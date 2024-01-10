@@ -11,9 +11,9 @@ const Connecting = async ({update, client, Boom, DisconnectReason, sleep, operat
        if (connection === 'close') {
          let messageconnect = new Boom(lastDisconnect?.error)?.output.statusCode
             if (messageconnect === DisconnectReason.badSession) { 
-               console.log(`Sorry, it looks like the session file is disabled. Please re-scan🙏`)
+               console.log(`Sorry, it looks like the session errors. Please get new session ID`)
                client.logout();
-               console.log('Mengkoneksikan ulang dalam 10 detik....')
+               console.log('Reconnect in 10 seconds....')
                setTimeout( () => {
                  operate();
                }, 10000)
@@ -49,7 +49,7 @@ const Connecting = async ({update, client, Boom, DisconnectReason, sleep, operat
              //silent for 5.5 seconds
               await sleep(5500)
                //displays information that it is connected
-                console.log('connected✔️') 
+                console.log('connected✅') 
          }
    }
    

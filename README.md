@@ -12,7 +12,7 @@
  
 <h1 align="center">❇️GDS-MD❇️</h1>
 
-#### 🪩 To Change the owner number click here [`config.js`](https://github.com/PRINCE-GDS/GDS-MD/main/lib/validator/config.js)🪩
+#### 🪩 To Change the owner number click here [`config.js`](https://github.com/PRINCE-GDS/GDS-MD/blob/main/lib/validator/config.js)🪩
 
 <h2 align="left">ＳＥＳＳＩＯＮ ＩＤ (ＰＡＩＲ ＣＯＤＥ)</h2>
 <p align="left">

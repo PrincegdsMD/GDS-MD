@@ -10,7 +10,7 @@
 
 
  
-<h1 align="center">❇️GDS-MD❇️</h1>
+<h1 align="center">ɢᴅs-ᴍᴅ</h1>
 
 #### 🪩 To Change the owner number click here [`config.js`](https://github.com/PRINCE-GDS/GDS-MD/blob/main/lib/validator/config.js)🪩
 

@@ -154,7 +154,7 @@ async function getMessage(key) {
   		return msg?.message
       }  
       return {
-      	conversation: "Hai Im YanzBotzX"
+      	conversation: "Hai Im GDS-MD"
       }  
   }
   

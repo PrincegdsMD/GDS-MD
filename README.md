@@ -1,23 +1,78 @@
-# YanzBotz-MD
-Script Base WhatsApp Bot Multi Device
-
-## NOTE
-This Script is for everyone, not for Sale. Jika dijual neraka menunggumu brother !
 
 <p align="center">
-	<img src="https://telegra.ph/file/bea650da4df4831add817.jpg" width="35%" style="margin-left: auto;margin-right: auto;display: block;">
+<a href="https://github.com/PRINCE-GDS/GDS-MD"><img title="Author" src="https://img.shields.io/badge/THE PRINCE BOT-black?style=for-the-badge&logo=github"></a>
+<p/>
+
+<p align="center">
+<a href="https://github.com/PRINCE-GDS?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/PRINCE-GDS?label=Followers&style=social"></a>
+<a href="https://github.com/PRINCE-GDS/GDS-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/PRINCE-GDS/THE-PRINCE-BOT?&style=social"></a>
+<a href="https://github.com/PRINCE-GDS/GDS-MD/network/members"><img title="Fork" src="https://img.shields.io/github/forks/PRINCE-GDS/THE-PRINCE-BOT?style=social"></a>
+<a href="https://github.com/PRINCE-GDS/GDS-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/https://github.com/PRINCE-GDS/GDS-MD?label=Watching&style=social"></a>
 </p>
-<h1 align="center">YanzBotz-MD</h1>
+ 
+<h1 align="center">❇️GDS-MD❇️</h1>
 
-This is Script of WhatsApp multi device, working with [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
+#### 🪩 To Change the owner number click here [`config.js`](https://github.com/PRINCE-GDS/GDS-MD/main/lib/validator/config.js)🪩
+
+<h2 align="left">ＳＥＳＳＩＯＮ ＩＤ (ＰＡＩＲ ＣＯＤＥ)</h2>
+<p align="left">
+<a href="https://replit.com/@iycwwwuaaipgfjs/Prince-PairCode?v=1"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=replit"></a>
+<p/>
+
+****
+#### If pair code don't work then scan QR for session ID
+
+
+<h2 align="left">ＳＥＳＳＩＯＮ ＩＤ (QR SCAN)</h2>
+
+<a href="https://princebotqr.onrender.com/"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=render"></a>
+<p/>
+
+
+<h1 align="left">ÐΣPLOY TO HΣЯOKU</h1> 
+
+#### 1. If You don't have an account in Heroku. Create an account.
+<br>
+       <p align="left"><a href="https://signup.heroku.com"> <img src="https://img.shields.io/badge/heroku%20Account-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
+#### 2. Deploy Now.
+   <p align="left"><a href="https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/GDS-MD"> <img src="https://img.shields.io/badge/Heroku%20Deploy-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 
-## UNTUK PENGGUNA WINDOWS/RDP
+<h1 align="left">ÐΣPLOY TO REPLIT</h1> 
 
-* Unduh & Instal Git [`Klik Disini`](https://git-scm.com/downloads)
-* Unduh & Instal NodeJS [`Klik Disini`](https://nodejs.org/en/download)
-* Unduh & Instal FFmpeg [`Klik Disini`](https://ffmpeg.org/download.html) (**Jangan Lupa Tambahkan FFmpeg ke variabel lingkungan PATH**)
+1. If You don't have an account in Replit. Create a account.
+    <br>
+<p align="left"><a href="https://replit.com/signup"> <img src="https://img.shields.io/badge/replit%20Account-purple?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
+
+2. Now Deploy
+    <br>
+<p align="left"><a href="https://repl.it/github/PRINCE-GDS/GDS-MD"> <img src="https://img.shields.io/badge/replit%20Deploy-purple?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
+
+<h2 align="left">DEPLOY TO KOYEB</h2> 
+
+#### 1. if you don't have a koyeb account. Create an account.
+   <br>
+   <p align="left"><a href="https://app.koyeb.com/auth/signup"> <img src="https://img.shields.io/badge/Koyeb account-purple?style=for-the-badge&logo=koyeb" width="220" height="38.45"/></a></p>
+
+#### 2. Now deploy
+   <br>
+  <p align="left"><a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FPRINCE-GDS%2FGDS-MD&branch=main&nameprincegds&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=your+sessionid+here&env[MODE]=public&env=[autoRead]=false&env[statusview]=false&env[REMOVEBG_KEY]=your+rmbg+key&env[antidelete]=false"> <img src="https://www.koyeb.com/static/images/deploy/button.svg" width="140" height="45.45"/></a></p>
+
+
+<h1 align="left">suᴘᴘoʀт ԍʀouᴘ ʟιɴκ</h1>
+
+
+
+   <p align="left">
+      <a href="https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP"><img height= "40" length= "10" title="Author" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsApp&logoColor=white"></a>
+     <p/>
+
+## FOR WINDOWS/RDP USERS
+* Download & Install Git [`Klik Disini`](https://git-scm.com/downloads)
+* Download & Install NodeJS [`Klik Disini`](https://nodejs.org/en/download)
+* Download & Install FFmpeg [`Klik Disini`](https://ffmpeg.org/download.html) (**Don't Forget to Add FFmpeg to the PATH environment variable**)
 
 
 ```bash
@@ -63,24 +118,13 @@ $ node .
 WhatsApp bot is still in the development stage, so there are a few bugs
 WhatsApp Connection (BETA, not working perfectly)
 
-Editing Number Owner & session name in [`config.js`](https://github.com/YanzBotz/YanzBotz-MD/blob/main/lib/validator/config.js)
+Editing Number Owner & session name in 
 My Apikey [`api.yanzbotz`](https://1pt.co/api.yanzbotz)
 
 
 ## Thanks To
 * [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
 * [`YanzBotz`](https://github.com/YanzBotz)
-* [`Febriansyah`](https://github.com/FebriansyahXd)
-* [`Arasya`](https://github.com/GetSya)
-* [`DikaArdnt`](https://github.com/DikaArdnt)
-* [`Rifza.p.p`](https://github.com/Rifza123)
-* [`Imam mahdi`](http://github.com/Adi-OfficialL)
-* [`Zansky`](http://github.com/myname31)
-* [`IqbalzzX`](http://github.com/IqbalzzX)
-* [`Ridho Atak`](https://github.com/atak676)
-* [`Nathaniel`](https://github.com/natgvlite)
-* [`Aprilia`](https://github.com/ALDI33)
-* [`Aldi Fauzi`](https://github.com/ALDI33)
 
 
 License: [MIT](https://en.wikipedia.org/wiki/MIT_License)

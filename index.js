@@ -1,24 +1,4 @@
-  /**
-       Thank for
-       • allah swt
-       • ortu
-       • YanzBotz ( creator )
-       • Febzabotz ( my team )
-       • Aprilia ( my team )
-       • Aldi Fauzi  ( my team )
-       • Dika Ardnt
-       • Rifza.p.p
-       • IqbalzzX
-    All creator bot, maaf kalau salah satu ga kesebut nama nya mohon maaf
-
-/**
-     Base By Aypa Team
-       • Febzabotz 
-       • YanzBotz 
-       •  Aprilia 
-       • Aldi Fauzi
-  */
-  console.log('Starting...');
+console.log('Starting...');
   const SETTING = require('./lib/validator/config')
   const pino = SETTING['modul']['pino']
   const chalk = SETTING['modul']['chalk']
@@ -64,7 +44,7 @@
                 return msg.message || undefined
             }
             return {
-                conversation: "Hai Im YanzBotz"
+                conversation: "Hai Im GDS-MD"
 	   }
 	},
 		      msgRetryCounterCache

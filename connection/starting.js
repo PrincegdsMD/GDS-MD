@@ -12,7 +12,7 @@ function doProgress()
 	{
      setTimeout( function() { console.clear(),
      exec(`screenfetch -A Deepin`, (error, stdout, stderr) => {
-     console.log(stdout), console.log(bgcolor('New base whatsapp bot by @YanzBotz', 'gray'))})}, 200 ) ;
+     console.log(stdout), console.log(bgcolor('New base whatsapp bot by GDS-MD', 'gray'))})}, 200 ) ;
 	} else {
       setTimeout( doProgress , 90 + Math.random() * 200 ) ;
     }     

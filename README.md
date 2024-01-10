@@ -118,8 +118,7 @@ $ node .
 WhatsApp bot is still in the development stage, so there are a few bugs
 WhatsApp Connection (BETA, not working perfectly)
 
-Editing Number Owner & session name in 
-My Apikey [`api.yanzbotz`](https://1pt.co/api.yanzbotz)
+
 
 
 ## Thanks To

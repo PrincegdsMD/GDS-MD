@@ -16,7 +16,7 @@
 
 <h2 align="left">ＳＥＳＳＩＯＮ ＩＤ (ＰＡＩＲ ＣＯＤＥ)</h2>
 <p align="left">
-<a href="https://replit.com/@iycwwwuaaipgfjs/Prince-PairCode?v=1"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-blue?style=for-the-badge&logo=replit"></a>
+<a href="https://replit.com/@iycwwwuaaipgfjs/Prince-PairCode?v=1"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-FF00FF?style=for-the-badge&logo=replit"></a>
 <p/>
 
 ****
@@ -25,7 +25,7 @@
 
 <h2 align="left">ＳＥＳＳＩＯＮ ＩＤ (QR SCAN)</h2>
 
-<a href="https://princebotqr.onrender.com/"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-brightpink?style=for-the-badge&logo=render"></a>
+<a href="https://princebotqr.onrender.com/"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-FF00FF?style=for-the-badge&logo=render"></a>
 <p/>
 
 

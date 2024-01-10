@@ -1,5 +1,5 @@
 {
-  "name": "YanzBotz",
+  "name": "GDS-MD",
   "version": "2.0.0",
   "description": "Using webSocket version in this script✓",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "node index.js --pairing-code"
   },
   "keywords": [],
-  "author": "YanzBotz",
+  "author": "GDS-MD",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",

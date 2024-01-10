@@ -16,7 +16,7 @@
 
 <h2 align="left">ＳＥＳＳＩＯＮ ＩＤ (ＰＡＩＲ ＣＯＤＥ)</h2>
 <p align="left">
-<a href="https://replit.com/@iycwwwuaaipgfjs/Prince-PairCode?v=1"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=replit"></a>
+<a href="https://replit.com/@iycwwwuaaipgfjs/Prince-PairCode?v=1"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-blue?style=for-the-badge&logo=replit"></a>
 <p/>
 
 ****
@@ -25,7 +25,7 @@
 
 <h2 align="left">ＳＥＳＳＩＯＮ ＩＤ (QR SCAN)</h2>
 
-<a href="https://princebotqr.onrender.com/"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=render"></a>
+<a href="https://princebotqr.onrender.com/"><img height= "40" title="Author" src="https://img.shields.io/badge/SESSION ID-brightpink?style=for-the-badge&logo=render"></a>
 <p/>
 
 
@@ -33,10 +33,10 @@
 
 #### 1. If You don't have an account in Heroku. Create an account.
 <br>
-       <p align="left"><a href="https://signup.heroku.com"> <img src="https://img.shields.io/badge/heroku%20Account-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+       <p align="left"><a href="https://signup.heroku.com"> <img src="https://img.shields.io/badge/heroku%20Account-darkgreen?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 #### 2. Deploy Now.
-   <p align="left"><a href="https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/GDS-MD"> <img src="https://img.shields.io/badge/Heroku%20Deploy-purple?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+   <p align="left"><a href="https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/GDS-MD"> <img src="https://img.shields.io/badge/Heroku%20Deploy-darkgreen?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
 
@@ -44,17 +44,17 @@
 
 1. If You don't have an account in Replit. Create a account.
     <br>
-<p align="left"><a href="https://replit.com/signup"> <img src="https://img.shields.io/badge/replit%20Account-purple?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
+<p align="left"><a href="https://replit.com/signup"> <img src="https://img.shields.io/badge/replit%20Account-darkgreen?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
 
 2. Now Deploy
     <br>
-<p align="left"><a href="https://repl.it/github/PRINCE-GDS/GDS-MD"> <img src="https://img.shields.io/badge/replit%20Deploy-purple?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
+<p align="left"><a href="https://repl.it/github/PRINCE-GDS/GDS-MD"> <img src="https://img.shields.io/badge/replit%20Deploy-darkgreen?style=for-the-badge&logo=replit" width="220" height="38.45"/></a></p>
 
 <h2 align="left">DEPLOY TO KOYEB</h2> 
 
 #### 1. if you don't have a koyeb account. Create an account.
    <br>
-   <p align="left"><a href="https://app.koyeb.com/auth/signup"> <img src="https://img.shields.io/badge/Koyeb account-purple?style=for-the-badge&logo=koyeb" width="220" height="38.45"/></a></p>
+   <p align="left"><a href="https://app.koyeb.com/auth/signup"> <img src="https://img.shields.io/badge/Koyeb account-darkgreen?style=for-the-badge&logo=koyeb" width="220" height="38.45"/></a></p>
 
 #### 2. Now deploy
    <br>

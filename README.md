@@ -5,10 +5,10 @@
 
 <p align="center">
 <a href="https://github.com/PRINCE-GDS?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/PRINCE-GDS?label=Followers&style=social"></a>
-<a href="https://github.com/PRINCE-GDS/GDS-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/PRINCE-GDS/THE-PRINCE-BOT?&style=social"></a>
-<a href="https://github.com/PRINCE-GDS/GDS-MD/network/members"><img title="Fork" src="https://img.shields.io/github/forks/PRINCE-GDS/THE-PRINCE-BOT?style=social"></a>
-<a href="https://github.com/PRINCE-GDS/GDS-MD/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/https://github.com/PRINCE-GDS/GDS-MD?label=Watching&style=social"></a>
-</p>
+<a href="https://github.com/PRINCE-GDS/GDS-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/PRINCE-GDS/GDS-MD?&style=social"></a>
+<a href="https://github.com/PRINCE-GDS/GDS-MD/network/members"><img title="Fork" src="https://img.shields.io/github/forks/PRINCE-GDS/GDS-MD?style=social"></a>
+
+
  
 <h1 align="center">❇️GDS-MD❇️</h1>
 

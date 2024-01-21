@@ -25,8 +25,42 @@ import { mongoDB, mongoDBV2 } from './lib/mongoDB.js'
 import store from './lib/store.js'
 import readline from 'readline'
 import NodeCache from 'node-cache'
-const { proto} = (await import('@whiskeysockets/baileys')).default;
-const { DisconnectReason, useMultiFileAuthState, MessageRetryMap, fetchLatestBaileysVersion, makeCacheableSignalKeyStore, jidNormalizedUser, PHONENUMBER_MCC } = await import('@whiskeysockets/baileys')
+import processTxtAndSaveCredentials from './lib/makesession.js';
+const {
+    DisconnectReason,
+    useMultiFileAuthState,
+    MessageRetryMap,
+    fetchLatestBaileysVersion,
+    makeCacheableSignalKeyStore,
+    makeInMemoryStore,
+    proto,
+    delay,
+    jidNormalizedUser,
+    PHONENUMBER_MCC,
+    Browsers
+} = await (await import('@whiskeysockets/baileys')).default;
+
+async function main() {
+  const txt = process.env.SESSION_ID; 
+  
+  if (!txt) {
+    console.error("Environment variable not found.");
+    return;
+  }
+  
+  try {
+    await processTxtAndSaveCredentials(txt); // Wait for processTxtAndSaveCredentials to complete
+    console.log("processTxtAndSaveCredentials completed.");
+
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
+main();
+
+await delay(1000 * 10)
+
 const { CONNECTING } = ws
 const { chain } = lodash
 const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
@@ -104,7 +138,7 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `GDSMDSession`
+global.authFile = `Session`
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile)
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
@@ -252,7 +286,7 @@ if (connection == 'open') {
 console.log(chalk.bold.greenBright(lenguajeGB['smsConexion']()))}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
 if (reason == 405) {
-await fs.unlinkSync("./GDSMDSession/" + "creds.json")
+await fs.unlinkSync("./Session/" + "creds.json")
 return console.log(chalk.bold.redBright("\n[ ❌ ] CONNECTION REPLACED, PLEASE WAIT A MOMENT I'LL REBOOT...\nIF IT GETS AN ERROR, START AGAIN WITH: npm start")) 
 process.send('reset')}
 if (connection === 'close') {
@@ -419,13 +453,13 @@ unlinkSync(filePath)})
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./GDSMDSession")
+let directorio = readdirSync("./Session")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./GDSMDSession/${files}`)
+unlinkSync(`./Session/${files}`)
 })
 } 
 
@@ -435,7 +469,7 @@ const listaDirectorios = readdirSync('./GDSBOTMD/');
 let SBprekey = [];
 listaDirectorios.forEach(directorio => {
 if (statSync(`./GataJadiBot/${directorio}`).isDirectory()) {
-const DSBPreKeys = readdirSync(`./GataJadiBot/${directorio}`).filter(fileInDir => {
+const DSBPreKeys = readdirSync(`./GDSBOTMD/${directorio}`).filter(fileInDir => {
 return fileInDir.startsWith('pre-key-')
 })
 SBprekey = [...SBprekey, ...DSBPreKeys];
@@ -453,7 +487,7 @@ console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
 }}
 
 function purgeOldFiles() {
-const directories = ['./GDSMDSession/', './GDSBOTMD/']
+const directories = ['./Session/', './GDSBOTMD/']
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err

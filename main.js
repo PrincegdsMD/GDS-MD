@@ -283,6 +283,19 @@ if (opcion == '1' || methodCodeQR) {
 console.log(chalk.bold.yellow(lenguajeGB['smsCodigoQR']()))}
 }
 if (connection == 'open') {
+    const {
+        jid,
+	name
+    } = conn.user;
+	
+    let msgf = `Hᴇʏ ${name} 👋🏻Wᴇʟᴄᴏᴍᴇ ᴛᴏ\n🛡️𝙂𝘿𝙎-𝙈𝘿🛡️\n\nʙᴏᴛ ɪs ᴏɴʟɪɴᴇ ɴᴏᴡ✅\nFᴏʀ ᴍᴏʀᴇ ϙᴜᴇʀʏ\nᴊᴏɪɴ ᴍʏ ᴄʜᴀɴɴᴇʟ\nhttps://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11\nIғ ʏᴏᴜ ʟɪᴋᴇ ᴛʜᴇ ʙᴏᴛ ɢɪᴠᴇ ᴀ sᴛᴀʀ 🌟 ᴛᴏ ᴍʏ ʀᴇᴘᴏ ғᴏʀ ᴄᴏᴜʀᴀɢᴇ\nhttps://github.com/PRINCE-GDS/GDS-MD\n\nENJOY💌`;
+    let gmes = conn.sendMessage (jid, {
+	text: msgf,
+	mentions: [jid]
+    }, {
+       quoted: null
+    });
+    
 console.log(chalk.bold.greenBright(lenguajeGB['smsConexion']()))}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
 if (reason == 405) {
@@ -397,7 +410,7 @@ const dir = global.__filename(join(pluginFolder, filename), true)
 if (filename in global.plugins) {
 if (existsSync(dir)) conn.logger.info(` SE ACTULIZADO - '${filename}' CON ÉXITO`)
 else {
-conn.logger.warn(`SE ELIMINO UN ARCHIVO : '${filename}'`)
+conn.logger.warn(`A FILE WAS DELETED : '${filename}'`)
 return delete global.plugins[filename];
 }
 } else conn.logger.info(`SE DETECTO UN NUEVO PLUGINS : '${filename}'`)

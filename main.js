@@ -21,7 +21,7 @@ import Pino from 'pino'
 import { Boom } from '@hapi/boom'
 import { makeWASocket, protoType, serialize } from './lib/simple.js'
 import {Low, JSONFile} from 'lowdb'
-import { mongoDB, mongoDBV2 } from './lib/mongoDB.js'
+import { MongoDB} from './lib/mongoDB.js';
 import store from './lib/store.js'
 import readline from 'readline'
 import NodeCache from 'node-cache'
@@ -81,10 +81,21 @@ global.timestamp = { start: new Date }
 
 const __dirname = global.__dirname(import.meta.url);
 
+//Prefix var
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse());
-global.prefix = new RegExp('^[' + (opts['prefix'] || '*/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-.@aA').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']');
+global.prefix = new RegExp('^[' + (process.env.PREFIX || '*/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-.@aA').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']');
 
-global.db = new Low(/https?:\/\//.test(opts['db'] || '') ? new cloudDBAdapter(opts['db']) : new JSONFile(`${opts._[0] ? opts._[0] + '_' : ''}database.json`));
+//Mongodb var
+
+global.opts['db'] = process.env.DATABASE_URL
+
+global.db = new Low(
+  /https?:\/\//.test(opts['db'] || '') ?
+    new CloudDBAdapter(opts['db']) : 
+     /mongodb(\+srv)?:\/\//i.test(opts['db']) ?
+      new MongoDB(opts['db']) :
+      new JSONFile(`${opts._[0] ? opts._[0] + '_' : ''}database.json`)
+);
 
 global.DATABASE = global.db; 
 global.loadDatabase = async function loadDatabase() {

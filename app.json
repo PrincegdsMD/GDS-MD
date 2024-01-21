@@ -2,7 +2,7 @@
   "name": "GDS-MD", 
   "description": "Super Bot WhatsApp",
   "repository": "https://github.com/PRINCE-GDS/GDS-MD",
-  "logo": "https://i.imgur.com/8fK4h6F.jpg",
+  "logo": "https://i.imgur.com/izRryBm.jpg",
   "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
 
   "stack": "container",
@@ -11,7 +11,17 @@
       "description": "your session id",
       "required": true,
       "value": ""
-    }
+          },
+    "PREFIX": {
+      "description": "put any one symbol here except @ and + , leave it Blank if you want to use multiple prefix",
+      "required": false,
+      "value": ""
+    },
+       "DATABASE_URL": {
+      "description": "your mongodb database url",
+      "required": false,
+      "value": ""
+       }      
   },
   
   "buildpacks": [

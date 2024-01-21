@@ -1,14 +1,83 @@
-<p align="center"> 
-<a href="https://github.com/GataNina-Li"><img src="http://readme-typing-svg.herokuapp.com?font=mono&size=17&duration=4000&color=F7B11B&center=falso&vCenter=falso&lines=GataBot-MD++%F0%9F%90%88;Gracias+por+visitar+este+repositorio.+%F0%9F%92%96" height="90px"></a> 
-</p>
+
 
 <p align="center">
-<img src="https://i.imgur.com/kd8sus3.jpeg" alt="GataBot-MD" width="800"/>
+<a href="https://github.com/PRINCE-GDS/GDS-MD"><img title="Author" src="https://img.shields.io/badge/ɢᴅs-ᴍᴅ-black?style=for-the-badge&logo=github"></a>
+<p/>
+
+
   
-> Antes de usar este repositorio, visita la **[Política de GataBot. 😼](https://github.com/GataNina-Li/GataBot-MD/blob/master/terms.md)** 
 </p>
-
 <p align="center">
+<a href="https://github.com/PRINCE-GDS?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/PRINCE-GDS?label=Followers&style=social"></a>
+<a href="https://github.com/PRINCE-GDS/GDS-MD/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/PRINCE-GDS/GDS-MD?&style=social"></a>
+<a href="https://github.com/PRINCE-GDS/GDS-MD/network/members"><img title="Fork" src="https://img.shields.io/github/forks/PRINCE-GDS/GDS-MD?style=social"></a>
+
+
+
+<h1 align="center">ɢᴅs-ᴍᴅ</h1>
+
+#### 🪩 To Change the owner number click here [`config.js`](https://github.com/PRINCE-GDS/GDS-MD/blob/main/lib/validator/config.js)🪩
+
+<h5 align="left">ＳＥＳＳＩＯＮ ＩＤ (ＰＡＩＲ ＣＯＤＥ)</h5>
+<p align="left">
+<a href="https://replit.com/@iycwwwuaaipgfjs/Prince-PairCode?v=1"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=replit"></a>
+<p/>
+
+****
+#### If pair code don't work then scan QR for session ID
+
+
+<h4 align="left">ＳＥＳＳＩＯＮ ＩＤ (QR SCAN)</h4>
+
+<a href="https://princebotqr.onrender.com/"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=render"></a>
+<p/>
+
+
+<h2 align="left">ÐΣPLOY TO HΣЯOKU</h2> 
+
+#### 1. If You don't have an account in Heroku. Create an account.
+<br>
+       <p align="left"><a href="https://signup.heroku.com"> <img src="https://img.shields.io/badge/heroku%20Account-darkgreen?style=for-the-badge&logo=heroku" height="30"/></a></p>
+
+#### 2. Deploy Now.
+   <p align="left"><a href="https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/GDS-MD"> <img src="https://img.shields.io/badge/Heroku%20Deploy-darkgreen?style=for-the-badge&logo=heroku" height="30"/></a></p>
+
+
+
+<h2 align="left">ÐΣPLOY TO REPLIT</h2> 
+
+1. If You don't have an account in Replit. Create a account.
+    <br>
+<p align="left"><a href="https://replit.com/signup"> <img src="https://img.shields.io/badge/replit%20Account-darkgreen?style=for-the-badge&logo=replit" height="30"/></a></p>
+
+2. Now Deploy
+    <br>
+<p align="left"><a href="https://repl.it/github/PRINCE-GDS/GDS-MD"> <img src="https://img.shields.io/badge/replit%20Deploy-darkgreen?style=for-the-badge&logo=replit" height="30"/></a></p>
+
+<h2 align="left">DEPLOY TO KOYEB</h2> 
+
+#### 1. if you don't have a koyeb account. Create an account.
+   <br>
+   <p align="left"><a href="https://app.koyeb.com/auth/signup"> <img src="https://img.shields.io/badge/Koyeb account-darkgreen?style=for-the-badge&logo=koyeb" height="30"/></a></p>
+
+#### 2. Now deploy
+   <br>
+  <p align="left"><a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FPRINCE-GDS%2FGDS-MD&branch=main&nameprincegds&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=your+sessionid+here&env[MODE]=public&env=[autoRead]=false&env[statusview]=false&env[REMOVEBG_KEY]=your+rmbg+key&env[antidelete]=false"> <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="30"/></a></p>
+
+
+<h1 align="left">suᴘᴘoʀт ԍʀouᴘ ʟιɴκ</h1>
+
+
+
+   <p align="left">
+      <a href="https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP"><img height= "40" length= "10" title="Author" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsApp&logoColor=white"></a>
+     <p/>
+
+## FOR WINDOWS/RDP USERS
+* Download & Install Git [`Klik Disini`](https://git-scm.com/downloads)
+* Download & Install NodeJS [`Klik Disini`](https://nodejs.org/en/download)
+* Download & Install FFmpeg [`Klik Disini`](https://ffmpeg.org/download.html) (**Don't Forget to Add FFmpeg to the PATH environment variable**)
+
 <a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYAME CON UNA 🌟 ¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
 <img src="https://i.pinimg.com/originals/d4/3c/90/d43c902873d4db8c85974dfd0798030b.gif" height="28px">
 </p>  
@@ -25,7 +94,7 @@
 </p>
 
 <div align="center">
-  
+
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:centergatabot@gmail.com)
 [![WhatsApp](https://img.shields.io/badge/STAFF-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/message/C45GXBEFTPONE1)
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/groups/872989990425789/)
@@ -60,6 +129,9 @@
 [![blog](https://img.shields.io/badge/Instalacion-Automatica-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/shorts/PESW8LXXlOI?feature=share)
 > **Note** Comandos para instalar de forma automática en Termux  
 ```bash
+git clone https://github.com/YanzBotz/YanzBotz-MD
+cd YanzBotz-MD
+npm install
 termux-setup-storage
 ```
 ```bash
@@ -68,6 +140,13 @@ apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - 
 ```js
 // PERSONALIZAR INSTALACIÓN AUTOMÁTICA (En caso de una Bifurcación)
 // Parámetros editables
+
+## HOW TO CONNECT TO MONGODB WHEN RUN IN HEROKU
+
+* Create account and database in mongodb atlas [`watch here`](https://youtu.be/rPqRyYJmx2g)
+* when you already have a database, you just need to take mongourl
+* Put mongourl in Procfile `web: node . --db 'mongourl'`
+* Example `web: node . -- db 'Your Mongo URI'`
 
 // REFERENCIA
 "wget -O - https://raw.githubusercontent.com/GataNina-Li/GataBot-MD/master/gata.sh | bash"
@@ -80,10 +159,9 @@ apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - 
 //LÍNEAS A MODIFICAR
 205 --> "git clone https://github.com/[user]/[repositorio].git"
 //Ejemplo: git clone https://github.com/GataNina-Li/GataBot-MD.git
-
+## FOR TERMUX/UBUNTU/SSH USER
 209 --> "cd [repositorio]"
 //Ejemplo: cd GataBot-MD
-
 //Una vez hecho estos cambios ejecute los nuevos comandos en Termux
 ```
 -----
@@ -124,11 +202,24 @@ cd storage/downloads/GataBot-MD-master/GataBot-MD-master
 yarn install
 ```
 ```bash
+apt update && apt upgrade
+apt install git -y
+apt install nodejs -y
+apt install ffmpeg -y
+git clone https://github.com/YanzBotz/YanzBotz-MD
+cd YanzBotz-MD
 npm install
 ```
+
+## RECOMMENDED INSTALL ON TERMUX
+
 ```bash
+pkg install yarn
+yarn
 npm start
 ```
+
+## Installing
 * #### APLICACIÓN RECOMENDADA PARA [`DESCOMPRIMIR`](https://play.google.com/store/apps/details?id=com.rarlab.rar)
 * #### APLICACIÓN RECOMENDADA PARA EDITAR [`NÚMERO DE OWNER`](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
 > **Note** Guardar los archivos en la ubicación: storage/downloads/GataBot-MD-master/GataBot-MD-master   
@@ -136,6 +227,7 @@ npm start
 ### 🚀 USAR GATABOT 24/7 EN TERMUX 
 > Ejecutar estos comandos dentro de la carpeta GataBot-MD
 ```bash
+$ node .
 termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
 ``` 
 #### ⬇️ Opciones Disponibles
@@ -161,6 +253,20 @@ pm2 start index
 ```bash
 grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/GataNina-Li/GataBot-MD/master/update.sh | bash 
 ```
+
+## ❗ Warning
+WhatsApp bot is still in the development stage, so there are a few bugs
+WhatsApp Connection (BETA, not working perfectly)
+
+
+
+
+## Thanks To
+* [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
+* [`YanzBotz`](https://github.com/YanzBotz)
+
+
+License: [MIT](https://en.wikipedia.org/wiki/MIT_License)
 #### Para que no pierda su progreso en GataBot, estos comandos realizarán un respaldo de su `database.json` y se agregará a la versión más reciente.
 > **Warning** Estos comandos solo funcionan para TERMUX, REPLIT, LINUX                           
 ----
@@ -184,7 +290,6 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 [![blog](https://img.shields.io/badge/BoxMine-GataBotMD-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/Ko019wvu2Tc)
 > Activar GataBot-MD 24/7 en BoxMine Host
-
 <a href="https://boxmineworld.com"><img src="https://i.imgur.com/allAyd4.png" height="125px"></a>
 ### BoxMine World
 
@@ -206,7 +311,6 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 ------------------
 ### 🟢 VORTEXUSCLOUD HOST
 > Activar GataBot-MD 24/7 en Vortexuscloud Host
-
 <a href="https://vortexuscloud.com"><img src="https://telegra.ph/file/4bd3d8d14e5683073d4f3.jpg" height="125px"></a>
 ### vortexus cloud
 
@@ -254,13 +358,13 @@ Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
 ### DISTRIBUIDORES AUTORIZADOS O RESELLERS - PREGUNTAS 
 <details>
 <summary><b>¿Te gustaría ser un Distribuidores Autorizados o reseller de GataBot?</b></summary>
-  
+
 - ¡Contáctanos **[correo electrónico](centergatabot@gmail.com)** para solicitar tu [**Licencia**](https://github.com/GataNina-Li/GataBot-MD/blob/master/terms.md)!
 </details>
 
 <details>
 <summary><b>¿Qué significa ser un Distribuidor Autorizado o reseller en GataBot?</b></summary>
-  
+
 - Aquellos usuarios que adquieran la licencia de Distribuidores Autorizados o resellers obtienen el derecho legal de utilizar este repositorio para fines educativos, políticos o comerciales, sin poner en riesgo su reputación personal u organizacional.
 </details>
 

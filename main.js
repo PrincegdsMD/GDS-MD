@@ -22,6 +22,7 @@ import { Boom } from '@hapi/boom'
 import { makeWASocket, protoType, serialize } from './lib/simple.js'
 import {Low, JSONFile} from 'lowdb'
 import { MongoDB} from './lib/mongoDB.js';
+import CloudDBAdapter from './lib/cloudDBAdapter.js';
 import store from './lib/store.js'
 import readline from 'readline'
 import NodeCache from 'node-cache'

@@ -1,9 +1,19 @@
 {
-  "name": "GataBot-MD", 
+  "name": "GDS-MD", 
   "description": "Super Bot WhatsApp",
-  "repository": "https://github.com/GataNina-Li/GataBot-MD",
+  "repository": "https://github.com/PRINCE-GDS/GDS-MD",
   "logo": "https://i.imgur.com/8fK4h6F.jpg",
   "keywords": ["java", "bot", "whatsapp-bot", "whatsapp-automation"],
+
+  "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "your session id",
+      "required": true,
+      "value": ""
+    }
+  },
+  
   "buildpacks": [
     {
       "url": "heroku/nodejs"

@@ -1458,8 +1458,10 @@ let callmsg = await this.reply(nk.from, `${lenguajeGB['smsCont15']()} *@${nk.fro
 await this.updateBlockStatus(nk.from, 'block')
 }}}}
 
+//antidelete var
 export async function deleteUpdate(message) {
-try {
+try {	
+if (typeof process.env.antidelete === 'undefined' || process.env.antidelete.toLowerCase() === 'false') return;
 const { fromMe, id, participant } = message
 if (fromMe) return 
 let msg = mconn.conn.serializeM(mconn.conn.loadMessage(id))

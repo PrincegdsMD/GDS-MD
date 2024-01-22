@@ -301,25 +301,19 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 - [x] Resultado <details><summary>Ajustes del Servidor - GataBot-MD</summary><img src="https://i.imgur.com/N0SwvbY.jpeg"></details>
 ------------------
-### ⚡ REPLIT - GATABOT
+### ⚡ REPLIT - GDS
 [![blog](https://img.shields.io/badge/Replit-GataBotMD-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/pQYkq4xv37o)
-<a target="_blank" href="https://replit.com/github/GataNina-Li/GataBot-MD"><img alt="Run on Replit" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg"></a>
-<a href="https://replit.com/github/GataNina-Li/GataBot-MD"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
+<a target="_blank" href="https://replit.com/github/PRINCE-GDS/GDS-MD"><img alt="Run on Replit" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg"></a>
+<a href="https://replit.com/github/PRINCE-GDS/GDS-MD"> <img src="https://media0.giphy.com/media/lMwu8EJAnv9kmn51KQ/giphy.gif" height="29px"></a>
 ------------------
-- [x] Resultado <details><summary>Importar Repositorio - GataBot-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
+- [x] Result <details><summary>Import Repository - GDS-MD</summary><img src="https://i.imgur.com/GQyRnMf.jpg"></details>
 ------------------
 ### 🟢 VORTEXUSCLOUD HOST
-> Activar GataBot-MD 24/7 en Vortexuscloud Host
+> Activar GDS-MD 24/7 en Vortexuscloud Host
 <a href="https://vortexuscloud.com"><img src="https://telegra.ph/file/4bd3d8d14e5683073d4f3.jpg" height="125px"></a>
-### vortexus cloud
 
-- Pagina Oficial: [`https://vortexuscloud.com`](https://vortexuscloud.com)
-- Tutorial - Crea una cuenta en la Dashboard: [`https://youtu.be/U3CEj0OlB9U?si=IMQAcGfGgYOqqVyZ`](https://youtu.be/U3CEj0OlB9U?si=IMQAcGfGgYOqqVyZ)
-- Dashboard: [`https://dash.vortexuscloud.com`](https://dash.vortexuscloud.com)
-- Panel: [`https://panel.vortexuscloud.com`](https://panel.vortexuscloud.com)
-- Dudas UNICAMENTE SOBRE EL HOST: [`wa.me/258858119033`](wa.me/258858119033) (Creador: Mauro) 
-- Canal sobre informacion del host : [`https://whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A`](https://whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A)
+
 ------------------
 ### 🌱 ACTIVAR EN KOYEB 
 
@@ -327,63 +321,37 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 
 ------------------
 ### ☁️ ACTIVAR EN RENDER 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FGataNina-Li%2FGataBot-MD) 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2FPRINCE-GDS%2FGDS-MD) 
 
 ------------------
-## 💻 PARA USUARIOS DE WINDOWS/VPS/RDP
-
-* Descargar e instala Git [`Aquí`](https://git-scm.com/downloads)
-* Descargar e instala NodeJS [`Aquí`](https://nodejs.org/en/download)
-* Descargar e instala FFmpeg [`Aquí`](https://ffmpeg.org/download.html) (**No olvide agregar FFmpeg a la variable de entorno PATH**)
-* Descargar e instala ImageMagick [`Aquí`](https://imagemagick.org/script/download.php)
-* Descargar e instala Yarn [`Aquí`](https://classic.yarnpkg.com/en/docs/install#windows-stable)
-```bash
-git clone https://github.com/GataNina-Li/GataBot-MD && cd GataBot-MD && npm install && npm update && node .
+## 💻 FOR WINDOWS/VPS/RDP USERS
+* Download and install Git ['Aquí'](https://git-scm.com/downloads)
+* Download and install NodeJS ['Aquí'](https://nodejs.org/en/download)
+* Descargar e instala FFmpeg ['Aquí'](https://ffmpeg.org/download.html) (**Don't forget to add FFmpeg to the PATH environment variable**)
+* Download and install ImageMagick ['Aquí'](https://imagemagick.org/script/download.php)
+* Download and install Yarn ['Aquí'](https://classic.yarnpkg.com/en/docs/install#windows-stable)
+'''bash 
+git clone https://github.com/PRINCE-GDS/GDS-MD && cd GDS-MD && npm install && npm update && node .
 ```
-## 💻 Instalación de FFmpeg para Windows 
-* Descarga cualquiera de las versiones de FFmpeg disponibles haciendo clic en [FFmpeg](https://www.gyan.dev/ffmpeg/builds/).
-* Extraer archivos a `C:\` path.
-* Cambie el nombre de la carpeta extraída a `ffmpeg`.
-* Ejecute el símbolo del sistema como administrador.
-* Ejecute el siguiente comando:
+## 💻 Installing FFmpeg for Windows
+* Download any of the available versions of FFmpeg by clicking [FFmpeg](https://www.gyan.dev/ffmpeg/builds/).
+* Extract files to 'C:\' path.
+* Rename the extracted folder to 'ffmpeg'.
+* Run Command Prompt as an administrator.
+* Run the following command: 
 ```cmd
 > setx /m PATH "C:\ffmpeg\bin;%PATH%"
 ```
-Si tiene éxito, le dará un mensaje como: `SUCCESS: specified value was saved`.
-* Ahora que tiene FFmpeg instalado, verifique que funcionó ejecutando este comando para ver la versión:
+If successful, it will give you a message like: 'SUCCESS: specified value was saved'.
+* Now that you have FFmpeg installed, check that it worked by running this command to see the version: 
 ```cmd
 > ffmpeg -version
 ```
 ----
-### DISTRIBUIDORES AUTORIZADOS O RESELLERS - PREGUNTAS 
-<details>
-<summary><b>¿Te gustaría ser un Distribuidores Autorizados o reseller de GataBot?</b></summary>
-
-- ¡Contáctanos **[correo electrónico](centergatabot@gmail.com)** para solicitar tu [**Licencia**](https://github.com/GataNina-Li/GataBot-MD/blob/master/terms.md)!
-</details>
-
-<details>
-<summary><b>¿Qué significa ser un Distribuidor Autorizado o reseller en GataBot?</b></summary>
-
-- Aquellos usuarios que adquieran la licencia de Distribuidores Autorizados o resellers obtienen el derecho legal de utilizar este repositorio para fines educativos, políticos o comerciales, sin poner en riesgo su reputación personal u organizacional.
-</details>
-
-<details>
-<summary><b>¿Dónde puedes solicitar la licencia para ser Distribuidor Autorizado o reseller de GataBot?</b></summary>
-
-  - Te ofrecemos opciones exclusivas: **[Instagram](https://www.instagram.com/gata_dios/)** y **[correo electrónico](centergatabot@gmail.com)**.
-</details>
-
-<details>
-<summary><b>¿Cómo puedo verificar quién es un distribuidor autorizado en GataBot?</b></summary>
-
-  - Lo hemos simplificado para ti. Si deseas conocer la lista y contactar al reseller para verificar su autenticidad, simplemente visita este **[enlace](https://github.com/GataNina-Li/GataBot-MD/blob/master/dealers.md)**. La licencia debe estar disponible públicamente en el repositorio del distribuidor, y si tanto su nombre de usuario en GitHub como el código de la licencia coinciden con nuestra lista, significa que está **[verificado](https://github.com/GataNina-Li/GataBot-MD/blob/master/terms.md)** como parte de resellers de GataBot. **¡Estamos aquí para garantizar transparencia y calidad en nuestra red de distribución!**
-</details>
-
-> Recuerda leer la **[Política de GataBot. 😼](https://github.com/GataNina-Li/GataBot-MD/blob/master/terms.md)** antes de hacer algo con este repositorio. 
+ 
   
 ----
-### 💠 [`IDIOMAS DISPONIBLES PARA GATABOT`](https://github.com/GataNina-Li/GataBot-MD/blob/master/config.js) 
+### 💠 [`IDIOMS AVAILABLE FOR GDS-MD`](https://github.com/PRINCE-GDS/GDS-MD/blob/master/config.js) 
 #### 🌐 Español  
 #### 🌐 Inglés (English) 
 #### 🌐 Portugués (Português)

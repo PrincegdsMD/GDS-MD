@@ -1471,7 +1471,7 @@ const antideleteMessage = `*╭━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━ 
 ${lenguajeGB['smsCont20']()} @${participant.split`@`[0]}
 ${lenguajeGB['smsCont21']()}
 *╰━━━⬣ ${lenguajeGB['smsCont19']()} ⬣━━╯*`.trim();
-await mconn.conn.sendMessage(conn.user.id, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
+await mconn.conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 mconn.conn.copyNForward(conn.user.id, msg).catch(e => console.log(e, msg))
 } catch (e) {
 console.error(e)

@@ -11,6 +11,11 @@
       "description": "your session id",
       "required": true,
       "value": ""
+      },
+    "antidelete": {
+      "description": "bot will forward deleted messages if you make it true",
+      "required": false,
+      "value": "false"
           },
     "PREFIX": {
       "description": "put any one symbol here except @ and + , leave it Blank if you want to use multiple prefix",

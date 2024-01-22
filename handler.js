@@ -953,14 +953,12 @@ if (!('detect' in chat)) chat.detect = true
 if (!('sWelcome' in chat)) chat.sWelcome = ''                    
 if (!('sBye' in chat)) chat.sBye = ''                    
 if (!('sPromote' in chat)) chat.sPromote = ''                    
-if (!('sDemote' in chat)) chat.sDemote = '' 
-if (!('delete' in chat)) chat.delete = false                   
-if (!('modohorny' in chat)) chat.modohorny = true                    
+if (!('sDemote' in chat)) chat.sDemote = ''                     
 if (!('stickers' in chat)) chat.stickers = false                   
 if (!('autosticker' in chat)) chat.autosticker = false                      
 if (!('audios' in chat)) chat.audios = true                     
 if (!('antiver' in chat)) chat.antiver = false                  
-if (!('antiLink' in chat)) chat.antiLink = false                    
+if (!('antiLink' in chat)) chat.antiLink = true                    
 if (!('antiLink2' in chat)) chat.antiLink2 = false
 if (!('antiTiktok' in chat)) chat.antiTiktok = false
 if (!('antiYoutube' in chat)) chat.antiYoutube = false
@@ -975,7 +973,7 @@ if (!('modoadmin' in chat)) chat.modoadmin = false
 if (!('antitoxic' in chat)) chat.antitoxic = false
 if (!('simi' in chat)) chat.simi = false
 if (!('antiTraba' in chat)) chat.antiTraba = true
-if (!('autolevelup' in chat))  chat.autolevelup = true
+if (!('autolevelup' in chat))  chat.autolevelup = false
 if (!isNumber(chat.expired)) chat.expired = 0
 } else
 global.db.data.chats[m.chat] = {
@@ -986,13 +984,11 @@ sWelcome: '',
 sBye: '',
 sPromote: '',
 sDemote: '', 
-delete: false,
-modohorny: true,
 stickers: false,
 autosticker: false,
 audios: true,
 antiver: false,
-antiLink: false,
+antiLink: true,
 antiLink2: false,
 antiTiktok: false,
 antiYoutube: false,
@@ -1007,7 +1003,7 @@ modoadmin: false,
 antitoxic: false,
 simi: false,
 antiTraba: true,
-autolevelup: true,
+autolevelup: false,
 expired: 0,
 }
 let settings = global.db.data.settings[this.user.jid]

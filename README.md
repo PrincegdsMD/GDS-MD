@@ -73,14 +73,11 @@
       <a href="https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP"><img height= "40" length= "10" title="Author" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsApp&logoColor=white"></a>
      <p/>
 
-## FOR WINDOWS/RDP USERS
-* Download & Install Git [`Klik Disini`](https://git-scm.com/downloads)
-* Download & Install NodeJS [`Klik Disini`](https://nodejs.org/en/download)
-* Download & Install FFmpeg [`Klik Disini`](https://ffmpeg.org/download.html) (**Don't Forget to Add FFmpeg to the PATH environment variable**)
 
-<a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYAME CON UNA 🌟 ¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
+
+<a href="#"><img title="GDS-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYAME CON UNA 🌟 ¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 
 <img src="https://i.pinimg.com/originals/d4/3c/90/d43c902873d4db8c85974dfd0798030b.gif" height="28px">
-</p>  
+</p>   
 
 <p align="center">
 <a href="#"><img title="GataBot-MD" src="https://img.shields.io/badge/LEA TODO EL README-red?colorA=%F77F48FF&colorB=%F77F48FF&style=for-the-badge"></a> 
@@ -106,67 +103,33 @@
 ### 👇 `Todas las cuentas están aquí!!`
 [![Enlaces](https://img.shields.io/badge/GataBot_Accounts-000000%7D?style=for-the-badge&logo=biolink&logoColor=white)](https://www.atom.bio/gatabot/)
 
------
-# 📍 Atajos del README
 
-| TEMA | DESCRIPCIÓN | ATAJO |
-|------|-------------|-------|
-| **TERMUX** | ***INSTALACIÓN AUTOMÁTICA*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-opción-1-instalación-automática-por-termux-) |
-| **TERMUX** | ***INSTALACIÓN MANUAL*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-opción-2-instalación-manual-por-termux---github) |
-| **TERMUX** | ***INSTALACIÓN POR ARCHIVOS*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-opción-3-instalación-por-termux---archivos) |
-| **TERMUX 24/7** | ***COMANDOS*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-usar-gatabot-247-en-termux) |
-| **TERMUX UPDATE** | ***COMANDOS PARA ACTUALIZAR GATABOT*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-actualizar-gatabot) |
-| **HEROKU** | ***INSTALACIÓN POR HEROKU*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-activar-en-heroku) |
-| **BOXMINE** | ***INSTALACIÓN POR BOXMINE*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-boxminehost) |
-| **REPLIT** | ***INSTALACIÓN POR REPLIT*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-replit---gatabot) |
-| **KOYEB** | ***INSTALACIÓN POR KOYEB*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-activar-en-koyeb) |
-| **WINDOWS** | ***INSTALACIÓN POR WINDOWS*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-para-usuarios-de-windowsvpsrdp) |
-| **DISTRIBUIDORES AUTORIZADOS** | ***PREGUNTAS*** |[ver](https://github.com/GataNina-Li/GataBot-MD#distribuidores-autorizados-o-resellers---preguntas) |
-| **SOBRE GATABOT** | ***POLÍTICA DE USO*** |[ver](https://github.com/GataNina-Li/GataBot-MD/blob/master/terms.md) |
-| **DESARROLLADORES** | ***PARTICIPATES DEL PROYECTO*** |[ver](https://github.com/GataNina-Li/GataBot-MD/#-creadora) |
------
-### 🌟 (OPCIÓN 1) INSTALACIÓN AUTOMÁTICA 🫰
-[![blog](https://img.shields.io/badge/Instalacion-Automatica-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/shorts/PESW8LXXlOI?feature=share)
-> **Note** Comandos para instalar de forma automática en Termux  
-```bash
-git clone https://github.com/YanzBotz/YanzBotz-MD
-cd YanzBotz-MD
-npm install
-termux-setup-storage
-```
-```bash
-apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/GataNina-Li/GataBot-MD/master/gata.sh | bash
-```
-```js
-// PERSONALIZAR INSTALACIÓN AUTOMÁTICA (En caso de una Bifurcación)
-// Parámetros editables
+### 🌟 (OPTION 1) AUTOMATIC INSTALLATION 🫰
+[! [blog] (https://img.shields.io/badge/Instalacion-Automatica-FF0000?style=for-the-badge&logo=youtube&logoColor=white)] (https://youtube.com/shorts/PESW8LXXlOI?feature=share)
+> **Note** Commands to install automatically in Termux  
+'''bash 
 
-## HOW TO CONNECT TO MONGODB WHEN RUN IN HEROKU
+// CUSTOMIZE AUTOMATIC INSTALLATION (In case of a Fork) Editable parameters 
 
-* Create account and database in mongodb atlas [`watch here`](https://youtu.be/rPqRyYJmx2g)
-* when you already have a database, you just need to take mongourl
-* Put mongourl in Procfile `web: node . --db 'mongourl'`
-* Example `web: node . -- db 'Your Mongo URI'`
+REFERENCE
+"wget -O - https://raw.githubusercontent.com/PRINCE-GDS/GDS-MD/master/gata.sh | bash"
 
-// REFERENCIA
-"wget -O - https://raw.githubusercontent.com/GataNina-Li/GataBot-MD/master/gata.sh | bash"
-
-// PARÁMETROS QUE PUEDE SER MODIFICADOS --> "[...]"
-"wget -O - https://raw.githubusercontent.com/[usuario]/[repositorio]/[rama]/gata.sh | bash"
-```
-#### MODIFICAR ARCHIVO [`gata.sh`](https://github.com/GataNina-Li/GataBot-MD/blob/master/gata.sh)
-```js
-//LÍNEAS A MODIFICAR
+PARAMETERS THAT CAN BE MODIFIED --> "[...]"
+"wget -O - https://raw.githubusercontent.com/[user]/[repository]/[branch]/cat.sh | bash"
+'''
+#### MODIFY FILE ['cat.sh'](https://github.com/GataNina-Li/GataBot-MD/blob/master/gata.sh)
+'''js
+LINES TO BE MODIFIED 
 205 --> "git clone https://github.com/[user]/[repositorio].git"
-//Ejemplo: git clone https://github.com/GataNina-Li/GataBot-MD.git
+Example: git clone https://github.com/PRINCE-GDS/GDS-MD.git
 ## FOR TERMUX/UBUNTU/SSH USER
-209 --> "cd [repositorio]"
-//Ejemplo: cd GataBot-MD
-//Una vez hecho estos cambios ejecute los nuevos comandos en Termux
-```
+209 --> "CD [repository]"
+Example: cd GDS-MD
+Once these changes are made, run the new commands in Termux
+'''
 -----
-### 🪄 (OPCIÓN 2) INSTALACIÓN MANUAL POR TERMUX - GITHUB 
-> **Note** Comandos para instalar de forma manual
+### 🪄 (OPTION 2) MANUAL INSTALLATION BY TERMUX - GITHUB 
+> **Note** Commands to install manually 
 ```bash
 termux-setup-storage
 ```
@@ -184,11 +147,11 @@ npm start
 ```
 > **Warning** Si aparece (Y/I/N/O/D/Z) [default=N] ? use la letra "y" + "ENTER" para continuar con la instalación 
 ------------------
-### 📁 (OPCIÓN 3) INSTALACIÓN POR TERMUX - ARCHIVOS
-> **Note** Descargué y Descomprime
-### [`GataBot-MD ~ Archivos`](https://github.com/GataNina-Li/GataBot-MD/archive/refs/heads/master.zip)
-[![blog](https://img.shields.io/badge/Termux-GataBotMD-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
-](https://youtu.be/UcWlyQ8u5HE)
+### 📁 (OPTION 3) INSTALLATION BY TERMUX - FILES
+> **Note** I downloaded and unzipped
+### ['GataBot-MD ~ Files'](https://github.com/PRINCE-GDS /GDS-MD /archive/refs/heads/master.zip)
+[! [blog] (https://img.shields.io/badge/Termux-GataBotMD-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+](https://youtu.be/UcWlyQ8u5HE) 
 ```bash
 termux-setup-storage
 ```
@@ -196,62 +159,47 @@ termux-setup-storage
 apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 ```bash
-cd storage/downloads/GataBot-MD-master/GataBot-MD-master 
+cd storage/downloads/GDS-MD-master/GDS-MD-master 
 ```
 ```bash
 yarn install
 ```
 ```bash
-apt update && apt upgrade
-apt install git -y
-apt install nodejs -y
-apt install ffmpeg -y
-git clone https://github.com/YanzBotz/YanzBotz-MD
-cd YanzBotz-MD
-npm install
-```
-
-## RECOMMENDED INSTALL ON TERMUX
-
-```bash
-pkg install yarn
-yarn
-npm start
-```
 
 ## Installing
-* #### APLICACIÓN RECOMENDADA PARA [`DESCOMPRIMIR`](https://play.google.com/store/apps/details?id=com.rarlab.rar)
-* #### APLICACIÓN RECOMENDADA PARA EDITAR [`NÚMERO DE OWNER`](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
-> **Note** Guardar los archivos en la ubicación: storage/downloads/GataBot-MD-master/GataBot-MD-master   
-----
-### 🚀 USAR GATABOT 24/7 EN TERMUX 
-> Ejecutar estos comandos dentro de la carpeta GataBot-MD
-```bash
+* #### RECOMMENDED APPLICATION FOR ['UNZIP'](https://play.google.com/store/apps/details?id=com.rarlab.rar)
+* #### RECOMMENDED APP FOR EDITING ['OWNER NUMBER'](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
+> **Note** Save the files to the location: storage/downloads/GDS-MD-master/GDS-MD-master   
+---- 
+### 🚀 USE GDS-MD 24/7 IN TERMUX 
+> Run these commands inside the GDS-MD folder
+'''bash 
 $ node .
 termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
 ``` 
-#### ⬇️ Opciones Disponibles
-> **Warning** Esto eliminará todo el historial que hayas establecido con PM2:
-```bash 
-pm2 delete index
-``` 
-> Si tienes cerrado Termux y quiere ver de nuevo la ejecución use:
-```bash 
-pm2 logs 
-``` 
-> Si desea detener la ejecución de Termux use:
-```bash 
-pm2 stop index
-``` 
-> Si desea iniciar de nuevo la ejecución de Termux use:
-```bash 
-pm2 start index
+
+#### ⬇️ Available Options
+> **Warning** This will delete all the history you've set with PM2:
+'''bash 
+PM2 Delete Index
+''' 
+> If you have Termux closed and want to see the execution again, use:
+'''bash 
+PM2 Logs 
+''' 
+> If you want to stop Termux from running, use:
+'''bash 
+PM2 Stop Index
+''' 
+> If you want to start running Termux again, use:
+'''bash 
+PM2 Start Index 
 ``` 
 ----
-### 😼 ACTUALIZAR GATABOT
-> **Note** Comandos para actualizar GataBot-MD de forma automática
-```bash
-grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/GataNina-Li/GataBot-MD/master/update.sh | bash 
+### 😼 UPDATE GATABOT
+> **Note** Commands to update GDS-MD automatically
+'''bash
+grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget & wget -O - https://raw.githubusercontent.com/GataNina-Li/GataBot-MD/master/update.sh | Bash  
 ```
 
 ## ❗ Warning
@@ -262,45 +210,45 @@ WhatsApp Connection (BETA, not working perfectly)
 
 
 ## Thanks To
-* [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
-* [`YanzBotz`](https://github.com/YanzBotz)
-
+* ['@adiwajshing/baileys'](https://github.com/adiwajshing/baileys)
+* ['YanzBotz'](https://github.com/YanzBotz)
 
 License: [MIT](https://en.wikipedia.org/wiki/MIT_License)
-#### Para que no pierda su progreso en GataBot, estos comandos realizarán un respaldo de su `database.json` y se agregará a la versión más reciente.
-> **Warning** Estos comandos solo funcionan para TERMUX, REPLIT, LINUX                           
+#### So that you don't lose your progress in GataBot, these commands will back up your 'database.json' and it will be added to the latest version.
+> **Warning** These commands only work for TERMUX, REPLIT, LINUX                           
 ----
-### 🟣 ACTIVAR EN HEROKU 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBotMD-Heroku) 
-### 👇 Añada lo siguente al Buildpack: 
-```bash
+### 🟣 ACTIVATE IN HEROKU
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/GDS-MD-Heroku) 
+
+### 👇 Add the following to the Buildpack: 
+'''bash
 heroku/nodejs
-```
-```bash
+'''
+'''bash
 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
-```
-```bash
+'''
+'''bash
 https://github.com/clhuang/heroku-buildpack-webp-binaries.git
-```
+'''
 -----
-- [x] Resultado <details><summary>Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
------
+- [x] <details><summary>Result Buildpack</summary><img src="https://i.imgur.com/t3Xzgnh.jpeg"></details>
+----- 
 
 ### ✅ BOXMINEHOST 
-[![blog](https://img.shields.io/badge/BoxMine-GataBotMD-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+[! [blog] (https://img.shields.io/badge/BoxMine-GDS-MD-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/Ko019wvu2Tc)
-> Activar GataBot-MD 24/7 en BoxMine Host
+> Activar GDS-MD 24/7 and BoxMine Host
 <a href="https://boxmineworld.com"><img src="https://i.imgur.com/allAyd4.png" height="125px"></a>
-### BoxMine World
 
-- Pagina Oficial: [`https://boxmineworld.com`](https://boxmineworld.com)
-- Tutorial - Crea una cuenta en la Dashboard: [`https://www.youtube.com/watch?v=ZAwBLuNmIlI`](https://www.youtube.com/watch?v=ZAwBLuNmIlI)
-- Dashboard: [`https://dash.boxmineworld.com`](https://dash.boxmineworld.com)
-- Panel: [`https://panel.boxmineworld.com`](https://panel.boxmineworld.com)
-- Dudas UNICAMENTE SOBRE EL HOST: [`https://discord.gg/84qsr4v`](https://discord.gg/84qsr4v) (Preguntar por Vicemi)
+### BoxMine World 
+- Official Website: ['https://boxmineworld.com'](https://boxmineworld.com)
+- Tutorial - Create an account in the Dashboard: ['https://www.youtube.com/watch?v=ZAwBLuNmIlI'](https://www.youtube.com/watch?v=ZAwBLuNmIlI)
+- Dashboard: ['https://dash.boxmineworld.com'](https://dash.boxmineworld.com)
+- Panel: ['https://panel.boxmineworld.com'](https://panel.boxmineworld.com)
+- Questions ONLY ABOUT THE HOST: ['https://discord.gg/84qsr4v'](https://discord.gg/84qsr4v) (Ask for Vicemi)
 
-- [x] Resultado <details><summary>Ajustes del Servidor - GataBot-MD</summary><img src="https://i.imgur.com/N0SwvbY.jpeg"></details>
-------------------
+- [x] <details><summary>Result Server Settings - GDS-MD</summary><img src="https://i.imgur.com/N0SwvbY.jpeg"></details>
+------------------ 
 ### ⚡ REPLIT - GDS
 [![blog](https://img.shields.io/badge/Replit-GataBotMD-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
 ](https://youtu.be/pQYkq4xv37o)
@@ -352,23 +300,11 @@ If successful, it will give you a message like: 'SUCCESS: specified value was sa
   
 ----
 ### 💠 [`IDIOMS AVAILABLE FOR GDS-MD`](https://github.com/PRINCE-GDS/GDS-MD/blob/master/config.js) 
-#### 🌐 Español  
-#### 🌐 Inglés (English) 
-#### 🌐 Portugués (Português)
-#### 🌐 Indonesio (Bahasa Indonesia) 
-#### 🌐 Árabe (عرب)
-#### 🌐 Hindi (Indian Language)
-- [x] Ejemplo <details><summary>Idioma</summary><img src="https://i.imgur.com/ZTwOGkT.jpg"></details>
+#### 🌐 English Global
+#### 🌐 Spanish
+#### 🌐 Portuguese
+#### 🌐 Bahasa Indonesia
+#### 🌐 Arabic
+#### 🌐 Hindi 
+- [x] Example <details><summary>Idioma</summary><img src="https://i.imgur.com/ZTwOGkT.jpg"></details>
 ----
-
-### 🌟 DESARROLLADORES
-<a href="https://github.com/GataNina-Li/GataBot-MD/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=GataNina-Li/GataBot-MD" /> 
-</a>
-
-### 🌟 AGRADECIMIENTOS
-[![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=60)](https://github.com/BrunoSobrino) 
-
-### 🌟 CREADORA 
-[![GataNina-Li](https://github.com/GataNina-Li.png?size=100)](https://github.com/GataNina-Li) 
-> Copyright (c) 2024 **[GataNina-Li](https://github.com/GataNina-Li/GataBot-MD/blob/master/LICENSE)**.

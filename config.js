@@ -125,6 +125,7 @@ global.country = '' // Add country, example: 🇪🇨
 global.packname = "ɢᴅs-ᴍᴅ"
 global.author = "Prince♥️"
 
+
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 // [ES] > CUENTAS E INFORMACIÓN DE VERSIONES DEL BOT, POR FAVOR 
 // MANTENGA ESTO SIN MODIFICAR, NOS ESFORZAMOS A DIARIO POR OFRECERLES UN BOT PARA LA COMUNIDAD, SEA AGRADECIDO 😉
@@ -132,14 +133,16 @@ global.author = "Prince♥️"
 global.vs = "1.7.0"
 global.vsJB = "2.5 (Beta)"
 global.gt = "𝙂𝘿𝙎-𝙈𝘿"
+global.menuvid = 'https://i.imgur.com/GFAAXqw.mp4'
 
-global.yt = "https://youtube.com/@gatadios"
-global.yt2 = "https://www.youtube.com/watch?v=Ko019wvu2Tc&t=71s"
-global.ig = "https://www.instagram.com/gata_dios"
-global.md = "https://github.com/GataNina-Li/GataBot-MD"
-global.fb = "https://www.facebook.com/groups/872989990425789/"
-global.tk = "https://www.tiktok.com/@gata_bot"
-global.ths = "https://www.threads.net/@gata_dios"
+
+global.yt = ""
+global.yt2 = ""
+global.ig = ""
+global.md = "https://github.com/PRINCE-GDS/GDS-MD"
+global.fb = ""
+global.tk = ""
+global.ths = ""
 global.paypal = ''
 global.asistencia = 'https://wa.me/message/C45GXBEFTPONE1' //Contacto
 

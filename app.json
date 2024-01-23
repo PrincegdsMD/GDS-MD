@@ -12,6 +12,11 @@
       "required": true,
       "value": ""
       },
+     "MODE": {
+      "description": "mode public or private",
+      "required": true,
+      "value": "public"
+      },
     "antidelete": {
       "description": "bot will forward deleted messages if you make it true",
       "required": false,

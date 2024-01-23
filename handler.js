@@ -1056,6 +1056,9 @@ await delay(time)
 }, time)
 }
 
+if (process.env.MODE && process.env.MODE.toLowerCase() === 'private' && !(isROwner || isOwner))
+          return;
+
 if (m.isBaileys) return
 m.exp += Math.ceil(Math.random() * 10)
 let usedPrefix

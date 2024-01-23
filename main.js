@@ -15,6 +15,7 @@ import { watchFile, unwatchFile } from 'fs'
 import syntaxerror from 'syntax-error'
 import { tmpdir } from 'os'
 import { format } from 'util'
+import dotenv from 'dotenv'
 import P from 'pino'
 import pino from 'pino'
 import Pino from 'pino'
@@ -40,6 +41,8 @@ const {
     PHONENUMBER_MCC,
     Browsers
 } = await (await import('@whiskeysockets/baileys')).default;
+
+dotenv.config()
 
 async function main() {
   const txt = process.env.SESSION_ID; 

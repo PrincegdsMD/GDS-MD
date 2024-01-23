@@ -472,12 +472,18 @@ Object.freeze(global.support);
 }
 
 function clearTmp() {
-const tmpDir = join(__dirname, 'tmp')
-const filenames = readdirSync(tmpDir)
-filenames.forEach(file => {
-const filePath = join(tmpDir, file)
-unlinkSync(filePath)})
+  const tmpDir = join(__dirname, 'tmp');
+  const filenames = readdirSync(tmpDir);
+  filenames.forEach(file => {
+    const filePath = join(tmpDir, file);
+    if (fs.lstatSync(filePath).isDirectory()) {
+      rmdirSync(filePath, { recursive: true });
+    } else {
+      unlinkSync(filePath);
+    }
+  });
 }
+
 
 function purgeSession() {
 let prekey = []

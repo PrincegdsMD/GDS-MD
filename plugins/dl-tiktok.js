@@ -49,8 +49,7 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
           const cap = `*_Here is your requested video_*`;
           await conn.sendMessage(m.chat, {video: {url: url}, caption: cap}, {quoted: m});
       m.react(done)
-        } catch {
-          throw `*_An or occurred. Please try again later._*`;
+       
           }
         }
       }

@@ -23,21 +23,21 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
     //const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: texto, contextInfo: {externalAdReply: {title: '𝘗𝘙𝘐𝘕𝘊𝘌-𝘉𝘖𝘛-𝘔𝘋', body: null, thumbnail: imagen1, sourceUrl: 'https://github.com/PRINCE-GDS/THE-PRINCE-BOT'}, mentionedJid: [m.sender]}}}, aa);
     //await conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id, mentions: [m.sender]});
     const dataF = await tiktok.v1(args[0]);
-    let desc1 =  `*𝙽𝙸𝙲𝙺𝙽𝙰𝙼𝙴:* ${dataF.nickname || 'Indefinido'}`
+    //let desc1 =  `*𝙽𝙸𝙲𝙺𝙽𝙰𝙼𝙴:* ${dataF.nickname || 'Indefinido'}`
     const desc1 = `*_Here is your requested video_*`;
     await conn.sendMessage(m.chat, {video: {url: dataF.play}, caption: desc1}, {quoted: m});
   m.react(done)
   } catch (e1) {
     try {
       const tTiktok = await tiktokdlF(args[0]);
-      let desc2 = `🔗 *Url:* ${tTiktok.video}`
+      //let desc2 = `🔗 *Url:* ${tTiktok.video}`
       const desc2 = `*_Here is your requested video_*`;
       await conn.sendMessage(m.chat, {video: {url: tTiktok.video}, caption: desc2}, {quoted: m});
     m.react(done)
     } catch (e2) {
       try {
         const p = await fg.tiktok(args[0]);
-         let te = `*𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴:* ${p.author || 'Indefinido'}`
+        // let te = `*𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴:* ${p.author || 'Indefinido'}`
         const te = `*_Here is your requested video_*`;
         await conn.sendMessage(m.chat, {video: {url: p.nowm}, caption: te}, {quoted: m});
     m.react(done)

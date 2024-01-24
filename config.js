@@ -15,13 +15,7 @@ global.owner = [
 ["923092668108", 'Prince❤️', true], //ɢᴅs-ᴍᴅ
 [""], 
 [""], 
-[""], 
-[""],
-[""],
-[""],
-[""],
-[""],
-[""]]
+]
 
 global.mods = []
 global.prems = []
@@ -67,6 +61,7 @@ global.itsrose = ["4b146102c4d500809da9d1ff"]
 global.baileys = "@whiskeysockets/baileys"
 
 global.APIs = { 
+CFROSAPI: 'https://api.cafirexos.com',
 xteam: 'https://api.xteam.xyz',
 dzx: 'https://api.dhamzxploit.my.id',
 lol: 'https://api.lolhuman.xyz',

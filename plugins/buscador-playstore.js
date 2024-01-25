@@ -19,7 +19,7 @@ conn.sendMessage(m.chat,{image:{url: gPlay.imagen},caption:`🔍 𝙍𝙀𝙎�
 📈 𝙋𝙐𝙉𝙏𝙐𝘼𝘾𝙄𝙊́𝙉: ${gPlay.puntuacion}`},{quoted:m})
 } catch (e) {
 await m.reply('an error occurred')
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(`couldn't get the file maybe it's large in size`)
 console.log(e)}  
 }
 

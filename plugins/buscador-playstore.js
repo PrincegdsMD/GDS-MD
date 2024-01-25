@@ -18,13 +18,13 @@ conn.sendMessage(m.chat,{image:{url: gPlay.imagen},caption:`🔍 𝙍𝙀𝙎�
 💸 𝙋𝙍𝙀𝘾𝙄𝙊: ${gPlay.precio}
 📈 𝙋𝙐𝙉𝙏𝙐𝘼𝘾𝙄𝙊́𝙉: ${gPlay.puntuacion}`},{quoted:m})
 } catch (e) {
-await m.reply(lenguajeGB['smsMalError3']() + '\n*' + lenguajeGB.smsMensError1() + '*\n*' + usedPrefix + `${lenguajeGB.lenguaje() == 'es' ? 'reporte' : 'report'}` + '* ' + `${lenguajeGB.smsMensError2()} ` + usedPrefix + command)
+await m.reply('an error occurred')
 console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}  
 }
 
 handler.help = ['playstore <aplicacion>']
 handler.tags = ['internet']
-handler.command = /^(playstore)$/i
+handler.command = /^(playstore|apk)$/i
 
 export default handler 

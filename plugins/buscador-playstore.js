@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, args }) => {
 	if (!args[0]) throw `${lenguajeGB['smsAvisoMG']()}𝙄𝙣𝙜𝙧𝙚𝙨𝙚 𝙚𝙡 𝙣𝙤𝙢𝙗𝙧𝙚 𝙙𝙚 𝙡𝙖 𝙖𝙠𝙥 𝙥𝙖𝙧𝙖 𝙗𝙪𝙨𝙘𝙖𝙧`
 	let enc = encodeURIComponent(text)
 try {
-let json = await fetch(`https://latam-api.vercel.app/api/playstore?apikey=nktesla&q={enc}`)
+let json = await fetch(`https://vihangayt.me/download/apk?id=text}`)
 let gPlay = await json.json()
 if (!gPlay.titulo) return m.reply(`[ ! ] Sin resultados`)
 conn.sendMessage(m.chat,{image:{url: gPlay.imagen},caption:`🔍 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎: ${gPlay.titulo}

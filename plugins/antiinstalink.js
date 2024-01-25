@@ -7,21 +7,20 @@ export async function before(m, {conn, isAdmin, isBotAdmin }) {
     if (!m.isGroup) return !1
     let chat = global.db.data.chats[m.chat]
     let bot = global.db.data.settings[this.user.jid] || {}
-    const isGroupLink = linkRegex.exec(m.text)
+    const isAntiLinkIg = linkRegex.exec(m.text)
 
-    if (chat.antiLink && isGroupLink && !isAdmin) {
+    if (chat.antiInstagram && isAntiLinkIg && !isAdmin) {
         if (isBotAdmin) {
-            const linkThisGroup = `https://instagram.com/i ${await this.groupInviteCode(m.chat)}`
-            if (m.text.includes(linkThisGroup)) return !0
+           
         }
         await conn.reply(m.chat, `*≡ 🛡️Link Detected❎*
             You have violated the group rule
 We do not allow links from other groups 
 bye bye 👋🏻 *@${m.sender.split('@')[0]}*  you will be kicked out of the group ${isBotAdmin ? '' : '\n\nIM not an admin so I canT expel you :"v'}`, null, { mentions: [m.sender] } )
-        if (isBotAdmin && chat.antiLink) {
+        if (isBotAdmin && chat.antiInstagram) {
         	await conn.sendMessage(m.chat, { delete: m.key })
             await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-        } else if (!chat.antiLink) return //m.reply('')
+        } else if (!chat.antiInstagram) return //m.reply('')
     }
     return !0
 }

@@ -105,7 +105,7 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["18059196237", 'Gata Dios 💻', 1], 
+["18059196237", 'PRINCE 💻', 1], 
 ["923092668108", '*_DEVELOPER_* 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
 ["923092668108", '𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
 ["923092668108", '_*DEVELOPER*_ 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
@@ -267,7 +267,7 @@ global.comienzo = "• • ◕◕════"
 global.fin = " • •"
 
 global.botdate = `⫹⫺ Date :  ${moment.tz('Asia/Karachi').format('DD/MM/YY')}`; //Asia/Karachi🇵🇰
-global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Los_Karachi').format('HH:mm:ss')}`;//Asia/Karachi🇵🇰
+global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${moment.tz('Asia/Karachi').format('HH:mm:ss')}`;//Asia/Karachi🇵🇰
 global.fgif = {
 key: {
 participant : '0@s.whatsapp.net'},

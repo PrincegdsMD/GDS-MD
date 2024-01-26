@@ -33,5 +33,5 @@ m.reply(`${hasill.result}`.trim())
   m.react('✅')
 } catch {    
 }}}}
-handler.command = ['openai', 'gpt', 'ia', 'robot']
+handler.command = ['openai', 'gpt2', 'ia', 'robot']
 export default handler

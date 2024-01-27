@@ -21,10 +21,10 @@ const configuration = new Configuration({organization: global.openai_org_id, api
 const openaiii = new OpenAIApi(configuration);
 const idioma = 'es'
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
-const sistema1 = `Actuaras como un Bot de WhatsApp el cual fue creado por GataNina-Li, tu seras GataBot-MD`;
+const sistema1 = `You will act as a WhatsApp Bot which was created by PRINCE-GDS, you will be GDS-MD `;
 const handler = async (m, {conn, text, usedPrefix, command}) => {
 if (usedPrefix == 'a' || usedPrefix == 'A') return;
-if (!text) throw `*${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙂𝙍𝙀𝙎𝙀 𝙐𝙉𝘼 𝙋𝙀𝙏𝙄𝘾𝙄𝙊𝙉 𝙊 𝙐𝙉𝘼 𝙊𝙍𝘿𝙀𝙉 𝙋𝘼𝙍𝘼 𝙐𝙎𝘼𝙍 𝙇𝘼 𝙁𝙐𝙉𝘾𝙄𝙊𝙉 𝘿𝙀𝙇 𝘾𝙃𝘼𝙏𝙂𝙋𝙏\n\n❏ 𝙀𝙅𝙀𝙈𝙋𝙇𝙊 𝘿𝙀 𝙋𝙀𝙏𝙄𝘾𝙄𝙊𝙉𝙀𝙎 𝙔 𝙊𝙍𝘿𝙀𝙉𝙀𝙎\n❏ ${usedPrefix + command} Recomienda un top 10 de películas de acción\n❏ ${usedPrefix + command} Codigo en JS para un juego de cartas` 
+if (!text) throw `*${lenguajeGB['smsAvisoMG']()} 🧊𝙀𝙓𝘼𝙈𝙋𝙇𝙀: ${usedPrefix + command} 𝙒𝙝𝙖𝙩 𝙞𝙨 𝙄𝙨𝙡𝙖𝙢??` 
 try {
 conn.sendPresenceUpdate('recording', m.chat);
 async function getOpenAIChatCompletion(texto) {
@@ -88,7 +88,7 @@ await conn.sendMessage(m.chat, {audio: audio7, fileName: 'error.mp3', mimetype: 
 } catch {
 try {
 const searchString2 = ' Indonesia ';
-const replacementString2 = ' español ';
+const replacementString2 = ' english ';
 const rres = await fetch(`https://api.ibeng.tech/api/others/chatgpt?q=Hola&apikey=eMlBNRzUXv`);
 const jjson = await rres.json();
 if (jjson.data == 'error' || jjson.data == '' || !jjson.data) return XD; // causar error undefined para usar otra api
@@ -102,7 +102,7 @@ try {
 const akuariapi2 = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${text}`);
 const akuariapijson2 = await akuariapi2.json();
 if (akuariapijson2.respon == 'error' || akuariapijson2.respon == '' || !akuariapijson2.respon) return XD; // causar error undefined para lanzar msg de error
-const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'es', autoCorrect: true});
+const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'ur', autoCorrect: true});
 const audio9 = await tts(akuariapiresult2.text, idioma);
 await conn.sendMessage(m.chat, {audio: audio9, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});                   
 } catch {
@@ -110,15 +110,15 @@ try {
 const akuariapi1 = await fetch(`https://api.akuari.my.id/ai/gbard?chat=${text}`);
 const akuariapijson1 = await akuariapi1.json();
 if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariapijson1.respon) return XD; // causar error undefined para usar otra api
-const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'es', autoCorrect: true});
+const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'ur', autoCorrect: true});
 const audio10 = await tts(akuariapiresult1.text, idioma);
 await conn.sendMessage(m.chat, {audio: audio10, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});                           
 } catch {
 }}}}}}}}}}}
-handler.command = /^(openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|Mysticvoz|MysticBotvoz|gptvoz|ai_voz|ai_voce)$/i;
+handler.command = /^(voicegpt|gptvoice|vgpt|gptv|openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|Mysticvoz|MysticBotvoz|gptvoz|ai_voz|ai_voce)$/i;
 export default handler;
 
-async function tts(text = 'error', lang = 'es') {
+async function tts(text = 'error', lang = 'ur') {
 return new Promise((resolve, reject) => {
 try {
 const tts = gtts(lang);

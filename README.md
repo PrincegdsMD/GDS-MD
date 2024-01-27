@@ -16,7 +16,9 @@
 
 <h1 align="center">ɢᴅs-ᴍᴅ</h1>
 
-#### 🪩 To Change the owner number click here [`config.js`](https://github.com/PRINCE-GDS/GDS-MD/blob/main/config.js)🪩
+#### ♥️ 𝘾𝙝𝙖𝙣𝙜𝙚 𝙩𝙝𝙚 𝙤𝙬𝙣𝙚𝙧 𝙣𝙪𝙢𝙗𝙚𝙧 𝙘𝙡𝙞𝙘𝙠 𝙝𝙚𝙧𝙚 [`𝙊𝙒𝙉𝙀𝙍`](https://github.com/PRINCE-GDS/GDS-MD/blob/main/config.js)♥️
+
+***
 
 ### 💠𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀 
 <p align="left">
@@ -35,9 +37,9 @@
   
   💠[𝘊𝘓𝘐𝘊𝘒 𝘏𝘌𝘙𝘌](https://signup.heroku.com)
   
-👇🏻------------------------------------------👇🏻
+👇---------------------ɢᴅs-ᴍᴅ---------------------👇
 
-🟣 𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒 👇🏻
+🟣 𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒 👇
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/GDS-MD-Heroku) 
 
@@ -50,9 +52,9 @@
   
   💠 [𝘊𝘓𝘐𝘊𝘒 𝘏𝘌𝘙𝘌](https://replit.com/signup) 
   
-👇🏻------------------------------------------👇🏻
+👇-------------------ɢᴅs-ᴍᴅ-----------------------👇
 
- 🟤 𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒 👇🏻
+ 🟤 𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒 👇
     <br>
 <p align="left"><a href="https://repl.it/github/PRINCE-GDS/GDS-MD"> <img src="https://img.shields.io/badge/Deploy%20To%20Replit-gray?style=for-the-badge&logo=replit" height="25"/></a></p>
 
@@ -63,20 +65,19 @@
 
 💠[𝘊𝘓𝘐𝘊𝘒 𝘏𝘌𝘙𝘌](https://app.koyeb.com/auth/signup)
 
-👇🏻------------------------------------------👇🏻
+👇--------------------ɢᴅs-ᴍᴅ----------------------👇
    
-⚫ 𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒 👇🏻
+⚫ 𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒 👇
    <br>
   <p align="left"><a href="https://app.koyeb.com/apps/deploy?type=git&repository=github.com%2FPRINCE-GDS%2FGDS-MD&branch=main&nameprincegds&builder=dockerfile&env[DATABASE_URL]=&env[SESSION_ID]=your+sessionid+here&env[MODE]=public&env=[autoRead]=false&env[statusview]=false&env[REMOVEBG_KEY]=your+rmbg+key&env[antidelete]=false"> <img src="https://www.koyeb.com/static/images/deploy/button.svg" height="40"/></a></p>
 
 ****
-
-
 ### 🟢 𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝙂𝙍𝙊𝙐𝙋 𝙇𝙄𝙉𝙆 🟢
    <p align="left">
       <a href="https://chat.whatsapp.com/Jo5bmHMAlZpEIp75mKbwxP"><img height= "40" length= "10" title="Author" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsApp&logoColor=white"></a>
      <p/>
-
+       
+***
 
 
 <a href="#"><img title="GDS-MD" src="https://img.shields.io/badge/SI TE AGRADA EL REPOSITORIO APOYAME CON UNA 🌟 ¡GRACIAS! -red?colorA=%255ff0000&colorB=%23017e40&style=for-the-badge"></a> 

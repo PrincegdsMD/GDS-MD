@@ -16,7 +16,7 @@ function kyun(seconds){
   var seconds = Math.floor(seconds % 60);
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-  return `❇️🩵 𝙂𝘿𝙎-𝙈𝘿 𝘽𝙊𝙏-𝙎𝘾𝙍𝙄𝙋𝙏 🩵❇️\n\n*🧊𝙉𝘼𝙈𝙀:* *${json?.name || 'GDS-MD'}*\n*🧊𝙎𝙏𝘼𝙍𝙎:* ${json?.watchers_count || '-'}\n*🧊𝙁𝙊𝙍𝙆𝙎:* ${json?.forks_count || '-'}\n*🧊𝘿𝘼𝙏𝙀:* ${moment(json?.updated_at).format('DD/MM/YY - HH:mm:ss') || '-'}\n*🧊𝙍𝙀𝙋𝙊-𝙐𝙍𝙇:* ${json?.html_url || 'https://github.com/PRINCE-GDS/GDS-MD'}\n\n\n*⏰𝘽𝙊𝙏 𝘼𝘾𝙏𝙄𝙑𝙀 𝘿𝙐𝙍𝘼𝙏𝙄𝙊𝙉:*\n🧊𝘿𝙖𝙮𝙨 _\t${pad(days)}_ \n🧊𝙃𝙤𝙪𝙧𝙨 _\t${pad(hours)}_ \n🧊𝙈𝙞𝙣𝙪𝙩𝙚𝙨 _${pad(minutes)}_ \n🧊𝙎𝙚𝙘𝙤𝙣𝙙𝙨 _${pad(seconds)}_ \t\n`
+  return `❇️🩵 𝙂𝘿𝙎-𝙈𝘿 𝘽𝙊𝙏-𝙎𝘾𝙍𝙄𝙋𝙏 🩵❇️\n\n*🧊𝙉𝘼𝙈𝙀:* *${json?.name || 'GDS-MD'}*\n*🧊𝙎𝙏𝘼𝙍𝙎:* *${json?.watchers_count || '-'}*\n*🧊𝙁𝙊𝙍𝙆𝙎:* *${json?.forks_count || '-'}*\n*🧊𝘿𝘼𝙏𝙀:* *${moment(json?.updated_at).format('DD/MM/YY - HH:mm:ss') || '-'}*\n*🧊𝙍𝙀𝙋𝙊-𝙐𝙍𝙇:* *${json?.html_url || 'https://github.com/PRINCE-GDS/GDS-MD'}*\n\n\n*⏰𝘽𝙊𝙏 𝘼𝘾𝙏𝙄𝙑𝙀 𝘿𝙐𝙍𝘼𝙏𝙄𝙊𝙉⏰*\n🧊𝘿𝙖𝙮𝙨 \t*${pad(days)}*\n🧊𝙃𝙤𝙪𝙧𝙨 \t*${pad(hours)}*\n🧊𝙈𝙞𝙣𝙪𝙩𝙚𝙨 *${pad(minutes)}* \n🧊𝙎𝙚𝙘𝙤𝙣𝙙𝙨 *${pad(seconds)}* \t\n`
 }
 					const runtime = process.uptime()
 		            const teks = `${kyun(runtime)}`

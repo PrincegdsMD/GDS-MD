@@ -4,13 +4,14 @@ const genAI = new GoogleGenerativeAI('AIzaSyDJC5a882ruaC4XL6ejY1yhgRkN-JNQKg8');
 
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
-  try {
-    if (!text && !(m.quoted && m.quoted.text)) {
-    if (!text) throw `𝙃𝙚𝙮👋🏻.. 𝙄 𝙖𝙢 𝙜𝙚𝙢𝙞𝙣𝙞 𝙂𝙤𝙤𝙜𝙡𝙚'𝙨 𝙖𝙙𝙫𝙖𝙣𝙘𝙚 𝙖𝙞, 𝙃𝙤𝙬 𝙢𝙖𝙮 𝙄 𝙝𝙚𝙡𝙥 𝙮𝙤𝙪?`
-     }
+ if (!text && !(m.quoted && m.quoted.text)) {
+  if (usedPrefix == 'a' || usedPrefix == 'A') return    
+if (!text) throw `*${lenguajeGB['smsAvisoMG']()}🧊𝙀𝙓𝘼𝙈𝙋𝙇𝙀: ${usedPrefix + command} 𝙒𝙝𝙖𝙩 𝙞𝙨 𝙄𝙨𝙡𝙖𝙢??`     
+ }
   if (!text && m.quoted && m.quoted.text) {
     text = m.quoted.text;
   }
+  try {
       m.react('📃')
     await displayLoadingScreen(conn, m.chat)
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
@@ -23,6 +24,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
     m.reply(textt)
   } catch (error) {
     console.error(error);
+    m.reply('Error from API')
   }
 }
 handler.help = ['gemini <text>']

@@ -33,14 +33,16 @@
 <p/>
 
 
-<h2 align="left">ÐΣPLOY TO HΣЯOKU</h2> 
+### 🟣 𝘿𝙀𝙋𝙇𝙊𝙔 𝙊𝙉 𝙃𝙀𝙍𝙊𝙆𝙐
 
-#### 1. If You don't have an account in Heroku. Create an account.
-<br>
-       <p align="left"><a href="https://signup.heroku.com"> <img src="https://img.shields.io/badge/heroku%20Account-darkgreen?style=for-the-badge&logo=heroku" height="30"/></a></p>
+###  𝘐𝘧 𝘠𝘰𝘶 𝘥𝘰𝘯'𝘵 𝘩𝘢𝘷𝘦 𝘢𝘯 𝘢𝘤𝘤𝘰𝘶𝘯𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶. 𝘊𝘳𝘦𝘢𝘵𝘦 𝘢𝘯 𝘢𝘤𝘤𝘰𝘶𝘯𝘵.
+🟣[𝘊𝘓𝘐𝘊𝘒 𝘏𝘌𝘙𝘌](https://signup.heroku.com)
 
-#### 2. Deploy Now.
-   <p align="left"><a href="https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/GDS-MD"> <img src="https://img.shields.io/badge/Heroku%20Deploy-darkgreen?style=for-the-badge&logo=heroku" height="30"/></a></p>
+
+###  𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/GDS-MD-Heroku) 
+
+  
 
 
 
@@ -196,7 +198,7 @@ PM2 Stop Index
 PM2 Start Index 
 ``` 
 ----
-### 😼 UPDATE GATABOT
+### 😼 UPDATE GDS-MD
 > **Note** Commands to update GDS-MD automatically
 '''bash
 grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget & wget -O - https://raw.githubusercontent.com/GataNina-Li/GataBot-MD/master/update.sh | Bash  
@@ -217,8 +219,6 @@ License: [MIT](https://en.wikipedia.org/wiki/MIT_License)
 #### So that you don't lose your progress in GataBot, these commands will back up your 'database.json' and it will be added to the latest version.
 > **Warning** These commands only work for TERMUX, REPLIT, LINUX                           
 ----
-### 🟣 ACTIVATE IN HEROKU
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/GDS-MD-Heroku) 
 
 ### 👇 Add the following to the Buildpack: 
 '''bash

@@ -1,18 +1,13 @@
-let handler = async (m, { conn,usedPrefix, command, text }) => {
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+let handler = async (m, { conn,usedPrefix, command, text}) => {
 if(isNaN(text) && !text.match(/@/g)){
-
+	
 }else if(isNaN(text)) {
 var number = text.split`@`[1]
 }else if(!isNaN(text)) {
 var number = text
 }
-
-if(!text && !m.quoted) return conn.reply(m.chat, lenguajeGB.smsMalused3(), + `*${usedPrefix + command} @${global.owner[0][0]}*`, fkontak, m)
-//conn.sendButton(m.chat, wm, lenguajeGB['smsMalused3']() + `*${usedPrefix + command} @${global.owner[0][0]}*`, null, [[lenguajeGB.smsConMenu(), `${usedPrefix}menu`]], fkontak, m)
-if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, lenguajeGB.smsDemott(), `*${usedPrefix + command} @${global.owner[0][0]}*`, fkontak, m)
-//conn.sendButton(m.chat, wm, lenguajeGB['smsDemott']() + `*${usedPrefix + command} @${global.owner[0][0]}*`, null, [[lenguajeGB.smsConMenu(), `${usedPrefix}menu`]], fkontak, m)
-	
+if(!text && !m.quoted) return conn.reply(m.chat, `✳️ Using the command \n *${usedPrefix + command}* @tag  (or reply to a message)`, m)
+if(number.length > 13 || (number.length < 11 && number.length > 0)) return conn.reply(m.chat, `✳️ Number incorrect`, m)
 try {
 if(text) {
 var user = number + '@s.whatsapp.net'
@@ -20,13 +15,18 @@ var user = number + '@s.whatsapp.net'
 var user = m.quoted.sender
 } else if(m.mentionedJid) {
 var user = number + '@s.whatsapp.net'
-} } catch (e) {
+} 
+} catch (e) {
 } finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'promote')
-conn.reply(m.chat, lenguajeGB['smsAvisoEG']() + lenguajeGB['smsDemott2'](), fkontak, m)
+m.reply(`🟢𝙐𝙎𝙀𝙍 𝙃𝘼𝙎 𝘽𝙀𝙀𝙉 𝙋𝙍𝙊𝙈𝙊𝙏𝙀𝘿`)
 }}
-handler.command = /^(p|promote|daradmin|darpoder)$/i
+handler.help = ['promote']
+handler.tags = ['group']
+handler.command = ['promote', 'promover', 'p'] 
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
-export default handler 
+handler.fail = null
+
+export default handler

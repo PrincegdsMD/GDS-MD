@@ -33,7 +33,7 @@ function kyun(seconds){
 							}
 					}
 
-	let pp = gataImag.getRandom()
+	let pp = gataImg.getRandom()
 						  let prep = generateWAMessageFromContent(m.chat, { orderMessage: { 
 itemCount: -10062007, status: 500,
 surface: 999,

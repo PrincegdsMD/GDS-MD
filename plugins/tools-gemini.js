@@ -1,6 +1,6 @@
 import {GoogleGenerativeAI} from '@google/generative-ai'
 import displayLoadingScreen from '../lib/loading.js'
-const genAI = new GoogleGenerativeAI('AIzaSyDJC5a882ruaC4XL6ejY1yhgRkN-JNQKg8');
+const genAI = new GoogleGenerativeAI('AIzaSyAARhKNTObnl7bDnVkH0o0c1jNPUKaRlhA');
 
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {

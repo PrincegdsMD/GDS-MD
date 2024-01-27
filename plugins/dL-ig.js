@@ -30,7 +30,7 @@ const responsel = await axios.get(apiUrll);
 const resultl = responsel.data;
 for (const item of resultl.message) {
 const shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${item.thumbnail}`)).text();
-let tXXxt = `✨ *ENLACE | URL:* ${shortUrRRl}\n\n${wm}`.trim()  
+let tXXxt = `${shortUrRRl}\n\n${wm}`.trim()  
 conn.sendFile(m.chat, item._url, null, tXXxt, m);
 await new Promise((resolve) => setTimeout(resolve, 10000));
 }} catch {    
@@ -38,20 +38,20 @@ try {
 const datTa = await instagram.v1(args[0]);
 for (const urRRl of datTa) {
 const shortUrRRl = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-const tXXxt = `✨ *ENLACE | URL:* ${shortUrRRl}\n\n${wm}`.trim();
+const tXXxt = `${vidcap}\n\n${wm}`.trim();
 conn.sendFile(m.chat, urRRl.url, 'error.mp4', tXXxt, m);
 await new Promise((resolve) => setTimeout(resolve, 10000));
 }} catch {
 try {
 const resultss = await instagramGetUrl(args[0]).url_list[0];
 const shortUrl2 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-const txt2 = `✨ *ENLACE | URL:* ${shortUrl2}\n\n${wm}`.trim();
+const txt2 = `${vidcap}\n\n${wm}`.trim();
 await conn.sendFile(m.chat, resultss, 'error.mp4', txt2, m);
 } catch {
 try {
 const resultssss = await instagramdl(args[0]);
 const shortUrl3 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-const txt4 = `✨ *ENLACE | URL:* ${shortUrl3}\n\n${wm}`.trim();
+const txt4 = `${vidcap}\n\n${wm}`.trim();
 for (const {url} of resultssss) await conn.sendFile(m.chat, url, 'error.mp4', txt4, m);
 } catch {
 try {
@@ -59,7 +59,7 @@ const human = await fetch(`https://api.lolhuman.xyz/api/instagram?apikey=${lolke
 const json = await human.json();
 const videoig = json.result;
 const shortUrl1 = await (await fetch(`https://tinyurl.com/api-create.php?url=${args[0]}`)).text();
-const txt1 = `✨ *ENLACE | URL:* ${shortUrl1}\n\n${wm}`.trim();
+const txt1 = `${vidcap}\n\n${wm}`.trim();
 await conn.sendFile(m.chat, videoig, 'error.mp4', txt1, m);
 } catch {
 console.log('Error en el intento 4, sin resultados')  

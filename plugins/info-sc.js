@@ -4,7 +4,7 @@ import fs from 'fs'
 import moment from 'moment-timezone';
 import fetch from 'node-fetch';
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-const res = await fetch('https://api.github.com/repos/GataNina-Li/GataBot-MD');
+const res = await fetch('https://api.github.com/repos/PRINCE-GDS/GDS-MD');
 const json = await res.json();
 function kyun(seconds){
   function pad(s){
@@ -16,7 +16,7 @@ function kyun(seconds){
   var seconds = Math.floor(seconds % 60);
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-  return `🌟 𓆩 𓅓 𓆪  𝘽 𝙊 𝙏  -  𝙎 𝘾 𝙍 𝙄 𝙋 𝙏   𓆩 𓅓 𓆪🌟\n\n*🧊»𝙉𝘼𝙈𝙀 :* ${json?.name || 'ɢᴅs-ᴍᴅ'}\n*🧊»𝙎𝙏𝘼𝙍𝙎:* ${json?.watchers_count || '-'}\n${json?.forks_count || '-'}\n🧊»𝙁𝙊𝙍𝙆𝙎 · ${json?.stargazers_count || '-'}\n*🧊»𝘿𝘼𝙏𝙀-𝙏𝙄𝙈𝙀 :* ${moment(json?.updated_at).format('DD/MM/YY - HH:mm:ss') || '-'}\n*🧊»𝙐𝙍𝙇 :* ${json?.html_url || 'https://github.com/PRINCE-GDS/GDS-MD'}\n\n Stars · ${json?.open_issues_count || '-'} Issues\n\n*⏰𝘼𝘾𝙏𝙄𝙑𝙀 𝙏𝙄𝙈𝙀:*\n 🧊»𝘿𝙖𝙮𝙨\t${pad(days)}\n 🧊»𝙃𝙤𝙪𝙧𝙨\t${pad(hours)}\n  🧊»𝙈𝙞𝙣𝙪𝙩𝙚𝙨${pad(minutes)}\n 🧊»𝙎𝙚𝙘𝙤𝙣𝙙𝙨${pad(seconds)} \t\n`
+  return `🩵𓆩 𓅓 𓆪 𝙂𝘿𝙎-𝙈𝘿 𝘽𝙊𝙏 𝙎𝘾𝙍𝙄𝙋𝙏 𓆩 𓅓 𓆪🩵\n\n\n*🧊»𝙉𝘼𝙈𝙀 :* ${json?.name || 'GDS-MD'}\n🧊»𝙎𝙏𝘼𝙍𝙎: ${json?.watchers_count || '-'}\n 🧊»𝙁𝙊𝙍𝙆𝙎:${json?.forks_count || '-'}\n🧊»𝘿𝘼𝙏𝙀: ${moment(json?.updated_at).format('DD/MM/YY - HH:mm:ss') || '-'}\n*🧊»𝙍𝙀𝙋𝙊-𝙐𝙍𝙇:* ${json?.html_url || 'https://github.com/PRINCE-GDS/GDS-MD'}\n\n\n*⏰𝘼𝘾𝙏𝙄𝙑𝙀 𝙏𝙄𝙈𝙀:*\n🧊𝘿𝙖𝙮𝙨_\t${pad(days)}_\n🧊𝙃𝙤𝙪𝙧𝙨_\t${pad(hours)}_\n🧊𝙈𝙞𝙣𝙪𝙩𝙚𝙨_${pad(minutes)}_\n🧊𝙎𝙚𝙘𝙤𝙣𝙙𝙨_${pad(seconds)}_ \t\n`
 }
 					const runtime = process.uptime()
 		            const teks = `${kyun(runtime)}`

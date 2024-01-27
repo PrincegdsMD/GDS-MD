@@ -16,7 +16,7 @@ function kyun(seconds){
   var seconds = Math.floor(seconds % 60);
 
   //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-  return `🌟  𝘽 𝙊 𝙏  -  𝙎 𝘾 𝙍 𝙄 𝙋 𝙏  🌟\n\n*» 𝙉𝙊𝙈𝘽𝙍𝙀 :* ${json?.name || 'GataBot-MD'}\n*» 𝙑𝙄𝙎𝙄𝙏𝘼𝙉𝙏𝙀𝙎 :* ${json?.watchers_count || '-'}\n*» 𝘼𝘾𝙏𝙐𝘼𝙇𝙄𝙕𝘼𝘾𝙄𝙊𝙉 :* ${moment(json?.updated_at).format('DD/MM/YY - HH:mm:ss') || '-'}\n*» 𝙐𝙍𝙇 :* ${json?.html_url || 'https://github.com/GataNina-Li/GataBot-MD'}\n\n${json?.forks_count || '-'} Forks · ${json?.stargazers_count || '-'} Stars · ${json?.open_issues_count || '-'} Issues\n\n*⏰ 𝙏𝙄𝙀𝙈𝙋𝙊 𝘼𝘾𝙏𝙄𝙑𝙊 | 𝘼𝘾𝙏𝙄𝙑𝙀 𝙏𝙄𝙈𝙀:*\n \t${pad(days)} Dias\t ${pad(hours)} Horas ${pad(minutes)} Minutos ${pad(seconds)} Segudos \t\n`
+  return `🌟 𓆩 𓅓 𓆪  𝘽 𝙊 𝙏  -  𝙎 𝘾 𝙍 𝙄 𝙋 𝙏   𓆩 𓅓 𓆪🌟\n\n*🧊»𝙉𝘼𝙈𝙀 :* ${json?.name || 'ɢᴅs-ᴍᴅ'}\n*🧊»𝙎𝙏𝘼𝙍𝙎:* ${json?.watchers_count || '-'}\n${json?.forks_count || '-'}\n🧊»𝙁𝙊𝙍𝙆𝙎 · ${json?.stargazers_count || '-'}\n*🧊»𝘿𝘼𝙏𝙀-𝙏𝙄𝙈𝙀 :* ${moment(json?.updated_at).format('DD/MM/YY - HH:mm:ss') || '-'}\n*🧊»𝙐𝙍𝙇 :* ${json?.html_url || 'https://github.com/PRINCE-GDS/GDS-MD'}\n\n Stars · ${json?.open_issues_count || '-'} Issues\n\n*⏰𝘼𝘾𝙏𝙄𝙑𝙀 𝙏𝙄𝙈𝙀:*\n 🧊»𝘿𝙖𝙮𝙨\t${pad(days)}\n 🧊»𝙃𝙤𝙪𝙧𝙨\t${pad(hours)}\n  🧊»𝙈𝙞𝙣𝙪𝙩𝙚𝙨${pad(minutes)}\n 🧊»𝙎𝙚𝙘𝙤𝙣𝙙𝙨${pad(seconds)} \t\n`
 }
 					const runtime = process.uptime()
 		            const teks = `${kyun(runtime)}`
@@ -32,26 +32,27 @@ function kyun(seconds){
 								}
 							}
 					}
-						    
+
+	let pp = gataImag.getRandom()
 						  let prep = generateWAMessageFromContent(m.chat, { orderMessage: { 
 itemCount: -10062007, status: 500,
 surface: 999,
 message: teks,
 description: '^^',
-orderTitle: 'Hi Sis',
+orderTitle: 'Hi bruh',
 token: '9',
-curreyCode: 'IDR',
-totalCurrencyCode: '>〰<',
+curreyCode: 'PKR',
+totalCurrencyCode: '>Rs<',
 totalAmount1000: '1000000',
-sellerJid: 'https://github.com/GataNina-Li/GataBot-MD',
-thumbnail: fs.readFileSync('./src/avatar_contact.png')
+sellerJid: 'https://github.com/PRINCE-GDS/GDS-MD',
+thumbnail: pp,
 }}, {contextInfo: null, quoted: m})
 conn.relayWAMessage(prep)
 //conn.sendMessage(m.chat, `${teks}`, MessageType.text, rtimebro)
 }
-handler.help = ['runtime']
+handler.help = ['runtime', 'script']
 handler.tags = ['info']
-handler.command = /^(runtime|sc|activo)$/i
+handler.command = /^(runtime|sc|active|git|script|github|repo|repository)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false

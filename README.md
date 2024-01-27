@@ -18,28 +18,25 @@
 
 #### 🪩 To Change the owner number click here [`config.js`](https://github.com/PRINCE-GDS/GDS-MD/blob/main/config.js)🪩
 
-<h5 align="left">ＳＥＳＳＩＯＮ ＩＤ (ＰＡＩＲ ＣＯＤＥ)</h5>
+### 💠𝙋𝘼𝙄𝙍 𝘾𝙊𝘿𝙀
 <p align="left">
-<a href="https://replit.com/@iycwwwuaaipgfjs/Prince-PairCode?v=1"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=replit"></a>
+<a href="https://replit.com/@iycwwwuaaipgfjs/Prince-PairCode?v=1"><img height= "20" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=replit"></a>
 <p/>
-
-****
-#### If pair code don't work then scan QR for session ID
-
-
-<h4 align="left">ＳＥＳＳＩＯＮ ＩＤ (QR SCAN)</h4>
-
-<a href="https://princebotqr.onrender.com/"><img height= "30" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=render"></a>
+  
+𝘐𝘧 𝘱𝘢𝘪𝘳 𝘤𝘰𝘥𝘦 𝘥𝘰𝘯'𝘵 𝘸𝘰𝘳𝘬 𝘵𝘩𝘦𝘯 𝘴𝘤𝘢𝘯 𝘘𝘙 𝘧𝘰𝘳 𝘴𝘦𝘴𝘴𝘪𝘰𝘯 𝘐𝘋
+### 💠𝙌𝙍 𝙎𝘾𝘼𝙉
+<a href="https://princebotqr.onrender.com/"><img height= "20" title="Author" src="https://img.shields.io/badge/SESSION ID-black?style=for-the-badge&logo=render"></a>
 <p/>
 
 
 ### 🟣 𝘿𝙀𝙋𝙇𝙊𝙔 𝙊𝙉 𝙃𝙀𝙍𝙊𝙆𝙐
+  𝘐𝘧 𝘠𝘰𝘶 𝘥𝘰𝘯'𝘵 𝘩𝘢𝘷𝘦 𝘢𝘯 𝘢𝘤𝘤𝘰𝘶𝘯𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶. 𝘊𝘳𝘦𝘢𝘵𝘦 𝘢𝘯 𝘢𝘤𝘤𝘰𝘶𝘯𝘵.
+  
+  💠[𝘊𝘓𝘐𝘊𝘒 𝘏𝘌𝘙𝘌](https://signup.heroku.com)
 
-###  𝘐𝘧 𝘠𝘰𝘶 𝘥𝘰𝘯'𝘵 𝘩𝘢𝘷𝘦 𝘢𝘯 𝘢𝘤𝘤𝘰𝘶𝘯𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶. 𝘊𝘳𝘦𝘢𝘵𝘦 𝘢𝘯 𝘢𝘤𝘤𝘰𝘶𝘯𝘵.
-🟣[𝘊𝘓𝘐𝘊𝘒 𝘏𝘌𝘙𝘌](https://signup.heroku.com)
 
+💠𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒
 
-###  𝘿𝙀𝙋𝙇𝙊𝙔 𝙉𝙊𝙒
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PRINCE-GDS/GDS-MD-Heroku) 
 
   

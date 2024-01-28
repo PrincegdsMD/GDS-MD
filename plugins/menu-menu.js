@@ -158,7 +158,7 @@ ${readMore}
 ┃🎟️ _${usedPrefix}pass premium_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 JUEGOS - MULTI JUEGOS 〕━⬣*
+*╭━〔 GAMES - MULTI GAMES 〕━⬣*
 ┃🎡➺ _${usedPrefix}mates | matemáticas | math_
 ┃🎡➺ _${usedPrefix}lanzar *cara* | *cruz*
 ┃🎡➺ _${usedPrefix}ppt *piedra : papel : tijera*_
@@ -168,28 +168,28 @@ ${readMore}
 ┃🎡➺ _${usedPrefix}topotakus_
 ┃🎡➺ _${usedPrefix}toppajer@s_
 ┃🎡➺ _${usedPrefix}topput@s_
-┃🎡➺ _${usedPrefix}topintegrantes | topintegrante_
-┃🎡➺ _${usedPrefix}toplagrasa | topgrasa_
-┃🎡➺ _${usedPrefix}toppanafrescos | toppanafresco_
-┃🎡➺ _${usedPrefix}topshiposters | topshipost_
+┃🎡➺ _${usedPrefix}topintegrantes | topmember_
+┃🎡➺ _${usedPrefix}toplagrasa | topgrease_
+┃🎡➺ _${usedPrefix}toppanafrescos | Toppanafresco_
+┃🎡➺ _${usedPrefix}topshiposters | Topshipost_
 ┃🎡➺ _${usedPrefix}toplindos | toplind@s_
 ┃🎡➺ _${usedPrefix}topfamosos | topfamos@s_
 ┃🎡➺ _${usedPrefix}topparejas | top5parejas_
 ┃🎡➺ _${usedPrefix}gay | gay *@tag*_
-┃🎡➺ _${usedPrefix}gay2 *nombre : @tag*_
-┃🎡➺ _${usedPrefix}lesbiana *nombre : @tag*_
-┃🎡➺ _${usedPrefix}manca *nombre : @tag*_
-┃🎡➺ _${usedPrefix}manco *nombre : @tag*_
-┃🎡➺ _${usedPrefix}pajero *nombre : @tag*_
-┃🎡➺ _${usedPrefix}pajera *nombre : @tag*_
-┃🎡➺ _${usedPrefix}puto *nombre : @tag*_
-┃🎡➺ _${usedPrefix}puta *nombre : @tag*_
-┃🎡➺ _${usedPrefix}rata *nombre : @tag*_
-┃🎡➺ _${usedPrefix}love *nombre : @tag*_
-┃🎡➺ _${usedPrefix}doxear *nombre : @tag*_
+┃🎡➺ _${usedPrefix}gay2 *name : @tag*_
+┃🎡➺ _${usedPrefix}lesbiana *name : @tag*_
+┃🎡➺ _${usedPrefix}manca *name : @tag*_
+┃🎡➺ _${usedPrefix}manco *name : @tag*_
+┃🎡➺ _${usedPrefix}pajero *name : @tag*_
+┃🎡➺ _${usedPrefix}pajera *name : @tag*_
+┃🎡➺ _${usedPrefix}puto *name : @tag*_
+┃🎡➺ _${usedPrefix}puta *name : @tag*_
+┃🎡➺ _${usedPrefix}rata *name : @tag*_
+┃🎡➺ _${usedPrefix}love *name : @tag*_
+┃🎡➺ _${usedPrefix}doxear *name : @tag*_
 ┃🎡➺ _${usedPrefix}doxxeame_
-┃🎡➺ _${usedPrefix}pregunta *texto*_
-┃🎡➺ _${usedPrefix}apostar | slot *cantidad*_
+┃🎡➺ _${usedPrefix}pregunta *text*_
+┃🎡➺ _${usedPrefix}apostar | slot *quantity*_
 ┃🎡➺ _${usedPrefix}formarpareja_
 ┃🎡➺ _${usedPrefix}dado_
 ┃🎡➺ _${usedPrefix}verdad_
@@ -202,54 +202,45 @@ ${readMore}
 ┃ *Tienes la Ocasión de*
 ┃ *Conversar con GataBot!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🪄➺ _${usedPrefix}simi | okgoogle *texto*_
-┃🪄➺ _${usedPrefix}alexa | siri | cortana *texto*_
-┃🪄➺ _${usedPrefix}simsimi | bixby *texto*_
+┃🪄➺ _${usedPrefix}simi | okgoogle *text*_
+┃🪄➺ _${usedPrefix}alexa | siri | cortana *text*_
+┃🪄➺ _${usedPrefix}simsimi | bixby *text*_
 *╰━━━━━━━━━━━━⬣*
 
 *╭━━━[ AJUSTES - CHATS ]━━━⬣*
 ┃ *Configura si eres Propietario(a) y/o*
 ┃ *Admin!!*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃⚙️ _${usedPrefix}on *:* off *bienvenida | welcome*_
-┃⚙️ _${usedPrefix}on *:* off *avisos | detect*_
-┃⚙️ _${usedPrefix}on *:* off *autonivel | autolevelup*_
-┃⚙️ _${usedPrefix}on *:* off *restringir | restrict*_
-┃⚙️ _${usedPrefix}on *:* off *antillamar | anticall*_
-┃⚙️ _${usedPrefix}on *:* off *publico | public*_
-┃⚙️ _${usedPrefix}on *:* off *autovisto | autoread*_
+┃⚙️ _${usedPrefix}on *:* off *welcome*_
+┃⚙️ _${usedPrefix}on *:* off *detect*_
+┃⚙️ _${usedPrefix}on *:* off *autolevelup*_
+┃⚙️ _${usedPrefix}on *:* off *restrict*_
+┃⚙️ _${usedPrefix}on *:* off *anticall*_
+┃⚙️ _${usedPrefix}on *:* off *public*_
+┃⚙️ _${usedPrefix}on *:* off *autoread*_
 ┃⚙️ _${usedPrefix}on *:* off *temporal*_
 ┃⚙️ _${usedPrefix}on *:* off *stickers*_
 ┃⚙️ _${usedPrefix}on *:* off *autosticker*_
-┃⚙️ _${usedPrefix}on *:* off *reacciones | reaction*_
+┃⚙️ _${usedPrefix}on *:* off *reaction*_
 ┃⚙️ _${usedPrefix}on *:* off *audios*_
-┃⚙️ _${usedPrefix}on *:* off *modocaliente | modohorny*_
-┃⚙️ _${usedPrefix}on *:* off *antitoxicos | antitoxic*_
-┃⚙️ _${usedPrefix}on *:* off *antiver | antiviewonce*_
-┃⚙️ _${usedPrefix}on *:* off *antieliminar | antidelete*_
-┃⚙️ _${usedPrefix}on *:* off *antinternacional | antifake*_
-┃⚙️ _${usedPrefix}on *:* off *antienlace | antilink*_
-┃⚙️ _${usedPrefix}on *:* off *antienlace2 | antilink2*_
+┃⚙️ _${usedPrefix}on *:* off *pconly*_
+┃⚙️ _${usedPrefix}on *:* off *gconly*_
+┃⚙️ _${usedPrefix}on *:* off *antitoxic*_
+┃⚙️ _${usedPrefix}on *:* off *antiviewonce*_
+┃⚙️ _${usedPrefix}on *:* off *antifake*_
+┃⚙️ _${usedPrefix}on *:* off *antilink*_
+┃⚙️ _${usedPrefix}on *:* off *antilink2*_
 ┃⚙️ _${usedPrefix}on *:* off *antitiktok | antitk*_
 ┃⚙️ _${usedPrefix}on *:* off *antiyoutube | antiyt*_
 ┃⚙️ _${usedPrefix}on *:* off *antitelegram | antitel*_
 ┃⚙️ _${usedPrefix}on *:* off *antifacebook | antifb*_
 ┃⚙️ _${usedPrefix}on *:* off *antinstagram | antig*_
 ┃⚙️ _${usedPrefix}on *:* off *antitwitter | antitw*_
-┃⚙️ _${usedPrefix}on *:* off *soloprivados | pconly*_
-┃⚙️ _${usedPrefix}on *:* off *sologrupos | gconly*_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 GRUPO - RESUMEN 〕━⬣*
-┃ *Ahora puedes ver el resumen*
-┃ *de configuracion de Grupos!!*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🧾➺ _${usedPrefix}configuracion_
-┃🧾➺ _${usedPrefix}settings_
-┃🧾➺ _${usedPrefix}vergrupo_
-*╰━━━━━━━━━━━━⬣*
 
-*╭━[ DESCARGAS | DOWNLOADS ]━⬣*
+
+*╭━[ DOWNLOADS ]━⬣*
 ┃🚀➺ _${usedPrefix}imagen | image *texto*_
 ┃🚀➺ _${usedPrefix}pinterest | dlpinterest *texto*_
 ┃🚀➺ _${usedPrefix}wallpaper|wp *texto*_
@@ -350,12 +341,6 @@ ${readMore}
 ┃📧➺ _${usedPrefix}delvoto | deletevoto_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━━━[ CONTENIDO 🔞 ]━━⬣*
-┃ *Visita el Menú de Comandos*
-┃ *Para Adultos!!*
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃🔞➺ _${usedPrefix}hornymenu_
-*╰━━━━━━━━━━━━⬣*
 
 *╭━[ CONVERTIDORES 🛰️ ]━⬣*
 ┃ *Convierte sticker en imagen!!*

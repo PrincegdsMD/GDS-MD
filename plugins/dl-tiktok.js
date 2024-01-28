@@ -13,7 +13,7 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   try {
     m.react(rwait)
     const dataFn = await conn.getFile(`${CFROSAPI}/api/tiktokv2?url=${args[0]}`);
-    const desc1n = `*_Here is your requested video_*`;
+    const desc1n = `${vidcap}`;
     await conn.sendMessage(m.chat, {video: dataFn.data, caption: desc1n}, {quoted: m});
  m.react(done)
   } catch (ee1) {
@@ -31,14 +31,14 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
     try {
       const tTiktok = await tiktokdlF(args[0]);
       //let desc2 = `🔗 *Url:* ${tTiktok.video}`
-      const desc2 = `*_Here is your requested video_*`;
+      const desc2 = `${vidcap}`;
       await conn.sendMessage(m.chat, {video: {url: tTiktok.video}, caption: desc2}, {quoted: m});
     m.react(done)
     } catch (e2) {
       try {
         const p = await fg.tiktok(args[0]);
         // let te = `*𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴:* ${p.author || 'Indefinido'}`
-        const te = `*_Here is your requested video_*`;
+        const te = `${vidcap}`;
         await conn.sendMessage(m.chat, {video: {url: p.nowm}, caption: te}, {quoted: m});
     m.react(done)
       } catch (e3) {
@@ -46,7 +46,7 @@ const handler = async (m, {conn, text, args, usedPrefix, command}) => {
           const {author: {nickname}, video, description} = await tiktokdl(args[0]);
           const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd;
           // let cap = `*𝙽𝙸𝙲𝙺𝙽𝙰𝙼𝙴:* ${nickname || 'Indefinido'}`
-          const cap = `*_Here is your requested video_*`;
+          const cap = `${vidcap}`;
           await conn.sendMessage(m.chat, {video: {url: url}, caption: cap}, {quoted: m});
       m.react(done) 
           } catch {

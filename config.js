@@ -199,7 +199,8 @@ global.imagen6 = fs.readFileSync("./media/menus/img2.jpg")
 global.imagen7 = fs.readFileSync("./media/menus/img3.jpg")
 global.imagen8 = fs.readFileSync("./media/menus/img4.jpg")
 global.imagen9 = fs.readFileSync("./media/menus/img5.png")
-global.imagen10 = fs.readFileSync("./media/menus/img6.jpg")
+global.imagen10 = fs.readFileSync("./media/menus/img5.jpg")
+global.imagen11 = fs.readFileSync("./media/menus/img6.jpg")
 
 global.img = 'https://i.imgur.com/IXlUwTW.jpg'
 global.img2 = 'https://i.imgur.com/EXTbyyn.jpg'

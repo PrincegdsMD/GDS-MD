@@ -31,6 +31,11 @@
       "description": "Put the Heroku app name, same as above entered",
       "required": true,
       "value": ""
+       },
+     "BOT_NAME": {
+      "description": "Put your name here for pack/author",
+      "required": true,
+      "value": "Prince♥️"
           },
     "PREFIX": {
       "description": "put any one symbol here except @ and + , leave it Blank if you want to use multiple prefix",

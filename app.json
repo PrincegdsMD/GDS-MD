@@ -32,12 +32,12 @@
       "required": true,
       "value": ""
        },
-     "OWNER_NAME": {
+     "OWNERNAME": {
       "description": "Put owner name here.",
       "required": true,
       "value": "Prince♥️"
        },
-     "OWNER_NUMBER": {
+     "OWNERNAME": {
       "description": "Put owner number here.",
       "required": true,
       "value": "923042205427"

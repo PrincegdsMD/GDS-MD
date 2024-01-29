@@ -32,6 +32,16 @@
       "required": true,
       "value": ""
        },
+     "OWNER_NAME": {
+      "description": "Put owner name here.",
+      "required": true,
+      "value": "Prince♥️"
+       },
+     "OWNER_NUMBER": {
+      "description": "Put owner number here.",
+      "required": true,
+      "value": "923042205427"
+       },
      "BOT_NAME": {
       "description": "Put your name here for pack/author",
       "required": true,

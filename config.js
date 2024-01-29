@@ -117,7 +117,7 @@ global.desc2 = '' // Add long description (90 caractres max) (Este parámetro se
 global.country = '' // Add country, example: 🇪🇨
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 
-global.packname = process.env.BOT_NAME
+global.packname = process.env.BOTNAME
 global.author = "Prince♥️"
 
 

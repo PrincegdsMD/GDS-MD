@@ -1,7 +1,7 @@
 function handler(m) {
   let powner = process.env.OWNERNAME
   
-  const data = global.powner.filter(([id, isCreator]) => id && isCreator)
+  const data = global.powner(([id, isCreator]) => id && isCreator)
   this.sendContact(m.chat, data.map(([id, name]) => [id, name]), m)
 
 }

@@ -21,17 +21,17 @@ await m.reply(res.text)
     m.react('✅')
 } catch {
 try {   
-let ia2 = await fetch(`https://www.guruapi.tech/api/chatgpt?text=${prompt}&string_id=${m.sender}`) //fetch(`https://api.ibeng.tech/api/info/openai?text=${text}&apikey=tamvan`)
+let ia2 = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=Hi`) //fetch(`https://api.ibeng.tech/api/info/openai?text=${text}&apikey=tamvan`)
 let resu2 = await ia2.json()
 m.reply(resu2.response.trim()) 
   m.react('✅')
 } catch {        
 try {    
-let tioress = await fetch(`https://www.guruapi.tech/api/chatgpt?text=${prompt}`)
+let tioress = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=${prompt}`)
 let hasill = await tioress.json()
 m.reply(`${hasill.result}`.trim())
   m.react('✅')
 } catch {    
 }}}}
-handler.command = ['gpt', 'ai']
+handler.command = ['gpt2', 'ai']
 export default handler

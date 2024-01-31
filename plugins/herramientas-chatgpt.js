@@ -91,7 +91,7 @@ if (!text) throw `*${lenguajeGB['smsAvisoMG']()}🧊𝙀𝙓𝘼𝙈𝙋𝙇𝙀
         const tioress22 = await fetch(`https://api.lolhuman.xyz/api/openai?apikey=${lolkeysapi}&text=${text}&user=${m.sender}`);
         const hasill22 = await tioress22.json();
         if (hasill22.result == 'error' || hasill22.result == '' || !hasill22.result) return XD; // causar error undefined para usar otra api
-        const hasill22_result = await translate(`${hasill22.result}`, {to: 'es', autoCorrect: true});
+        const hasill22_result = await translate(`${hasill22.result}`, {to: 'ur', autoCorrect: true});
         m.reply(`${hasill22_result.text}`.trim());
         m.react('✅')
     } catch {
@@ -99,9 +99,9 @@ if (!text) throw `*${lenguajeGB['smsAvisoMG']()}🧊𝙀𝙓𝘼𝙈𝙋𝙇𝙀
         conn.sendPresenceUpdate('composing', m.chat);
         const searchString2 = ' Indonesia ';
         const replacementString2 = ' español ';
-        const rres = await fetch(`https://api.ibeng.tech/api/others/chatgpt?q=Hola&apikey=eMlBNRzUXv`);
+        const rres = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=Hi`);
         const jjson = await rres.json();
-        const hahaha = await translate(`${jjson.data}`, {to: 'es', autoCorrect: true});
+        const hahaha = await translate(`${jjson.data}`, {to: 'ur', autoCorrect: true});
         const sextS = hahaha.text;
         const replacedText = sextS.replace(searchString2, replacementString2).trim();
         m.reply(replacedText);
@@ -109,19 +109,19 @@ if (!text) throw `*${lenguajeGB['smsAvisoMG']()}🧊𝙀𝙓𝘼𝙈𝙋𝙇𝙀
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
-        const akuariapi2 = await fetch(`https://api.akuari.my.id/ai/gpt?chat=${text}`);
+        const akuariapi2 = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=Hi`);
         const akuariapijson2 = await akuariapi2.json();
         if (akuariapijson2.respon == 'error' || akuariapijson2.respon == '' || !akuariapijson2.respon) return XD; // causar error undefined para lanzar msg de error
-        const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'es', autoCorrect: true});
+        const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'ur', autoCorrect: true});
         m.reply(akuariapiresult2.text.trim());
         m.react('✅')
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
-        const akuariapi1 = await fetch(`https://api.azz.biz.id/api/bard?q=${text}&key=global`);
+        const akuariapi1 = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=Hi`);
         const akuariapijson1 = await akuariapi1.json();
         if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariapijson1.respon) return XD; // causar error undefined para usar otra api
-        const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'es', autoCorrect: true});
+        const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'ur', autoCorrect: true});
         m.reply(`${akuariapiresult1.text}`.trim());
         m.react('✅')
     } catch {

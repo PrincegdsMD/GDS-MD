@@ -99,7 +99,7 @@ if (!text) throw `*${lenguajeGB['smsAvisoMG']()}🧊𝙀𝙓𝘼𝙈𝙋𝙇𝙀
         conn.sendPresenceUpdate('composing', m.chat);
         const searchString2 = ' Indonesia ';
         const replacementString2 = ' español ';
-        const rres = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=Hi`);
+        const rres = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=${prompt}`);
         const jjson = await rres.json();
         const hahaha = await translate(`${jjson.data}`, {to: 'ur', autoCorrect: true});
         const sextS = hahaha.text;
@@ -109,7 +109,7 @@ if (!text) throw `*${lenguajeGB['smsAvisoMG']()}🧊𝙀𝙓𝘼𝙈𝙋𝙇𝙀
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
-        const akuariapi2 = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=Hi`);
+        const akuariapi2 = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=${prompt}`);
         const akuariapijson2 = await akuariapi2.json();
         if (akuariapijson2.respon == 'error' || akuariapijson2.respon == '' || !akuariapijson2.respon) return XD; // causar error undefined para lanzar msg de error
         const akuariapiresult2 = await translate(`${akuariapijson2.respon}`, {to: 'ur', autoCorrect: true});
@@ -118,7 +118,7 @@ if (!text) throw `*${lenguajeGB['smsAvisoMG']()}🧊𝙀𝙓𝘼𝙈𝙋𝙇𝙀
     } catch {
       try {
         conn.sendPresenceUpdate('composing', m.chat);
-        const akuariapi1 = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=Hi`);
+        const akuariapi1 = await fetch(`https://ultimetron.guruapi.tech/gpt3?prompt=${prompt}`);
         const akuariapijson1 = await akuariapi1.json();
         if (akuariapijson1.respon == 'error' || akuariapijson1.respon == '' || !akuariapijson1.respon) return XD; // causar error undefined para usar otra api
         const akuariapiresult1 = await translate(`${akuariapijson1.respon}`, {to: 'ur', autoCorrect: true});

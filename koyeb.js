@@ -7,9 +7,9 @@ RUN sudo dnf -y update &&\
 
 RUN git clone https://github.com/PRINCE-GDS/GDS-MD
 
-WORKDIR /root/GataBot-MD
+WORKDIR /root/GDS-MD
 
-COPY ./root/GataBot-MD
+COPY ./root/GDS-MD
 
 RUN yarn install
 

@@ -953,8 +953,7 @@ if (!('detect' in chat)) chat.detect = true
 if (!('sWelcome' in chat)) chat.sWelcome = ''                    
 if (!('sBye' in chat)) chat.sBye = ''                    
 if (!('sPromote' in chat)) chat.sPromote = ''                    
-if (!('sDemote' in chat)) chat.sDemote = ''                     
-if (!('stickers' in chat)) chat.stickers = false                   
+if (!('sDemote' in chat)) chat.sDemote = ''                                        
 if (!('autosticker' in chat)) chat.autosticker = false                      
 if (!('audios' in chat)) chat.audios = true                     
 if (!('antiver' in chat)) chat.antiver = false                  
@@ -984,7 +983,6 @@ sWelcome: '',
 sBye: '',
 sPromote: '',
 sDemote: '', 
-stickers: false,
 autosticker: false,
 audios: true,
 antiver: false,

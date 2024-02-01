@@ -2,8 +2,12 @@ import fetch from 'node-fetch'
 
 var handler = async (m, { text,  usedPrefix, command }) => {
 
-if (!text) throw `INGRESE UN TEXTO!`
-
+if (!text && !(m.quoted && m.quoted.text)) {    
+if (!text) throw `*${lenguajeGB['smsAvisoMG']()}🧊𝙀𝙓𝘼𝙈𝙋𝙇𝙀: *${usedPrefix + command}* 𝙒𝙝𝙖𝙩 𝙞𝙨 𝙄𝙨𝙡𝙖𝙢??`     
+ }
+  if (!text && m.quoted && m.quoted.text) {
+    text = m.quoted.text;
+  }
 try {
 
 await m.reply(wait)
@@ -13,7 +17,7 @@ await m.reply(res.result)
 
 } catch (error) {
 console.error(error)
-throw 'OCURRIÓ UN ERROR'
+throw '𝘼𝙋𝙄 𝙀𝙍𝙍𝙊𝙍'
 }
 
 }

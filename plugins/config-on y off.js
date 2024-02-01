@@ -27,7 +27,7 @@ lenguajeGB.smsParaAdYOw() + ' ' + `${m.isGroup ? chat.audios ? '✅' : '❌' : l
 lenguajeGB.smsParaAdYOw() + ' ' + `${m.isGroup ? chat.modohorny ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,   
 lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antitoxic ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,   
 lenguajeGB.smsParaAdYOw() + ' ' + `${m.isGroup ? chat.antiver ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,  
-lenguajeGB.smsParaAdYOw() + ' ' + `${m.isGroup ? chat.delete ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,  
+lenguajeGB.smsParaAdYOw() + ' ' + `${m.isGroup ? chat.chatbot ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,  
 lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antifake ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,  
 lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiLink ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,   
 lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiLink2 ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,    
@@ -386,7 +386,7 @@ throw false
 chat.antiTraba = isEnable
 break
 
-case 'simi':
+case 'simi': case 'chatbot':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -436,6 +436,12 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 
 ┃┃✦ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.detect ? '✅' : '❌' : lenguajeGB.smsNoGg()}
 ┃┃✦ ${usedPrefix + command} detec
+┃┃✦ ${lenguajeGB.smsDete2()}
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+┃┃✦ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.chatbot ? '✅' : '❌' : lenguajeGB.smsNoGg()}
+┃┃✦ ${usedPrefix + command} chatbot
 ┃┃✦ ${lenguajeGB.smsDete2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈

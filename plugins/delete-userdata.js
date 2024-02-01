@@ -9,8 +9,8 @@ var number = text.split`@`[1]
 var number = text
 }
 
-if(!text && !m.quoted) return conn.reply(m.chat, `*ETIQUETE AL USUARIO, ESCRIBA SU NUMERO O RESPONDA AL MENSAJE PARA REINICIAR DATOS*`, m)
-if(isNaN(number)) return conn.reply(m.chat, `*EL NÚMERO QIE INGRESÓ NO ES VÁLIDO PARA REINICIAR LOS DATOS*`, m)
+if(!text && !m.quoted) return conn.reply(m.chat, `*USER ETIQUETTE, WRITE YOUR NUMBER OR REPLY TO MESSAGE TO REDEEM DATA*`, m)
+if(isNaN(number)) return conn.reply(m.chat, `*THE NUMBER YOU ENTERED IS INVALID TO RESET THE DATA*`, m)
 try {
 if(text) {
 var user = number + '@s.whatsapp.net'
@@ -27,11 +27,12 @@ let users = m.isGroup ? participants.find(u => u.jid == user) : {}
 let number = user.split('@')[0]
   
 delete global.global.db.data.users[user]
-conn.reply(m.chat, `*SE REINICIO A @${number} DE LA BASE DE DATOS*`, null, { mentions: [user] })
+conn.reply(m.chat, `*IS RESET TO @${number} DATABASE *`, null, { mentions: [user] })
 }}
 
 handler.tags = ['owner']
 handler.command = ['restablecerdatos', 'borrardatos', 'deletedatauser'] 
+handler.helps = ['deleteuserdata'];
 handler.owner = true
 
 export default handler

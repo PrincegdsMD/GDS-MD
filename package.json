@@ -94,8 +94,6 @@
 "yt-search": "^2.10.3",
 "google-it": "^1.6.3",
 "ytdl-core": "^4.11.4"
-"youtubedl-core": "github:khlevon/node-ytdl-core#v4.11.4-patch.2",
-"youtubedl-core": "npm:ytdl-core@4.10.0",
 "youtubedl-core": "npm:@distube/ytdl-core",
 },
 "devDependencies": {

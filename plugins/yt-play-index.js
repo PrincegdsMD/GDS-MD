@@ -5,8 +5,7 @@ import fs from 'fs';
 import axios from 'axios';
 import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
 import { pipeline } from 'stream';
-import { promisify } from 'util';
-import os from 'os';
+import {promisify, os} from 'node-os-utils';
 
 const streamPipeline = promisify(pipeline);
 

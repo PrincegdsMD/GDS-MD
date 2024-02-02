@@ -10,23 +10,23 @@ try {
   m.react("⏳")
 const yt_play = await search(args.join(" "))
 let additionalText = ''
-if (command === 'play') {
+if (command === 'play2') {
 additionalText = '𝘼𝙐𝘿𝙄𝙊 🎧'
-} else if (command === 'play2') {
+} else if (command === 'video') {
 additionalText = '𝙑𝙄𝘿𝙀𝙊 🎥'}
-let captionvid = `𓆩 𓅓 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓅓 𓆪*
-┃𓅓 𝙏𝙄𝙏𝙇𝙀 » ${yt_play[0].title}
+let captionvid = `*𓆩 𓅓 𓆪 ✧═══ ɢᴅs-ᴍᴅ ═══✧ 𓆩 𓅓 𓆪*
+💗𝙏𝙄𝙏𝙇𝙀 » ${yt_play[0].title}
 ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-┃𓅓 𝙋𝙐𝘽𝙇𝙄𝙎𝙃𝙀𝘿 » ${yt_play[0].ago}
+💗𝙋𝙐𝘽𝙇𝙄𝙎𝙃𝙀𝘿 » ${yt_play[0].ago}
 ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-┃𓅓 𝘿𝙐𝙍𝘼𝙏𝙄𝙊𝙉 » ${secondString(yt_play[0].duration.seconds)}
+💗𝘿𝙐𝙍𝘼𝙏𝙄𝙊𝙉 » ${secondString(yt_play[0].duration.seconds)}
 ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-┃𓅓 𝙑𝙄𝙀𝙒𝙎 » ${MilesNumber(yt_play[0].views)}
+💗𝙑𝙄𝙀𝙒𝙎 » ${MilesNumber(yt_play[0].views)}
 ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-┃𓅓 𝙐𝙍𝙇 » ${yt_play[0].url}
+💗𝙐𝙍𝙇 » ${yt_play[0].url}
 ﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘﹘
-┃𓅓 𝙔𝙊𝙐𝙍 ${additionalText}, 𝙄𝙎 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂...
-*𓆩 𓅓 𓆪 ✧═══ ${vs} ═══✧ 𓆩 𓅓 𓆪*`  
+💗𝙔𝙊𝙐𝙍 ${additionalText}, 𝙄𝙎 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿𝙄𝙉𝙂...
+*𓆩 𓅓 𓆪 ✧═══ ɢᴅs-ᴍᴅ ═══✧ 𓆩 𓅓 𓆪*`  
 await conn.sendMessage(m.chat, {
 text: captionvid,
 contextInfo: {
@@ -154,7 +154,7 @@ m.react('✅')
 }} catch {
 handler.limit = 0
 }}
-handler.command = ['play', 'video']
+handler.command = ['play2', 'video']
 handler.exp = 0
 handler.limit = 1
 export default handler

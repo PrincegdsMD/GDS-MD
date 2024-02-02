@@ -55,7 +55,7 @@ conn.reply(m.chat, `*YOUR REGISTRATION TIME IS OVER!!*\n\n_If you do not continu
 if (user.registered === true) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}*YA ESTÁ REGISTRADO!!*\n*SI QUIERE ANULAR SU REGISTRO, USE ESTE COMANDO*\n*${usedPrefix}unreg numero de serie*\n\n*SI NO RECUERDA SU NÚMERO DE SERIE, USE ESTE COMANDO*\n*${usedPrefix}NULL*`, fkontak, m)	
 
 if (command == 'verificar' || command == 'verify' || command == 'register' || command == 'reg' || command == 'registrar') {
-await conn.reply(m.chat, `*👀 HOW YOU WANT TO REGISTER?*\n\n📑 *QUICK REGISTRATION*\n• Verification Badge\n• Unlock Commands That Require Log\n\n*Type for Quick Logging:*\n${usedPrefix}reg1 Name Age\n\n🗂️ *FULL REGISTRATION*\n• Verification Badge\n• Unlock commands that require registration\n• Free Temporal Premium\n• More options for this record\n\n*Type for the full record:*\n${usedPrefix}nombre\n\n\`\`\`⭐ Keep in mind that you will have some time to complete in case you register\`\`\``, fkontak, m)
+await conn.reply(m.chat, `*👀 HOW YOU WANT TO REGISTER?*\n\n📑 *QUICK REGISTRATION*\n• Verification Badge\n• Unlock Commands That Require Log\n\n*Type for Quick Logging:*\n${usedPrefix}reg1 Name Age\n\n🗂️ *FULL REGISTRATION*\n• Verification Badge\n• Unlock commands that require registration\n• Free Temporal Premium\n• More options for this record\n\n*Type for the full record:*\n${usedPrefix}name\n\n\`\`\`⭐ Keep in mind that you will have some time to complete in case you register\`\`\``, fkontak, m)
 }
 
 if (command == 'reg1') {
@@ -72,12 +72,12 @@ if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}👉 *REGIST
 //if (_registro['length'] >= 3 || isNaN(_registro[1])) return 
 //conn.sendButton(m.chat, fg + '🙃 *ESTÁ INTENTANDO SEPRAR SU NOMBRE O UNIR TODO?* ', '🧐 *COINCIDE COMO EN ESTOS EJEMPLOS:*\n' + `\`\`\`${usedPrefix + command} Super${gt}20\`\`\`` + '\n' + `\`\`\`${usedPrefix + command} Super 15 ${gt} \`\`\`` + '\n' + `\`\`\`${usedPrefix + command} Super ${gt} 24 De ${author}\`\`\`\n\n` + '*Si cumple que tenga (Nombre/Frase y Edad) Autocompletaremos su Registro, de lo contraio vuelva a registrarse*\n➘ _Use el Botón de abajo_', null, [[`🌟 AUTOCOMPLETAR MI REGISTRO`, usedPrefix + 'reg1' + ' ' + text.replace(/[♧◇♡♤■□●○•°☆▪︎¤¿?¡¬¦±×÷°µ§©®™¶€¢£¥₽₹₩₱₸₪₫₮₦₴₡₭₲₼₿.,\/#!$%\^&\*;:{}@=\-_`~()\s\0-9]/gi, "") + ' ' + text.replace(/[♧◇♡♤■□●○•°☆▪︎¤¿?¡¬¦±×÷°µ§©®™¶€¢£¥₽₹₩₱₸₪₫₮₦₴₡₭₲₼₿.,\/#!$%\^&\*;:{}@=\-_`~()\s\a-z]/gi, "")], ['📑 VOLVER A REGISTRAR', command + usedPrefix]], m)
 if (!_registro[0]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*MISSING NAME, REGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} Name Age\`\`\``, fkontak, m)
-if (_registro[0].length >= 30) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*YOUR NAME IS VERY LONG, REGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
-if (_registro[0].length <= 2) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*YOUR NAME IS TOO SHORT OR MISSING, REGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
+if (_registro[0].length >= 30) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*YOUR NAME IS VERY LONG, REGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} Name Age\`\`\``, fkontak, m)
+if (_registro[0].length <= 2) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*YOUR NAME IS TOO SHORT OR MISSING, REGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} Name Age\`\`\``, fkontak, m)
 _registro[0] = text.replace(/\s+/g, '').replace(/[0-9]+/gi, "")
 user.name = _registro[0]
 
-if (!_registro[1]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*FALTA SU EDAD, PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
+if (!_registro[1]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*FALTA SU EDAD, PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} Name Age\`\`\``, fkontak, m)
 if (_registro[1] > 90) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*YOUR AGE IS VERY OLD, PLEASE USE ANOTHER AGE*\n\n*PREGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} Name Age\`\`\``, fkontak, m)
 if (_registro[1] < 10) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*YOUR AGE IS VERY YOUNG, PLEASE USE ANOTHER AGE*\n\n*REGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} Name Age\`\`\``, fkontak, m)
 user.age = parseInt(_registro[1]) //_registro[1]	

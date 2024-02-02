@@ -477,9 +477,9 @@ function clearTmp() {
   filenames.forEach(file => {
     const filePath = join(tmpDir, file);
     if (fs.lstatSync(filePath).isDirectory()) {
-      rmdirSync(filePath, { recursive: true });
+      fs.rmdirSync(filePath, { recursive: true });
     } else {
-      unlinkSync(filePath);
+      fs.unlinkSync(filePath);
     }
   });
 }

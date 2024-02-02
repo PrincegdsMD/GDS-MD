@@ -11,6 +11,7 @@ import { spawn } from 'child_process'
 import lodash from 'lodash'
 import chalk from 'chalk'
 import fs from 'fs'
+import fs from 'fs-extra'
 import { watchFile, unwatchFile } from 'fs'  
 import syntaxerror from 'syntax-error'
 import { tmpdir } from 'os'
@@ -477,7 +478,7 @@ function clearTmp() {
   filenames.forEach(file => {
     const filePath = join(tmpDir, file);
     if (fs.lstatSync(filePath).isDirectory()) {
-      rmdirSync(filePath, { recursive: true });
+      fs.rmdirSync(filePath, { recursive: true });
     } else {
       unlinkSync(filePath);
     }

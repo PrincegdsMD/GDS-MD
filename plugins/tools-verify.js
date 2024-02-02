@@ -212,7 +212,7 @@ await conn.sendMessage(m.chat, { text: yyr + `\n\n✨ *HERE'S AN EXAMPLE OF HOW 
 } 
 var identidadAsignada = asignarIdentidad(text)
 user.identidad = identidadAsignada
-if (user.identidad && text < generos.length && text != 0) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *GENIAL!! SE HA COMPLETADO LO SIGUIENTE*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NAME:*\n${!user.name ? sinDefinir : user.name}\n\n*❖ AGE:*\n${!user.age ? sinDefinir : user.age + ' años'}\n\n*❖ GENDER:*\n${!user.genero ? sinDefinir : user.genero}\n\n*❖ GENDER PREFERENCE:*\n${!user.identidad ? sinDefinir : user.identidad}\n\n❇️ *YOU CAN NOW RECORD YOUR HOBBIES, EXAMPLE:*\n\`\`\`${usedPrefix}hobby\`\`\``}, {quoted: fkontak})
+if (user.identidad && text < generos.length && text != 0) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *THAT'S GREAT!! THE FOLLOWING HAS BEEN COMPLETED*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NAME:*\n${!user.name ? sinDefinir : user.name}\n\n*❖ AGE:*\n${!user.age ? sinDefinir : user.age + ' years'}\n\n*❖ GENDER:*\n${!user.genero ? sinDefinir : user.genero}\n\n*❖ GENDER PREFERENCE:*\n${!user.identidad ? sinDefinir : user.identidad}\n\n❇️ *YOU CAN NOW RECORD YOUR HOBBIES, EXAMPLE:*\n\`\`\`${usedPrefix}hobby\`\`\``}, {quoted: fkontak})
 }
 	
 if (command == 'pastime' || command == 'hobby') {
@@ -230,9 +230,9 @@ var todosLosPasatiempos = [
     "🥋 Mixed Martial Arts", "Astrophotography", "Astrology", "Athletics", "👟 🔭 🔮 🩰 Ballet",
     "💄 Beauty", "Canyoning", "Blog", "Sketches", "✏️ 🏔️ 💻 🎳 Bowling",
     "🥊 Boxing", "🏸 Badminton",
-    "👋 Estar en YouTube", "👋 Estar en TikTok", "👋 Estar en Facebook", "👋 Estar en Facebook Messenger",
-    "👋 Estar en Whatsapp", "👋 Estar en Instagram", "👋 Estar en Twitter", "👋 Estar en Pinterest",
-    "👋 Estar en Telegram", "👋 Estar en WeChat", "👋 Estar en Snapchat", "👋 Estar en Reddit",
+    "👋 Be on YouTube", "Be on TikTok", "Be on Facebook", "👋 👋 👋 Be on Facebook Messenger",
+    "👋 Be on Whatsapp", "Be on Instagram", "Be on Twitter", "👋 👋 👋 Be on Pinterest",
+    "👋 Be on Telegram", "Be on WeChat", "Be on Snapchat", "👋 👋 👋 Be on Reddit",
     "📝 Escritura creativa", "🎧 Escuchar música", "📘 Estudiar", "👻 Fantasmas y/o apariciones",
     "👟 Fitness", "📸 Fotografía", "📸 Fotogénico/a", "📸 Fotografía de moda", "📸 Fotografía de juegos",
     "📸 Fotografía de animales", "📸 Fotografía de paisajes", "📸 Fotografía blanco y negro", "⚽ Fútbol",

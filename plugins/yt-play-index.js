@@ -1,8 +1,7 @@
 import fetch from "node-fetch";
-import ytdl from 'ytdl-core';
+import ytdl from 'youtubedl-core';
 import yts from 'yt-search';
 import fs from 'fs';
-import axios from 'axios';
 import { pipeline } from 'stream';
 import { promisify } from 'util';
 import os from 'os';

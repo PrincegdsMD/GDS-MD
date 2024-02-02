@@ -5,7 +5,7 @@ let pas1 = 0, pas2 = 0, pas3 = 0, pas4 = 0, pas5 = 0
 
 let handler = async function (m, { conn, text, command, usedPrefix }) {
 let key 
-let sinDefinir = '😿 No encontrada'
+let sinDefinir = '😿 No found'
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }	
 let d = new Date(new Date + 3600000)
 let locale = 'es'
@@ -44,18 +44,18 @@ return
 if (typeof genero === 'string') {
 global.db.data.users[m.sender]['registroC'] = true
 registrando = false
-conn.reply(m.chat, `*SU TIEMPO DE REGISTRO HA TERMINADO!!*\n\n_Si no continúa en este momento su registro no se guardará, si guarda más tarde su registro se habrá perdido_\n\n*Para continuar escriba:* ${usedPrefix}finalizar`, fkontak, m)
+conn.reply(m.chat, `*YOUR REGISTRATION TIME IS OVER!!*\n\n_If you do not continue at this time your record will not be saved, if you save later your record will have been perdido_\n\n*To continue, type:* ${usedPrefix}complete`, fkontak, m)
 }else{
 clearInterval(intervalId)
 global.db.data.users[m.sender]['registroR'] = true		
 registrando = false
-conn.reply(m.chat, `*SU TIEMPO DE REGISTRO HA TERMINADO!!*\n\n_Si no continúa en este momento su registro no se guardará, si guarda más tarde su registro se habrá perdido_\n\n*Para continuar escriba:* ${usedPrefix}finalizar`, fkontak, m)}
+conn.reply(m.chat, `*YOUR REGISTRATION TIME IS OVER!!*\n\n_If you do not continue at this time your record will not be saved, if you save later your record will be lost_\n\n*To continue, type:* ${usedPrefix}complete`, fkontak, m)}
 }
 		
-if (user.registered === true) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}*YA ESTÁ REGISTRADO!!*\n*SI QUIERE ANULAR SU REGISTRO, USE ESTE COMANDO*\n*${usedPrefix}unreg numero de serie*\n\n*SI NO RECUERDA SU NÚMERO DE SERIE, USE ESTE COMANDO*\n*${usedPrefix}myns*`, fkontak, m)	
+if (user.registered === true) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}*YA ESTÁ REGISTRADO!!*\n*SI QUIERE ANULAR SU REGISTRO, USE ESTE COMANDO*\n*${usedPrefix}unreg numero de serie*\n\n*SI NO RECUERDA SU NÚMERO DE SERIE, USE ESTE COMANDO*\n*${usedPrefix}NULL*`, fkontak, m)	
 
 if (command == 'verificar' || command == 'verify' || command == 'register' || command == 'reg' || command == 'registrar') {
-await conn.reply(m.chat, `*👀 CÓMO DESEA REGISTRARSE?*\n\n📑 *REGISTRO RÁPIDO*\n• Insignia de verificación\n• Desbloquear comandos que requieran registro\n\n*Escriba para el registro rápido:*\n${usedPrefix}reg1 nombre edad\n\n🗂️ *REGISTRO COMPLETO*\n• Insignia de verificación\n• Desbloquear comandos que requieran registro\n• Premium Temporal Gratis\n• Más opciones para este registro\n\n*Escriba para el registro completo:*\n${usedPrefix}nombre\n\n\`\`\`⭐ Considere que tendrá un tiempo para completar en caso de registrarse\`\`\``, fkontak, m)
+await conn.reply(m.chat, `*👀 HOW YOU WANT TO REGISTER?*\n\n📑 *QUICK REGISTRATION*\n• Verification Badge\n• Unlock Commands That Require Log\n\n*Type for Quick Logging:*\n${usedPrefix}reg1 Name Age\n\n🗂️ *FULL REGISTRATION*\n• Verification Badge\n• Unlock commands that require registration\n• Free Temporal Premium\n• More options for this record\n\n*Type for the full record:*\n${usedPrefix}nombre\n\n\`\`\`⭐ Keep in mind that you will have some time to complete in case you register\`\`\``, fkontak, m)
 }
 
 if (command == 'reg1') {
@@ -68,41 +68,41 @@ clearInterval(intervalId)}, 126000) //2.1 min
 
 registro = text.replace(/\s+/g, usedPrefix) 
 _registro = text.split(" ",2)
-if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}👉 *PARÁMETROS DEL REGISTRO:*\n${usedPrefix + command} nombre edad\n\n\`\`\`EJEMPLO:\`\`\`\n${usedPrefix + command} ${gt} 20\n\n*✨ CONSEJO:*\n• _Su nombre no debe de contener números_\n• _La edad no debe de contener letras_\n\n⭐ *Si desea personalizar más su registro, escriba:*\n${usedPrefix}nombre`, fkontak, m)
+if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}👉 *REGISTRY PARAMETERS:*\n${usedPrefix + command} Name Age\n\n\`\`\`EXAMPLE:\`\`\`\n${usedPrefix + command} ${gt} 20\n\n*✨ ADVICE:*\n• _Your name must not contain numbers_\n• _Age should not contain letters_\n\n⭐ *If you would like to further customize your record, type:*\n${usedPrefix}name`, fkontak, m)
 //if (_registro['length'] >= 3 || isNaN(_registro[1])) return 
 //conn.sendButton(m.chat, fg + '🙃 *ESTÁ INTENTANDO SEPRAR SU NOMBRE O UNIR TODO?* ', '🧐 *COINCIDE COMO EN ESTOS EJEMPLOS:*\n' + `\`\`\`${usedPrefix + command} Super${gt}20\`\`\`` + '\n' + `\`\`\`${usedPrefix + command} Super 15 ${gt} \`\`\`` + '\n' + `\`\`\`${usedPrefix + command} Super ${gt} 24 De ${author}\`\`\`\n\n` + '*Si cumple que tenga (Nombre/Frase y Edad) Autocompletaremos su Registro, de lo contraio vuelva a registrarse*\n➘ _Use el Botón de abajo_', null, [[`🌟 AUTOCOMPLETAR MI REGISTRO`, usedPrefix + 'reg1' + ' ' + text.replace(/[♧◇♡♤■□●○•°☆▪︎¤¿?¡¬¦±×÷°µ§©®™¶€¢£¥₽₹₩₱₸₪₫₮₦₴₡₭₲₼₿.,\/#!$%\^&\*;:{}@=\-_`~()\s\0-9]/gi, "") + ' ' + text.replace(/[♧◇♡♤■□●○•°☆▪︎¤¿?¡¬¦±×÷°µ§©®™¶€¢£¥₽₹₩₱₸₪₫₮₦₴₡₭₲₼₿.,\/#!$%\^&\*;:{}@=\-_`~()\s\a-z]/gi, "")], ['📑 VOLVER A REGISTRAR', command + usedPrefix]], m)
-if (!_registro[0]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*FALTA SU NOMBRE, PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
-if (_registro[0].length >= 30) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*SU NOMBRE ES MUY LARGO, PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
-if (_registro[0].length <= 2) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*SU NOMBRE ES MUY CORTO O FALTANTE, PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
+if (!_registro[0]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*MISSING NAME, REGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} Name Age\`\`\``, fkontak, m)
+if (_registro[0].length >= 30) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*YOUR NAME IS VERY LONG, REGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
+if (_registro[0].length <= 2) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*YOUR NAME IS TOO SHORT OR MISSING, REGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
 _registro[0] = text.replace(/\s+/g, '').replace(/[0-9]+/gi, "")
 user.name = _registro[0]
 
 if (!_registro[1]) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*FALTA SU EDAD, PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
-if (_registro[1] > 90) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*SU EDAD ES MUY MAYOR, USE OTRA EDAD POR FAVOR*\n\n*PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
-if (_registro[1] < 10) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*SU EDAD ES MUY MENOR, USE OTRA EDAD POR FAVOR*\n\n*PARÁMETROS DEL REGISTRO:*\n\`\`\`${usedPrefix + command} nombre edad\`\`\``, fkontak, m)
+if (_registro[1] > 90) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*YOUR AGE IS VERY OLD, PLEASE USE ANOTHER AGE*\n\n*PREGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} Name Age\`\`\``, fkontak, m)
+if (_registro[1] < 10) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*YOUR AGE IS VERY YOUNG, PLEASE USE ANOTHER AGE*\n\n*REGISTRY PARAMETERS:*\n\`\`\`${usedPrefix + command} Name Age\`\`\``, fkontak, m)
 user.age = parseInt(_registro[1]) //_registro[1]	
 global.db.data.users[m.sender]['registroR'] = true
 
-let registroRapido = ` *░ 📑 REGISTRO ACTUAL 📑 ░*
+let registroRapido = ` *░ 📑 CURRENT REGISTRATION 📑 ░*
  *∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷*
-┊ *✓ NOMBRE*
+┊ *✓ NAME*
 ┊ ⁘ ${user.name === 0 ? sinDefinir : user.name}
 ┊
-┊ *✓ EDAD*
+┊ *✓ AGE*
 ┊ ⁘ ${user.age === 0 ? sinDefinir : user.age + ' años'}
 ╰┈┈┈┈┈┈┈┈┈┈┈┈•
 
-❇️ \`\`\`Para finalizar su registro escriba:\`\`\`
-✪ *${usedPrefix}finalizar*`
+❇️ \`\`\`To finalize your registration, type:\`\`\`
+✪ *${usedPrefix}complete*`
 
 await conn.sendMessage(m.chat, {
 text: registroRapido,
 contextInfo: {
 externalAdReply: {
 title: wm,
-body: '🌟 Puede modificar su registro antes de finalizar',
+body: '🌟 You can modify your registration before finalizing',
 thumbnailUrl: pp, 
-sourceUrl: 'https://www.atom.bio/gatabot/',
+sourceUrl: 'https://whatsapp.com/channel/0029VaKNbWkKbYMLb61S1v11',
 mediaType: 1,
 showAdAttribution: true,
 renderLargerThumbnail: true
@@ -116,27 +116,27 @@ intervalId = setInterval(mensajeRegistro, 3 * 60 * 1000) //3 min
 setTimeout(() => {
 clearInterval(intervalId)}, 186000) //3.1 min
 }
-if (verificar.test(text) == false || text.length <= 1) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}👉 *PERSONALICE SU NOMBRE PARA REGISTRAR, EJEMPLO:*\n${usedPrefix}nombre ${gt}`, fkontak, m)
-if (/^\d+$/.test(text)) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*SU NOMBRE NO DEBE DE TENER SÓLO NÚMEROS, EJEMPLO:*\n${usedPrefix}nombre ${gt}\n\n🌟 _Si quiere usar su nombre registrado en su WhatsApp, escriba:_\n*${usedPrefix}nombre2*`}, {quoted: fkontak})
-if (text.length >= 25) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*USE UN NOMBRE MÁS CORTO, EJEMPLO:*\n${usedPrefix}nombre ${gt}\n\n🌟 _Si quiere usar su nombre registrado en su WhatsApp, escriba:_\n*${usedPrefix}nombre2*`}, {quoted: fkontak})
-if (text.length <= 2) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*NOMBRE FALTANTE O MUY CORTO, EJEMPLO:*\n${usedPrefix}nombre ${gt}\n\n🌟 _Si quiere usar su nombre registrado en su WhatsApp, escriba ${usedPrefix}nombre2_`}, {quoted: fkontak})
+if (verificar.test(text) == false || text.length <= 1) return conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}👉 *CUSTOMIZE YOUR NAME TO REGISTER, EXAMPLE:*\n${usedPrefix}name ${gt}`, fkontak, m)
+if (/^\d+$/.test(text)) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*YOUR NAME SHOULDN'T JUST HAVE NUMBERS, EXAMPLE:*\n${usedPrefix}nombre ${gt}\n\n🌟 _If you want to use your registered name on your WhatsApp, type:_\n*${usedPrefix}name2*`}, {quoted: fkontak})
+if (text.length >= 25) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*USE A SHORTER NAME, EXAMPLE:*\n${usedPrefix}nombre ${gt}\n\n🌟 _If you want to use your registered name on your WhatsApp, type:_\n*${usedPrefix}Name2*`}, {quoted: fkontak})
+if (text.length <= 2) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*MISSING OR VERY SHORT NAME, EXAMPLE:*\n${usedPrefix}nombre ${gt}\n\n🌟 _If you want to use your registered name on your WhatsApp, type ${usedPrefix}Name2_`}, {quoted: fkontak})
 user.name = text.replace(/\s+/g, '').replace(/[0-9]+/gi, "").trim()
-if (user.name) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *GENIAL!! SE HA COMPLETADO LO SIGUIENTE*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NOMBRE:*\n${user.name === 0 ? sinDefinir : user.name}\n\n🔢 *AHORA PUEDE REGISTRAR SU EDAD, EJEMPLO:*\n\`\`\`${usedPrefix}edad 20\`\`\``}, {quoted: fkontak})
+if (user.name) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *THAT'S GREAT!! THE FOLLOWING HAS BEEN COMPLETED*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NAME:*\n${user.name === 0 ? sinDefinir : user.name}\n\n🔢 *YOU CAN NOW REGISTER YOUR AGE, EXAMPLE:*\n\`\`\`${usedPrefix}age 22\`\`\``}, {quoted: fkontak})
 }
 	
 if (command == 'nombre2' || command == 'name2') {
-if (/^\d+$/.test(text)) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*SU NOMBRE NO DEBE DE TENER SÓLO NÚMEROS, EJEMPLO:*\n${usedPrefix}nombre ${gt}\n\n🌟 _Si quiere usar su nombre registrado en su WhatsApp, escriba:_\n*${usedPrefix}nombre2*`}, {quoted: fkontak})
-if (nombreWA.slice(1).length < 2) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*SU NOMBRE DE WHATSAPP ES MUY CORTO PARA REGISTRAR*\n\n*Modifique su nombre de WhatsApp e intente de nuevo o puede personalizar 🌟 su nombre usando:*\n*${usedPrefix}nombre ${gt}*`}, {quoted: fkontak})
-if (nombreWA.slice(1).length > 25) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*SU NOMBRE DE WHATSAPP ES MUY LARGO PARA REGISTRAR*\n\n*Modifique su nombre de WhatsApp e intente de nuevo o puede personalizar 🌟 su nombre usando:*\n*${usedPrefix}nombre ${gt}*`}, {quoted: fkontak})
+if (/^\d+$/.test(text)) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*YOUR NAME SHOULDN'T JUST HAVE NUMBERS, EXAMPLE:*\n${usedPrefix}name ${gt}\n\n🌟 _If you want to use your registered name on your WhatsApp, type:_\n*${usedPrefix}Name2*`}, {quoted: fkontak})
+if (nombreWA.slice(1).length < 2) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*SU NOMBRE DE WHATSAPP ES MUY CORTO PARA REGISTRAR*\n\n*Modify your WhatsApp name and try again or you can customize it 🌟 su nombre usando:*\n*${usedPrefix}nombre ${gt}*`}, {quoted: fkontak})
+if (nombreWA.slice(1).length > 25) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*SU NOMBRE DE WHATSAPP ES MUY LARGO PARA REGISTRAR*\n\n*Modify your WhatsApp name and try again or you can customize it 🌟 su nombre usando:*\n*${usedPrefix}nombre ${gt}*`}, {quoted: fkontak})
 user.name = nombreWA.replace(/\s+/g, '').replace(/[0-9]+/gi, "").slice(1).trim()
 if (user.name) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *GENIAL!! SE HA COMPLETADO LO SIGUIENTE*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NOMBRE:*\n${user.name === 0 ? sinDefinir : user.name}\n\n🔢 *AHORA PUEDE REGISTRAR SU EDAD, EJEMPLO:*\n\`\`\`${usedPrefix}edad 20\`\`\``}, {quoted: fkontak})
 }
 		
 if (command == 'edad' || command == 'age' || command == 'edad2' || command == 'age2') {
 if (verificar.test(text.slice(1)) == false && !text) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoIIG']()}*👉 AGREGUÉ SU EDAD PARA REGISTRAR, EJEMPLO:*\n${usedPrefix}edad 20`}, {quoted: fkontak})
-if (isNaN(text)) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*INGRESE SOLO NÚMEROS*`, fkontak, m)
-if (text > 90) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*DEMASIADO MAYOR PARA SER REGISTRADO*`, fkontak, m)
-if (text < 10) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*DEMASIADO MENOR PARA SER REGISTRADO*`, fkontak, m)
+if (isNaN(text)) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*ENTER NUMBERS ONLY*`, fkontak, m)
+if (text > 90) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*TOO OLD TO BE REGISTERED*`, fkontak, m)
+if (text < 10) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*TOO MINOR TO BE SEARCHED*`, fkontak, m)
 user.age = text.replace(/[.,\/#!$%\^&\*;:{}@=\-_`~()\s\a-z]/gi, "")
 if (verificar.test(text) == true) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *GENIAL!! SE HA COMPLETADO LO SIGUIENTE*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NOMBRE:*\n${user.name === 0 ? sinDefinir : user.name}\n\n*❖ EDAD:*\n${user.age === 0 ? sinDefinir : user.age + ' años'}\n\n🧬 *AHORA PUEDE REGISTRAR SU GÉNERO, EJEMPLO:*\n\`\`\`${usedPrefix}genero\`\`\``}, {quoted: fkontak})
 }

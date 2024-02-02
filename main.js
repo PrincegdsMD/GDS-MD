@@ -10,7 +10,7 @@ import yargs from 'yargs'
 import { spawn } from 'child_process'
 import lodash from 'lodash'
 import chalk from 'chalk'
-import fs from 'fs-extra'
+import fs from 'fs'
 import { watchFile, unwatchFile } from 'fs'  
 import syntaxerror from 'syntax-error'
 import { tmpdir } from 'os'
@@ -477,7 +477,7 @@ function clearTmp() {
   filenames.forEach(file => {
     const filePath = join(tmpDir, file);
     if (fs.lstatSync(filePath).isDirectory()) {
-      fs.rmdirSync(filePath, { recursive: true });
+      rmdirSync(filePath, { recursive: true });
     } else {
       unlinkSync(filePath);
     }

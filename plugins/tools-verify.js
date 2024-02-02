@@ -126,63 +126,63 @@ if (user.name) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG'
 	
 if (command == 'nombre2' || command == 'name2') {
 if (/^\d+$/.test(text)) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*YOUR NAME SHOULDN'T JUST HAVE NUMBERS, EXAMPLE:*\n${usedPrefix}name ${gt}\n\n🌟 _If you want to use your registered name on your WhatsApp, type:_\n*${usedPrefix}Name2*`}, {quoted: fkontak})
-if (nombreWA.slice(1).length < 2) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*SU NOMBRE DE WHATSAPP ES MUY CORTO PARA REGISTRAR*\n\n*Modify your WhatsApp name and try again or you can customize it 🌟 su nombre usando:*\n*${usedPrefix}nombre ${gt}*`}, {quoted: fkontak})
-if (nombreWA.slice(1).length > 25) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*SU NOMBRE DE WHATSAPP ES MUY LARGO PARA REGISTRAR*\n\n*Modify your WhatsApp name and try again or you can customize it 🌟 su nombre usando:*\n*${usedPrefix}nombre ${gt}*`}, {quoted: fkontak})
+if (nombreWA.slice(1).length < 2) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*YOUR WHATSAPP NAME IS TOO SHORT TO REGISTER*\n\n*Modify your WhatsApp name and try again or you can customize it 🌟 your name using:*\n*${usedPrefix}nombre ${gt}*`}, {quoted: fkontak})
+if (nombreWA.slice(1).length > 25) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()}*YOUR WHATSAPP NAME IS TOO LONG TO REGISTER*\n\n*Modify your WhatsApp name and try again or you can customize it 🌟 your name using:*\n*${usedPrefix}nombre ${gt}*`}, {quoted: fkontak})
 user.name = nombreWA.replace(/\s+/g, '').replace(/[0-9]+/gi, "").slice(1).trim()
-if (user.name) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *GENIAL!! SE HA COMPLETADO LO SIGUIENTE*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NOMBRE:*\n${user.name === 0 ? sinDefinir : user.name}\n\n🔢 *AHORA PUEDE REGISTRAR SU EDAD, EJEMPLO:*\n\`\`\`${usedPrefix}edad 20\`\`\``}, {quoted: fkontak})
+if (user.name) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *THAT'S GREAT!! THE FOLLOWING HAS BEEN COMPLETED*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NAME:*\n${user.name === 0 ? sinDefinir : user.name}\n\n🔢 *YOU CAN NOW REGISTER YOUR AGE, EXAMPLE:*\n\`\`\`${usedPrefix}age 22\`\`\``}, {quoted: fkontak})
 }
 		
 if (command == 'edad' || command == 'age' || command == 'edad2' || command == 'age2') {
-if (verificar.test(text.slice(1)) == false && !text) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoIIG']()}*👉 AGREGUÉ SU EDAD PARA REGISTRAR, EJEMPLO:*\n${usedPrefix}edad 20`}, {quoted: fkontak})
+if (verificar.test(text.slice(1)) == false && !text) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoIIG']()}*👉 I ADDED YOUR AGE TO REGISTER, EXAMPLE:*\n${usedPrefix}age 22`}, {quoted: fkontak})
 if (isNaN(text)) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*ENTER NUMBERS ONLY*`, fkontak, m)
 if (text > 90) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*TOO OLD TO BE REGISTERED*`, fkontak, m)
 if (text < 10) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*TOO MINOR TO BE SEARCHED*`, fkontak, m)
 user.age = text.replace(/[.,\/#!$%\^&\*;:{}@=\-_`~()\s\a-z]/gi, "")
-if (verificar.test(text) == true) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *GENIAL!! SE HA COMPLETADO LO SIGUIENTE*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NOMBRE:*\n${user.name === 0 ? sinDefinir : user.name}\n\n*❖ EDAD:*\n${user.age === 0 ? sinDefinir : user.age + ' años'}\n\n🧬 *AHORA PUEDE REGISTRAR SU GÉNERO, EJEMPLO:*\n\`\`\`${usedPrefix}genero\`\`\``}, {quoted: fkontak})
+if (verificar.test(text) == true) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *THAT'S GREAT!! THE FOLLOWING HAS BEEN COMPLETED*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NAME:*\n${user.name === 0 ? sinDefinir : user.name}\n\n*❖ EDAD:*\n${user.age === 0 ? sinDefinir : user.age + ' años'}\n\n🧬 *YOU CAN NOW REGISTER YOUR GENDER, EXAMPLE:*\n\`\`\`${usedPrefix}gender\`\`\``}, {quoted: fkontak})
 }
 	
 if (command == 'genero' || command == 'género' || command == 'gender') {
-let genText = `🌟 *SELECCIONA TU GÉNERO!!*
-1️⃣ ️▸ _🚹 MASCULINO (Hombre)_
-2️⃣ ▸ _🚺 FEMENINO (Mujer)_
-3️⃣ ▸ _👤 OCULTAR GÉNERO (Omitir)_\n
-🌟 *PUEDE USAR EL EMOJI NUMÉRICO O TEXTO NUMÉRICO PARA ELEGIR SU GÉNERO EJEMPLO:*
+let genText = `🌟 *SELECT YOUR GENDER!!*
+1️⃣ ️▸ _🚹 MALE (Male)_
+2️⃣ ▸ _🚺 FEMALE (Female)_
+3️⃣ ▸ _👤 HIDE GENDER (Skip)_\n
+🌟 *YOU CAN USE THE NUMERIC EMOJI OR NUMERIC TEXT TO CHOOSE YOUR EXAMPLE GENDER:*
 ✓ \`\`\`${usedPrefix}genero 2️⃣\`\`\`
 ✓ \`\`\`${usedPrefix}genero 2\`\`\``
 if (!text) return conn.sendMessage(m.chat, { text: genText }, { quoted: fkontak })	
 function asignarGenero(text) {
-if (text == 0 && text > 3) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*"${text}" NO ES VÁLIDO PARA ELEGIR, RECUERDE USAR EL EMOJI NUMÉRICO, EMOJI DE GÉNERO O TEXTO NUMÉRICO PARA SELECCIONAR SU GÉNERO, EJEMPLO*\n\n✓ \`\`\`${usedPrefix}genero 2️⃣\`\`\`\n✓ \`\`\`${usedPrefix}genero 2\`\`\``, fkontak, m) 
+if (text == 0 && text > 3) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*"${text}" NOT VALID TO CHOOSE, REMEMBER TO USE THE NUMERIC EMOJI, GENDER EMOJI OR NUMERIC TEXT TO SELECT YOUR GENDER, EXAMPLE*\n\n✓ \`\`\`${usedPrefix}genero 2️⃣\`\`\`\n✓ \`\`\`${usedPrefix}genero 2\`\`\``, fkontak, m) 
 switch (text) {
 case "1️⃣":
 case "1":
 case "🚹":
-genero = "Hombre"
+genero = "Man"
 break
 case "2️⃣":
 case "2":
 case "🚺":
-genero = "Mujer"
+genero = "Woman"
 break
 case "3️⃣":
 case "3":
 case "👤":
-genero = "Ocultado"
+genero = "Hidden"
 break
 default:
-return conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*RECUERDE USAR EL EMOJI NUMÉRICO, EMOJI DE GÉNERO O TEXTO NUMÉRICO PARA SELECCIONAR SU GÉNERO, EJEMPLO*\n\n✓ \`\`\`${usedPrefix}genero 2️⃣\`\`\`\n✓ \`\`\`${usedPrefix}genero 2\`\`\``, fkontak, m)
+return conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*REMEMBER TO USE THE NUMERIC EMOJI, GENDER EMOJI, OR NUMERIC TEXT TO SELECT YOUR GENDER, EXAMPLE*\n\n✓ \`\`\`${usedPrefix}gender 2️⃣\`\`\`\n✓ \`\`\`${usedPrefix}gender 2\`\`\``, fkontak, m)
 }}
 asignarGenero(text)
 user.genero = genero
-if (user.genero) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *GENIAL!! SE HA COMPLETADO LO SIGUIENTE*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NOMBRE:*\n${user.name === 0 ? sinDefinir : user.name}\n\n*❖ EDAD:*\n${user.age === 0 ? sinDefinir : user.age + ' años'}\n\n*❖ GENERO:*\n${user.genero === 0 ? sinDefinir : user.genero}\n\n*🌼 AHORA PUEDE REGISTRAR SU ORIENTACIÓN SEXUAL, EJEMPLO:*\n\`\`\`${usedPrefix}identidad\`\`\``}, {quoted: fkontak}) 
+if (user.genero) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *THAT'S GREAT!! THE FOLLOWING HAS BEEN COMPLETED*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NOMBRE:*\n${user.name === 0 ? sinDefinir : user.name}\n\n*❖ AGE:*\n${user.age === 0 ? sinDefinir : user.age + ' años'}\n\n*❖ GENDER:*\n${user.genero === 0 ? sinDefinir : user.genero}\n\n*🌼 YOU CAN NOW REGISTER YOUR GENDER ORIENTATION, EXAMPLE:*\n\`\`\`${usedPrefix}identity\`\`\``}, {quoted: fkontak}) 
 }
 	
 if (command == 'identidad' || command == 'identity') {
 var generos = [
-"Agénero", "Andrógino", "Andrógina", "Asexual", "Bigénero", "Bisexual",
-"Cisgénero", "CrossDresser", "Demigénero", "Gay", "Género fluido", "Género neutro",
+"Agender", "Androgynous", "Androgynous", "Asexual", "Bigender", "Bisexual",
+"Cisgender", "CrossDresser", "Demigender", "Gay", "Gender Fluid", "Gender Neutral",
 "Genderqueer", "Heterosexual", "Heteroflexible", "Homoflexible", "Homosexual",
-"Intersexual", "Lesbiana", "Pansexual", "Pangénero", "Questioning", "Queer",
-"Sapiosexual", "Transgénero", "Trigénero", "Variante/Género expansivo"
+"Intersex", "Lesbian", "Pansexual", "Pangender", "Questioning", "Queer",
+"Sapiosexual", "Transgender", "Trigender", "Variant/Gender Expansive"
 ]
 var emojiANumero = { "0️⃣": "0", "1️⃣": "1", "2️⃣": "2", "3️⃣": "3", "4️⃣": "4", "5️⃣": "5", "6️⃣": "6", "7️⃣": "7", "8️⃣": "8", "9️⃣": "9" }
 function asignarIdentidad(text) {
@@ -193,13 +193,13 @@ var numero = parseInt(text.replace(/[^\d]/g, ''))
 if (!isNaN(numero) && Number(numero) > 0 && Number(numero) <= generos.length) {
 return generos[numero - 1]
 } else if (!text) {
-return conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*RECUERDE USAR EL EMOJI NUMÉRICO, EMOJI DE GÉNERO O TEXTO NUMÉRICO PARA SELECCIONAR SU ORIENTACIÓN SEXUAL, EJEMPLO*\n\n✓ \`\`\`${usedPrefix}identidad 2️⃣\`\`\`\n✓ \`\`\`${usedPrefix}identidad 2\`\`\``, fkontak, m)
+return conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}*REMEMBER TO USE THE NUMERIC EMOJI, GENDER EMOJI, OR NUMERIC TEXT TO SELECT YOUR SEXUAL ORIENTATION, EXAMPLE*\n\n✓ \`\`\`${usedPrefix}identity 2️⃣\`\`\`\n✓ \`\`\`${usedPrefix}identity 2\`\`\``, fkontak, m)
 }else{
-conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*ESTÁ ELECCIÓN "${numero}" NO FORMA PARTE DE LA LISTA DE ORIENTACIONES, ELEGIR UNO DE LA LISTA POR FAVOR, EJEMPLO:*\n\n✓ \`\`\`${usedPrefix}identidad 2️⃣\`\`\`\n✓ \`\`\`${usedPrefix}identidad 2\`\`\``, fkontak, m)
+conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}*ESTÁ ELECCIÓN "${numero}" NOT PART OF THE LIST OF ORIENTATIONS, PLEASE CHOOSE ONE FROM THE LIST, EXAMPLE:*\n\n✓ \`\`\`${usedPrefix}identity 2️⃣\`\`\`\n✓ \`\`\`${usedPrefix}identity 2\`\`\``, fkontak, m)
 }}
 let yyr = ''
 yyr += `*╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈•*
-*┊ 🌟 SELECCIONE SU ORIENTACIÓN SEXUAL!!*
+*┊ 🌟 SELECT YOUR GENDER ORIENTATION!!*
 *┊┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈•*\n`
 generos.forEach(function (identidad, index) {
 yyr += `*┊* \`\`\`[${index + 1}]\`\`\` » _${identidad}_\n`
@@ -208,14 +208,14 @@ yyr += `*╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈*`
 if (!text) {
 const { key } = await conn.sendMessage(m.chat, { text: yyr }, {quoted: fkontak})	
 await delay(1000)
-await conn.sendMessage(m.chat, { text: yyr + `\n\n✨ *AQUÍ UN EJEMPLO DE COMO SELECCIONAR:*\n\`\`\`${usedPrefix}identidad 4️⃣\`\`\`\n\`\`\`${usedPrefix}identidad 4\`\`\``, edit: key }, {quoted: fkontak}) 
+await conn.sendMessage(m.chat, { text: yyr + `\n\n✨ *HERE'S AN EXAMPLE OF HOW TO SELECT:*\n\`\`\`${usedPrefix}identity 4️⃣\`\`\`\n\`\`\`${usedPrefix}identity 4\`\`\``, edit: key }, {quoted: fkontak}) 
 } 
 var identidadAsignada = asignarIdentidad(text)
 user.identidad = identidadAsignada
-if (user.identidad && text < generos.length && text != 0) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *GENIAL!! SE HA COMPLETADO LO SIGUIENTE*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NOMBRE:*\n${!user.name ? sinDefinir : user.name}\n\n*❖ EDAD:*\n${!user.age ? sinDefinir : user.age + ' años'}\n\n*❖ GENERO:*\n${!user.genero ? sinDefinir : user.genero}\n\n*❖ ORIENTACIÓN SEXUAL:*\n${!user.identidad ? sinDefinir : user.identidad}\n\n❇️ *AHORA PUEDE REGISTRAR SUS PASATIEMPOS, EJEMPLO:*\n\`\`\`${usedPrefix}pasatiempo\`\`\``}, {quoted: fkontak})
+if (user.identidad && text < generos.length && text != 0) return conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoEG']()}🌟 *GENIAL!! SE HA COMPLETADO LO SIGUIENTE*\n*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*\n\n*❖ NAME:*\n${!user.name ? sinDefinir : user.name}\n\n*❖ AGE:*\n${!user.age ? sinDefinir : user.age + ' años'}\n\n*❖ GENDER:*\n${!user.genero ? sinDefinir : user.genero}\n\n*❖ GENDER PREFERENCE:*\n${!user.identidad ? sinDefinir : user.identidad}\n\n❇️ *YOU CAN NOW RECORD YOUR HOBBIES, EXAMPLE:*\n\`\`\`${usedPrefix}hobby\`\`\``}, {quoted: fkontak})
 }
 	
-if (command == 'pasatiempo' || command == 'hobby') {
+if (command == 'pastime' || command == 'hobby') {
 pasatiempo = 0
 pas1 = ''
 pas2 = ''
@@ -224,20 +224,12 @@ pas4 = ''
 pas5 = ''  
 var seleccion = text
 var todosLosPasatiempos = [
-"👟 Acroyoga", "🎭 Actuación", "🥋 Aikido", "🎯 Airsoft", "♟️ Ajedrez",
-    "🏔️ Alpinismo", "🖥️ Animación", "🎉 Animador/a de Equipos", "✏️ Anime dibujos", "🐝 Apicultura",
-    "💻 Aprender a programar", "🌐 Aprender un idioma", "💐 Arreglos florales", "🎨 Arte", "🥋 Artes marciales",
-    "🥋 Artes marciales mixtas", "🔭 Astrofotografía", "🔮 Astrología", "👟 Atletismo", "🩰 Ballet",
-    "💄 Belleza", "🏔️ Barranquismo", "💻 Blog", "✏️ Bocetos", "🎳 Bowling",
-    "🥊 Boxeo", "🏸 Bádminton", "🏀 Baloncesto", "⚾ Béisbol", "🖋️ Caligrafía", "👟 Caminata",
-    "🏕 Camping", "🛶 Canoa", "🎤 Canto", "🎤 Canto a capela", "✏️ Caricaturas", "🪚 Carpintería",
-    "🏎️ Carreras de autos", "🐎 Carreras de caballos", "🛵 Carreras de motocicletas", "❄️ Carreras de moto de nieve",
-    "🚧 Carreras de obstáculos", "🦮 Carreras de perros", "🛷 Carreras de trineos", "♿ Carreras en silla de ruedas",
-    "🗺️ Cartografía", "🏹 Caza", "🚲 Ciclismo", "🎬 Cinematografía", "🔮 Clarividencia", "🍳 Cocinar",
-    "🥗 Cocina saludable", "🧤 Coleccionar objetos", "🗝️ Coleccionar antigüedades", "💥 Coleccionar cómics",
-    "📚 Coleccionar libros", "🎭 Comedia", "👻 Conspiración", "🍕 Comer", "🎵 Composición de canciones",
-    "🎶 Composición de música", "🚗 Conducir", "🎩 Cosplay", "💐 Cultivo de flores", "🎼 Danza",
-    "🥋 Defensa personal", "👟 Deportes extremos", "✏️ Dibujar", "✏️ Dibujar en 3D", "💤 Dormir",
+"👟 Acroyoga", "Acting", "Aikido", "Airsoft", "🎯 🎭 🥋 ♟️ Chess",
+    "🏔️ Mountaineering", "Animation", "Team Animator", "Anime Drawings", "✏️ 🖥️ 🎉 🐝 Beekeeping",
+    "💻 Learn to code", "Learn a language", "Flower arranging", "Art", "🎨 🌐 💐 🥋 Martial arts",
+    "🥋 Mixed Martial Arts", "Astrophotography", "Astrology", "Athletics", "👟 🔭 🔮 🩰 Ballet",
+    "💄 Beauty", "Canyoning", "Blog", "Sketches", "✏️ 🏔️ 💻 🎳 Bowling",
+    "🥊 Boxing", "🏸 Badminton",
     "👋 Estar en YouTube", "👋 Estar en TikTok", "👋 Estar en Facebook", "👋 Estar en Facebook Messenger",
     "👋 Estar en Whatsapp", "👋 Estar en Instagram", "👋 Estar en Twitter", "👋 Estar en Pinterest",
     "👋 Estar en Telegram", "👋 Estar en WeChat", "👋 Estar en Snapchat", "👋 Estar en Reddit",

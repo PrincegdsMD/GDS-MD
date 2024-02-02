@@ -76,40 +76,40 @@ let emoji = Array.from(lvl.toString()).map((digit) => numberToEmoji[digit] || "�
 
 const lugarFecha = moment().tz('America/Lima')
 const formatoFecha = {
-weekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-months: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+weekdays: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August ', 'September', 'October', 'November', 'December']
 }
 lugarFecha.locale('es', formatoFecha)
 const horarioFecha = lugarFecha.format('dddd, DD [de] MMMM [del] YYYY || HH:mm A').replace(/^\w/, (c) => c.toUpperCase())
 
-let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Ocultado 🕶️' ? `🕶️` : user.genero == 'Mujer 🚺' ? `🚺` : user.genero == 'Hombre 🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : username}*${(conn.user.jid == global.conn.user.jid ? '' : `\n*SOY SUB BOT DE: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
+let menu = `${lenguajeGB['smsConfi2']()} *${user.genero === 0 ? '👤' : user.genero == 'Hidden🕶️' ? `🕶️` : user.genero == 'Woman🚺' ? `🚺` : user.genero == 'Man🚹' ? `🚹` : '👤'} ${user.registered === true ? user.name : username}*${(conn.user.jid == global.conn.user.jid ? '' : `\n*SOY SUB BOT DE: https://wa.me/${global.conn.user.jid.split`@`[0]}*`) || ''}
 
 \`\`\`${horarioFecha}\`\`\`
 ⎔ *${lenguajeGB['smsTotalUsers']()}* ➺ _${Object.keys(global.db.data.users).length}_ 
-⎔ *Registrados »* ${rtotalreg}/${totalreg}    
+⎔ *Reported »* ${rtotalreg}/${totalreg}    
 ⎔ *${lenguajeGB['smsUptime']()}* ➺ _${uptime}_ 
 ⎔ *${lenguajeGB['smsVersion']()}* ➺ _${vs}_
 ⎔ *${lenguajeGB['smsMode']()} ➺* _${global.opts['self'] ? `${lenguajeGB['smsModePrivate']().charAt(0).toUpperCase() + lenguajeGB['smsModePrivate']().slice(1).toLowerCase()}` : `${lenguajeGB['smsModePublic']().charAt(0).toUpperCase() + lenguajeGB['smsModePublic']().slice(1).toLowerCase()}`}_
 ⎔ *${lenguajeGB['smsBanChats']()}* ➺ _${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}_ 
 ⎔ *${lenguajeGB['smsBanUsers']()}* ➺ _${Object.entries(global.db.data.users).filter(user => user[1].banned).length}_
 
-✨ *◜INFORMACIÓN DEL USUARIO◞* ✨
-⊜ *Tipo de registro »* ${user.registered === true ? `_${user.registroC === true ? 'Registro Completo 🗂️' : 'Registro Rápido 📑'}_` : '❌ _Sin registro_'}
-⊜ *Mi estado »* ${typeof user.miestado !== 'string' ? '❌ _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
-⊜ *Registrado »* ${user.registered === true ? '✅' : '❌ _' + usedPrefix + 'verificar_'}
-⊜ *${lenguajeGB['smsBotonM7']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✅' : '❌ _' + usedPrefix + 'pase premium_'}
+✨ *◜USER INFORMATION◞* ✨
+⊜ *Record Type »* ${user.registered === true ? `_${user.registroC === true ? 'Full Registration 🗂️' : 'Quick Sign-Up 📑'}_` : '❌ _No Registration_'}
+⊜ *My Status »* ${typeof user.miestado !== 'string' ? '❌ _' + usedPrefix + 'miestado_' : '_Me siento ' + user.miestado + '_'}
+⊜ *Registered »* ${user.registered === true ? '✅' : '❌ _' + usedPrefix + 'verificar_'}
+⊜ *${lenguajeGB['smsBotonM7']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM7']().slice(1).toLowerCase()} »* ${user.premiumTime > 0 ? '✅' : '❌ _' + usedPrefix + 'Premium Pass_'}
 
 ⊜ *${lenguajeGB['smsBotonM5']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM5']().slice(1).toLowerCase()} »* ${role}
 ⊜ *${lenguajeGB['smsBotonM6']().charAt(0).toUpperCase() + lenguajeGB['smsBotonM6']().slice(1).toLowerCase()} »* ${emoji} || ${user.exp - min}/${xp}
 ⊜ *${lenguajeGB['smsPareja']()}* ${pareja ? `\n*»* ${name} 💕 ${conn.getName(pareja)}` : `🛐 ${lenguajeGB['smsResultPareja']()}`}
-⊜ *Pasatiempo(s)* ➺ ${user.pasatiempo === 0 ? '*Sin Registro*' : user.pasatiempo + '\n'}
+⊜ *Pastime(s)* ➺ ${user.pasatiempo === 0 ? '*No Registration*' : user.pasatiempo + '\n'}
 
-⊜ *Experiencia ➟* ${exp} ⚡
-⊜ *Diamantes ➟* ${limit} 💎
-⊜ *GataCoins ➟* ${money} 🐈
+⊜ *Experience ➟* ${exp} ⚡
+⊜ *Diamonds ➟* ${limit} 💎
+⊜ *GDSCoins ➟* ${money} 🐈
 ⊜ *Tokens ➟* ${joincount} 🪙
 ${readMore}
-*╭━〔 INFORMACIÓN DE GATABOT 〕⬣*
+*╭━〔 GDS-MD INFORMATION T 〕⬣*
 ┃💫➺ _${usedPrefix}cuentasgatabot | cuentasgb_
 ┃💫➺ _${usedPrefix}gruposgb | grupos | groupgb_
 ┃💫➺ _${usedPrefix}donar | donate_
@@ -120,12 +120,12 @@ ${readMore}
 ┃💫➺ _${usedPrefix}creadora | owner_
 ┃💫➺ _${usedPrefix}velocidad | ping_
 ┃💫➺ _Bot_ 
-┃💫➺ _términos y condiciones_
+┃💫➺ _Terms & Conditions_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 FUNCIÓN SUB BOT 〕━⬣*
-┃ *Ya puedes convertir tú*
-┃ *Número en GataBot!!*
+*╭━〔 SUB BOT FUNCTION 〕━⬣*
+┃ *You can convert now*
+┃ *Number in GDS-MD!! * 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃💻 _${usedPrefix}serbot | jadibot_
 ┃💻 _${usedPrefix}serbot --code | jadibot --code_
@@ -134,13 +134,13 @@ ${readMore}
 ┃💻 _${usedPrefix}bcbot_
 *╰━━━━━━━━━━━━⬣*
 
-*╭━〔 REPORTAR COMANDO 〕━⬣*
-┃ *Reporta con este comando de haber*
-┃ *Fallas para poder Solucionar!!*
+*╭━〔 REPORT COMMAND 〕━⬣*
+┃ *Report with this haber command*
+┃ *Failures to be able to Solve!! *
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 💌 _${usedPrefix}reporte *texto*_
-┃ 💌 _${usedPrefix}report *texto*_
-*╰━━━━━━━━━━━━⬣*
+┃💌  _${usedPrefix}report *text*_
+┃💌  _${usedPrefix}report *text*_
+*╰━━━━━━━━━━━━⬣* 
 
 *╭━〔 ÚNETE AL GRUPO 〕━⬣*
 ┃ *Une a GataBot en Grupos!!*
@@ -199,8 +199,8 @@ ${readMore}
 *╰━━━━━━━━━━━━⬣*
 
 *╭━〔 IA 〕━⬣*
-┃ *Tienes la Ocasión de*
-┃ *Conversar con GataBot!!*
+┃ *You Have the Chance to*
+┃ *Chat with GDS-MD!!* 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃🪄➺ _${usedPrefix}simi | okgoogle *text*_
 ┃🪄➺ _${usedPrefix}alexa | siri | cortana *text*_

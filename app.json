@@ -32,15 +32,10 @@
       "required": true,
       "value": ""
        },
-     "OWNERNAME": {
-      "description": "Put owner name here.",
-      "required": true,
-      "value": "Prince♥️"
-       },
-     "OWNERNAME": {
-      "description": "Put owner number here.",
-      "required": true,
-      "value": "923042205427"
+     "Video_Cap": {
+      "description": "Video downloaded caption",
+      "required": false,
+      "value": "💗𝙃𝙀𝙍𝙀 𝙄𝙎 𝙔𝙊𝙐𝙍 𝙍𝙀𝙌𝙐𝙀𝙎𝙏𝙀𝘿 𝙑𝙄𝘿𝙀𝙊💗"
        },
      "BOT_NAME": {
       "description": "Put your name here for pack/author",

@@ -13,7 +13,7 @@ const cat = `*🩵𝙂𝘿𝙎-𝘽𝙊𝙏-𝙈𝘿🩵*
 
 
 *_ᴛʜᴇ ᴍᴏᴅᴇʀᴀᴛᴏʀ_*
-*${developer}*`
+*${asistencia}*`
 
 await conn.sendFile(m.chat, pp, 'menuvid', cat, fkontak)
 }

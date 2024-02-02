@@ -220,7 +220,7 @@ auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
 },
-markOnlineOnConnect: true, 
+markOnlineOnConnect: false, 
 generateHighQualityLinkPreview: true, 
 getMessage: async (clave) => {
 let jid = jidNormalizedUser(clave.remoteJid)

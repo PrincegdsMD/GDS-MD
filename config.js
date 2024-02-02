@@ -105,7 +105,7 @@ global.moment = moment
 // [ES] > Agregate a ti, colaboradores o ayudates, aparecerá en el comando de lista de contactos.
 // [EN] > Adding yourself, collaborators or helpers will appear in the contact list command.
 global.official = [ // Agregate si eres Owner
-["18059196237", 'PRINCE 💻', 1], 
+["923092668108", 'PRINCEGDS 💻', 1], 
 ["923092668108", '*_DEVELOPER_* 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],  
 ["923092668108", '𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
 ["923092668108", '_*DEVELOPER*_ 𝗢𝗳𝗶𝗰𝗶𝗮𝗹 💻', 1],
@@ -139,7 +139,7 @@ global.fb = ""
 global.tk = ""
 global.ths = ""
 global.paypal = ''
-global.asistencia = 'https://wa.me/message/C45GXBEFTPONE1' //Contacto
+global.asistencia = 'https://wa.me/message/DCAK67ON3XVOG1' //Contacto
 
 global.nna = '' // CANAL UPDATE
 global.nn2 = '' // CANAL GataBot
@@ -176,7 +176,7 @@ global.envio = eeg
 
 global.eg = '╰⊱💚⊱ *𝙎𝙐𝘾𝘾𝙀𝙎𝙎* ⊱💚⊱╮\n\n'
 global.exito = eg
-global.vidcap = '💗𝙃𝙀𝙍𝙀 𝙄𝙎 𝙔𝙊𝙐𝙍 𝙍𝙀𝙌𝙐𝙀𝙎𝙏𝙀𝘿 𝙑𝙄𝘿𝙀𝙊💗'
+global.vidcap = process.env.Video_Cap
 // • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •
 global.wm = "𝙂𝘿𝙎-𝙈𝘿 : ɢᴅs-ᴍᴅ"
 global.igfg = "𝙂𝘿𝙎-𝙈𝘿"

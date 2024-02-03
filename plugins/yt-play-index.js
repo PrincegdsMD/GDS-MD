@@ -5,8 +5,8 @@ import fs from 'fs';
 import axios from 'axios';
 import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
 import { pipeline } from 'stream';
-import { promisify } from 'utils';
-import os from 'os'
+import { promisify } from 'util';
+import os from 'os';
 const streamPipeline = promisify(pipeline);
 
 const handler = async (m, {

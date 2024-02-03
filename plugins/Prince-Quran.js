@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
-import { translate } from '@vitalets/google-translate-api';
-
+import pkg from '@vitalets/google-translate-api';
+const { translate } = pkg;
 let quranSurahHandler = async (m, { conn }) => {
   try {
     // Extract the surah number or name from the command text.

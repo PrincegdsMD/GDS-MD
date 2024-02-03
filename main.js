@@ -428,18 +428,18 @@ else {
 conn.logger.warn(`A FILE WAS DELETED : '${filename}'`)
 return delete global.plugins[filename];
 }
-} else conn.logger.info(`SE DETECTO UN NUEVO PLUGINS : '${filename}'`)
+} else conn.logger.info(`A NEW PLUGIN DETECTED : '${filename}'`)
 const err = syntaxerror(readFileSync(dir), filename, {
 sourceType: 'module',
 allowAwaitOutsideFunction: true,
 });
-if (err) conn.logger.error(`SE DETECTO UN ERROR DE SINTAXIS | SYNTAX ERROR WHILE LOADING '${filename}'\n${format(err)}`);
+if (err) conn.logger.error(`SYNTAX ERROR WHILE LOADING '${filename}'\n${format(err)}`);
 else {
 try {
 const module = (await import(`${global.__filename(dir)}?update=${Date.now()}`));
 global.plugins[filename] = module.default || module;
 } catch (e) {
-conn.logger.error(`HAY UN ERROR REQUIERE EL PLUGINS '${filename}\n${format(e)}'`);
+conn.logger.error(`THERE IS A BUG REQUIRED PLUGINS '${filename}\n${format(e)}'`);
 } finally {
 global.plugins = Object.fromEntries(Object.entries(global.plugins).sort(([a], [b]) => a.localeCompare(b)));
 }}}};

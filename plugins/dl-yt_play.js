@@ -10,7 +10,7 @@ try {
   m.react("⏳")
 const yt_play = await search(args.join(" "))
 let additionalText = ''
-if (command === 'play2') {
+if (command === 'play') {
 additionalText = '𝘼𝙐𝘿𝙄𝙊 🎧'
 } else if (command === 'video') {
 additionalText = '𝙑𝙄𝘿𝙀𝙊 🎥'}
@@ -154,7 +154,7 @@ m.react('✅')
 }} catch {
 handler.limit = 0
 }}
-handler.command = ['play2', 'video']
+handler.command = ['play', 'video']
 handler.exp = 0
 handler.limit = 1
 export default handler

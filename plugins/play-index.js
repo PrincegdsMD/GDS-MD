@@ -1,10 +1,12 @@
 import fetch from "node-fetch";
 import ytdl from 'ytdl-core';
 import yts from 'yt-search';
+import axios from 'axios';
 import fs from 'fs';
 import { pipeline } from 'stream';
 import { promisify } from 'util';
 import os from 'os';
+import {youtubedl, youtubedlv2} from '@bochilteam/scraper';
 
 const streamPipeline = promisify(pipeline);
 
@@ -108,7 +110,7 @@ handler.before = async (m, {
 
 handler.help = ["plist"];
 handler.tags = ["downloader"];
-handler.command = /^(plist)$/i;
+handler.command = /^(pllay)$/i;
 export default handler;
 
 function formatBytes(bytes, decimals = 2) {

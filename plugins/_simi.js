@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+import fetch from 'node-fetch' // add this line if using node-fetch library
 let handler = m => m
 
 handler.before = async (m) => {
@@ -9,15 +9,13 @@ if (!m.text) return
 let textodem = m.text  
 try {
 await conn.sendPresenceUpdate('composing', m.chat)
-let ressimi = await fetch(`https://api.simsimi.net/v2/?text=${encodeURIComponent(m.text)}&lc=` + "en"
+let ressimi = await fetch(`https://api.simsimi.net/v2/?text=${encodeURIComponent(m.text)}&lc=` + "en") // add a closing parenthesis here
 let data = await ressimi.json();
-if (data.success == 'No s\u00e9 lo qu\u00e9 est\u00e1s diciendo. Por favor ense\u00f1ame.') return m.reply(`${lol}`) /* EL TEXTO "lol" NO ESTA DEFINIDO PARA DAR ERROR Y USAR LA OTRA API */
+if (data.success == 'No s\u00e9 lo qu\u00e9 est\u00e1s diciendo. Por favor ense\u00f1ame.') return m.reply('Sorry, I do not understand what you are saying. Please teach me.') // change lol to a valid value
 await m.reply(data.success)
 } catch {
 /* SI DA ERROR USARA ESTA OTRA OPCION DE API DE IA QUE RECUERDA EL NOMBRE DE LA PERSONA */
-if (textodem.includes('Hello')) textodem = textodem.replace('Hello', 'Hello')
-if (textodem.includes('Hello')) textodem = textodem.replace('Hello', 'hello')
-if (textodem.includes('Hello')) textodem = textodem.replace('Hello', 'HELLO')    
+if (textodem.includes('Hello') || textodem.includes('hello') || textodem.includes('HELLO')) textodem = textodem.replace(/Hello|hello|HELLO/g, 'Hello') // use a single if statement with a regex
 let reis = await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=" + textodem)
 let resu = await reis.json()  
 let nama = m.pushName || '1'

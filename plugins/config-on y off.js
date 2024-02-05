@@ -21,7 +21,7 @@ lenguajeGB.smsParaOw() + ' ' + `${global.opts['self'] ? '❌' : '✅'}`,
 lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.modoadmin ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,  
 lenguajeGB.smsParaOw() + ' ' + `${global.opts['autoread'] ? '✅' : '❌'}`, 
 lenguajeGB.smsParaOw() + ' ' + `${bot.temporal ? '✅' : '❌'}`,      
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.autosticker ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,   
+lenguajeGB.smsParaOw() + ' ' + `${bot.autobio ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,   
 lenguajeGB.smsParaAdYOw() + ' ' + `${m.isGroup ? chat.reaction ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,    
 lenguajeGB.smsParaAdYOw() + ' ' + `${m.isGroup ? chat.audios ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,  
 lenguajeGB.smsParaAdYOw() + ' ' + `${m.isGroup ? chat.modohorny ? '✅' : '❌' : lenguajeGB.smsNoGg()}`,   
@@ -46,7 +46,7 @@ lenguajeGB.smsAntiIG1(), lenguajeGB.smsAntiTW1(), lenguajeGB.smsSOLOP1(), lengua
 let descripción = [ lenguajeGB.smsWel2(), lenguajeGB.smsDete2(), lenguajeGB.smsANivel2(), lenguajeGB.smsRestri2(), lenguajeGB.smsLlamar2(), lenguajeGB.smsAntiSp2(), lenguajeGB.smsModP2(), lenguajeGB.smsModAd2(), lenguajeGB.smsLect2(), lenguajeGB.smsTempo2(), lenguajeGB.smsStik2(), lenguajeGB.smsStickA2(), lenguajeGB.smsReacc2(), lenguajeGB.smsAudi2(), lenguajeGB.smsModHor2(), lenguajeGB.smsAntitoc2(), lenguajeGB.smsModOb2(), lenguajeGB.smsAntiEli2(), lenguajeGB.smsAntiInt2(), lenguajeGB.smsAntiE2(), lenguajeGB.smsAntiEE2(), lenguajeGB.smsAntiTT2(), lenguajeGB.smsAntiYT2(), lenguajeGB.smsAntiTEL2(), lenguajeGB.smsAntiFB2(),
 lenguajeGB.smsAntiIG2(), lenguajeGB.smsAntiTW2(), lenguajeGB.smsSOLOP2(), lenguajeGB.smsSOLOG2()]
 
-let comando = [ "welcome", "detect", "autolevelup", "restrict", "anticall", "antispam", "public", "modoadmin", "autoread", "temporal", "stickers", "autosticker", "reaction", "audios", "modohorny", "antitoxic", "antiviewonce", "antidelete", "antifake", "antilink", "antilink2", "antitiktok", "antiyoutube", "antitelegram", "antifacebook",
+let comando = [ "welcome", "detect", "autolevelup", "restrict", "anticall", "antispam", "public", "modoadmin", "autoread", "temporal", "stickers", "autobio", "reaction", "audios", "autoreaction", "antitoxic", "antiviewonce", "antidelete", "antifake", "antilink", "antilink2", "antitiktok", "antiyoutube", "antitelegram", "antifacebook",
 "antinstagram", "antitwitter", "pconly", "gconly"]
 
 let sections = Object.keys(titulo, nombre, descripción, comando).map((v, index) => ({ title: `${titulo[v]}`,
@@ -112,6 +112,15 @@ throw false
 }}
 chat.delete = isEnable
 break
+
+case 'autobio':
+  isAll = true
+  if (!isROwner) {
+  global.dfail('rowner', m, conn)
+  throw false
+  }
+  bot.autoBio = isEnable
+  break	 
     
 case 'public': case 'publico':
 isAll = true
@@ -194,14 +203,7 @@ throw false
 chat.antiTwitter = isEnable 
 break
     
-case 'modohorny': case 'modocaliente':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
-throw false
-}}
-chat.modohorny = isEnable          
-break
+
     
 case 'stickers':
 if (m.isGroup) {
@@ -230,16 +232,9 @@ throw false
 chat.autolevelup = isEnable          
 break
     
-case 'autosticker':
-if (m.isGroup) {
-if (!(isAdmin || isOwner)) {
-global.dfail('admin', m, conn)
-throw false
-}}
-chat.autosticker = isEnable          
-break
+
     
-case 'reaction': case 'reaccion': case 'emojis': case 'antiemojis': case 'reacciones': case 'reaciones':
+case 'reaction': case 'reaccion': case 'emojis': case 'antiemojis': case 'reacciones': case 'autoreaction':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
@@ -464,6 +459,12 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
+┃┃✦ ${lenguajeGB.smsParaOw()} ${bot.autobio ? '✅' : '❌'}
+┃┃✦ ${usedPrefix + command} autobio
+┃┃✦ ${lenguajeGB.smsLlamar2()}
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
 ┃┃✦ ${lenguajeGB.smsParaOw()} ${bot.antiSpam ? '✅' : '❌'}
 ┃┃✦ ${usedPrefix + command} antiSpam
 ┃┃✦ ${lenguajeGB.smsAntiSp2()}
@@ -501,7 +502,7 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
 ┃┃✦ ${lenguajeGB.smsParaAdYOw()} ${m.isGroup ? chat.reaction ? '✅' : '❌' : lenguajeGB.smsNoGg()}    
-┃┃✦ ${usedPrefix + command} reaction
+┃┃✦ ${usedPrefix + command} autoreaction
 ┃┃✦ ${lenguajeGB.smsReacc2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈

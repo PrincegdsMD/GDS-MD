@@ -1,17 +1,20 @@
 let handler = m => m
 handler.all = async function (m) {
 let setting = global.db.data.settings[this.user.jid]
-	
+
+let bot = global.db.data.settings[this.user.jid] || {};
+  if (bot.autoBio) {
 let _uptime = process.uptime() * 1000
 let _muptime
 if (process.send) { process.send('uptime')
 _muptime = await new Promise(resolve => { process.once('message', resolve) 
 setTimeout(resolve, 2000) }) * 1000}
 let uptime = clockString(_uptime)
-let bio = `${global.packname} ║ ✅ ${uptime} ⌛ ║ ⒼⒷ 𓃠 #estado #menu #jadibot #grupos #owner 💻 By GLOBAL-GB `
+let bio = `${global.packname} ║ ✅ ${uptime} ⌛ ║ 💗Love you 💻 ɢᴅs-ᴍᴅ💗 `
 await this.updateProfileStatus(bio).catch(_ => _)
 setting.status = new Date() * 1
 } 
+}
 export default handler
 
 function clockString(ms) {

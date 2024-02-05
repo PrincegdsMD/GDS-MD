@@ -8,27 +8,32 @@
   "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "your session id",
+      "description": "put your session id here",
       "required": true,
       "value": ""
       },
      "MODE": {
-      "description": "mode public or private",
+      "description": "bot mode public or private",
       "required": true,
       "value": "public"
       },
     "antidelete": {
       "description": "bot will forward deleted messages if you make it true",
       "required": false,
-      "value": "false"
+      "value": "true"
+      },
+    "STATUSVIEW": {
+      "description": "To auto view your contacts whatsapp status, for trun it off just delete this var",
+      "required": false,
+      "value": ""
       },
      "HKEY": {
-      "description": "Put your Heroku api key Here , Get one from here https://dashboard.heroku.com/account",
+      "description": "Put your Heroku api key Here.",
       "required": true,
       "value": ""
     },
      "HAPP": {
-      "description": "Put the Heroku app name, same as above entered",
+      "description": "Put the same above name here as a Heroku app name.",
       "required": true,
       "value": ""
        },
@@ -43,9 +48,9 @@
       "value": "Prince♥️"
           },
     "PREFIX": {
-      "description": "put any one symbol here except @ and + , leave it Blank if you want to use multiple prefix",
+      "description": "put any one symbol here for bot perfix",
       "required": false,
-      "value": ""
+      "value": "."
       },
      "REMOVEBG_KEY": {
       "description": "your RemoveBg api key",

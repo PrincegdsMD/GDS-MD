@@ -953,9 +953,7 @@ if (!('detect' in chat)) chat.detect = true
 if (!('sWelcome' in chat)) chat.sWelcome = ''                    
 if (!('sBye' in chat)) chat.sBye = ''                    
 if (!('sPromote' in chat)) chat.sPromote = ''                    
-if (!('sDemote' in chat)) chat.sDemote = ''                                        
-if (!('autosticker' in chat)) chat.autosticker = false                      
-if (!('audios' in chat)) chat.audios = true                     
+if (!('sDemote' in chat)) chat.sDemote = ''                                                             
 if (!('antiver' in chat)) chat.antiver = false                  
 if (!('antiLink' in chat)) chat.antiLink = true                    
 if (!('antiLink2' in chat)) chat.antiLink2 = false
@@ -983,8 +981,6 @@ sWelcome: '',
 sBye: '',
 sPromote: '',
 sDemote: '', 
-autosticker: false,
-audios: true,
 antiver: false,
 antiLink: true,
 antiLink2: false,
@@ -1341,8 +1337,12 @@ if (!opts['noprint']) await (await import(`./lib/print.js`)).default(m, this)
 console.log(m, m.quoted, e)}
 let settingsREAD = global.db.data.settings[this.user.jid] || {}  
 if (opts['autoread']) await this.readMessages([m.key])
+if (process.env.STATUSVIEW && m.key.remoteJid === 'status@broadcast')
+	await conn.readMessages([m.key])
 if (settingsREAD.autoread2) await this.readMessages([m.key])  
-//if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])    
+//if (settingsREAD.autoread2 == 'true') await this.readMessages([m.key])  
+	
+
 	    
 if (!db.data.chats[m.chat].reaction && m.isGroup) throw 0
 if (!m.fromMem && m.text.match(/(ata|des|able|izo|ido|.-.|._.|:)|:(|:v|v:|o.o|;v|v;|v':|:'v)/gi)) {
